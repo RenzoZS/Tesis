@@ -1,0 +1,22 @@
+#! /bin/bash
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#$ -q gpu@compute-6-10.local
+#$ -l gpu=1
+#$ -l memoria_a_usar=1G
+#$ -N dif_SIR
+#$ -o /home/renzo.zagarra/jobgpu0
+#$ -e /home/renzo.zagarra/jobgpu0
+
+#Otras gpu que andan
+#gpu@compute-6-7.local,gpu@compute-6-6.local
+#gpu@compute-6-9.local,gpu@compute-6-8.local,gpu@compute-6-4.local,gpu@compute-6-3.local,gpu@compute-6-0.local
+
+conda activate gpu
+
+echo DeviceID: $SGE_GPU
+
+nvidia-smi -q
+
+python test.py
