@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \documentclass[12pt,papel,twoside]{ibtesis}
+\documentclass[12pt,screen,twoside,pagebackref,openany]{ibtesis}
+% \documentclass[12pt,papel,singlespace,oneside]{ibtesis}
+% \documentclass[12pt,papel,preprint,singlespace,oneside]{ibtesis}
+
+
+%%%%%%%%%%%%%%%%%%%%% Paquetes extra %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Por conveniencia: aqu\'{\i} puede cargar todos los paquetes y definir los comandos 
+% que necesite
+\usepackage{ibextra}
+\usepackage{physics}
+\usepackage{dsfont}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathrsfs}
+\usepackage{changepage}
+\usepackage{physics}
+\usepackage{booktabs}
+\usepackage{appendix}
+\usepackage{subcaption}
+\usepackage{csquotes}
+\usepackage{listings}
+\decimalpoint
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% Informacion sobre la tesis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Frentes de onda en ecuaciones de reacción-difusión-convección sobre medios heterogéneos}
+\author{Lic. Renzo Zagarra Saez}
+\director{Dr. Alejandro Kolton}
+\carrera{Tesis Maestría en Física}
+\grado{Maestrando}
+\laboratorio{Teoría de la Materia Condensada -- Centro At\'{o}mico Bariloche}
+\jurado{Dr. Ezequiel Ferrero}
+
+\palabrasclave{Sistemas complejos, Medios Desordenados, Ecuaciones de Difusión, Modelo SIR}
+\keywords{Dynamic Systems, Disordered Media, Diffusion Equations, SIR Model}
+% Si queremos poner la fecha manualmente:
+% \date{Diciembre de 2099}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\titlepagefalse % Si no quiere compilar la portada descomente esta linea
+%\includeonly{apendices} % Compilar s\'{o}lo estos archivos 
+\graphicspath{{figs/}} % Lugar donde encontrar las figuras generales (se puede poner uno en cada cap{\'{\i}}tulo)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% Dentro del environment 'preliminary' va:
+% la dedicatoria, resumen, abstract, indices
+
+\begin{preliminary}
+
+% Escriba su dedicatoria
+\dedicatoria{
+A mis padres, Francisco y Liliana, \\por su apoyo incondicional.\\
+A mis hermanos, Franco y Lucas, \\por hacer de cada momento una sonrisa.\\
+A mi novia, Sol, \\por acompañarme y entenderme como nadie. 
+}
+
+%%% \'{I}ndices %%%%
+
+\tableofcontents 
+
+\begin{abreviaturas}
+  \noindent
+  {$S(x,y,t)$ \hspace*{.3cm} Fracción de susceptibles en la posición $(x,y)$ en el instante $t$.\\
+  $I(x,y,t)$ \hspace*{.3cm} Fracción de infectados en la posición $(x,y)$ en el instante $t$.\\
+  $R(x,y,t)$ \hspace*{.3cm} Fracción de recuperados en la posición $(x,y)$ en el instante $t$.\\
+  $\beta$ \hspace*{.3cm} Tasa de transmisión.\\
+  $\gamma$ \hspace*{.3cm} Tasa de recuperación.\\
+  $S_0$ \hspace*{.3cm} Distribución inicial de la fracción de susceptibles.\\
+  $S_c$ \hspace*{.3cm} Fracción de susceptibles crítica.\\
+  $R_0$ \hspace*{.3cm} Coeficiente de reproducción.\\
+  $D_{x}$ \hspace*{.3cm} Coeficiente de dispersión de $x$.\\
+  $u(y,t)$ \hspace*{.3cm} Campo de desplazamiento del frente de onda.\\
+  $u_{cm}(t)$ \hspace*{.3cm} Centro de masa del frente de onda.\\
+  $I_{max}$ \hspace*{.3cm} Amplitud media del frente de onda.\\
+  $c$ \hspace*{.3cm} Velocidad media del frente de onda.\\
+  $w(t)$ \hspace*{.3cm} Rugosidad del frente de onda.\\
+  $S(q)$ \hspace*{.3cm} Factor de estructura del campo de desplazamiento del frente de onda.\\
+  $f_I(t)$ \hspace*{.3cm} Perfil centrado del frente de onda.\\
+  $\beta_{\vb r}$ \hspace*{.3cm} Distribución espacial de la tasa de transmisión.\\
+  H \hspace*{.3cm} Medio homogéneo\\
+  DA \hspace*{.3cm} Heterogeneidad dicotómica-aleatoria.\\
+  S \hspace*{.3cm} Heterogeneidad suavizada.\\
+  DC \hspace*{.3cm} Heterogeneidad dicotómica-correlacionada.}
+  
+  
+\end{abreviaturas}
+
+               %\'{I}ndice
+
+\listoffigures
+\listoftables
+
+\include{resumen}
+
+\end{preliminary}
+
+
+% Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
+\input{cap1}
+\input{cap2}
+\input{cap3}
+\include{cap4}
+
+\appendix
+\include{apend1}
+
+\begin{biblio}
+\bibliography{mibib}
+\end{biblio}
+
+\begin{postliminary}
+
+\begin{seccion}{Agradecimientos}
+Agradezco al Instituto Balseiro, a la Universidad Nacional de Cuyo y a la Comisión Nacional de Energía Atómica por hacer posible mis estudios universitarios. 
+Agradezco enteramente a todo el personal de estas instituciones que hacen posible, con gran esfuerzo y a pesar todas las complicaciones dadas por la pandemia, que 
+educación universitaria de altísimo nivel, pública y gratuita llegue a todo el país. Particular agradecimiento para mi director de tesis, Dr. Alejandro Kolton, 
+por su gran apoyo en el desarrollo de este trabajo y buena predisposición para todo. Agradezco también a mis compañeros de camada Amir Zablotsky, Pedro \textit{El Bata}
+Llauradó, Esteban \textit{El Leches} Acerbo, Marco Madile, Ezequiel Saidman, Martín Famá y Francisco \textit{El Bbto} Gymnich por estar siempre presentes y ayudar a 
+liberar las tensiones de la vida universitaria.
+\end{seccion}
+
+\end{postliminary}
+
+\end{document}
+
