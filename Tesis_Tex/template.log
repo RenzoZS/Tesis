@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.19)  8 JUL 2022 12:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.19)  11 AUG 2022 21:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/renzo/OneDrive/Documentos/IB/Tesis_M/tesis/Tesis_Tex/template.tex
-(c:/Users/renzo/OneDrive/Documentos/IB/Tesis_M/tesis/Tesis_Tex/template.tex
+**"c:/Users/renzo/Mi unidad (renzo.zagarra@ib.edu.ar)/Tesis_M/tesis/Tesis_Tex/template.tex"
+(c:/Users/renzo/Mi unidad (renzo.zagarra@ib.edu.ar)/Tesis_M/tesis/Tesis_Tex/template.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (ibtesis.cls
 Document Class: ibtesis 2010/10/25 v0.8 (a4 paper) IB - UnCuyo
 (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
-File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@chapter=\count186
@@ -314,52 +314,63 @@ File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
 \c@bookmark@seq@number=\count294
 \Hy@SectionHShift=\skip64
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 81.
-LaTeX Info: Redefining \es@scroman on input line 95.
+Package hyperref Info: Option `colorlinks' set `true' on input line 79.
+LaTeX Info: Redefining \es@scroman on input line 93.
 \imsizeL=\skip65
 \imsize=\skip66
 \imsizeS=\skip67
-) (ibextra.sty (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip68
-\bibsep=\skip69
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count295
-)) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
-Package: physics 
- (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2022-04-10 L3 programming layer (loader) 
- (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count296
-\l__pdf_internal_box=\box52
-))
-Package: xparse 2022-01-12 L3 Experimental document command parser
-)) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/doublestroke\dsfont.sty
-Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+) (ibextra.sty (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup8
+\symAMSb=\mathgroup9
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/bbm\bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip68
+\multirow@cntb=\count295
+\multirow@dima=\skip69
+\bigstrutjot=\dimen173
 ) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count297
-\mult@box=\box53
-\multicol@leftmargin=\dimen173
-\c@unbalance=\count298
-\c@collectmore=\count299
-\doublecol@number=\count300
-\multicoltolerance=\count301
-\multicolpretolerance=\count302
-\full@width=\dimen174
-\page@free=\dimen175
-\premulticols=\dimen176
-\postmulticols=\dimen177
+\c@tracingmulticols=\count296
+\mult@box=\box52
+\multicol@leftmargin=\dimen174
+\c@unbalance=\count297
+\c@collectmore=\count298
+\doublecol@number=\count299
+\multicoltolerance=\count300
+\multicolpretolerance=\count301
+\full@width=\dimen175
+\page@free=\dimen176
+\premulticols=\dimen177
+\postmulticols=\dimen178
 \multicolsep=\skip70
 \multicolbaselineskip=\skip71
-\partial@page=\box54
-\last@line=\box55
-\maxbalancingoverflow=\dimen178
-\mult@rightbox=\box56
-\mult@grightbox=\box57
-\mult@firstbox=\box58
-\mult@gfirstbox=\box59
+\partial@page=\box53
+\last@line=\box54
+\maxbalancingoverflow=\dimen179
+\mult@rightbox=\box55
+\mult@grightbox=\box56
+\mult@firstbox=\box57
+\mult@gfirstbox=\box58
+\@tempa=\box59
 \@tempa=\box60
 \@tempa=\box61
 \@tempa=\box62
@@ -395,87 +406,134 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box92
 \@tempa=\box93
 \@tempa=\box94
-\@tempa=\box95
-\c@minrows=\count303
-\c@columnbadness=\count304
-\c@finalcolumnbadness=\count305
-\last@try=\dimen179
-\multicolovershoot=\dimen180
-\multicolundershoot=\dimen181
-\mult@nat@firstbox=\box96
-\colbreak@box=\box97
-\mc@col@check@num=\count306
-) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count307
-\float@exts=\toks24
-\float@box=\box98
-\@float@everytoks=\toks25
-\@floatcapt=\box99
-) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
-Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks26
-\thm@bodyfont=\toks27
-\thm@headfont=\toks28
-\thm@notefont=\toks29
-\thm@headpunct=\toks30
-\thm@preskip=\skip72
-\thm@postskip=\skip73
-\thm@headsep=\skip74
-\dth@everypar=\toks31
-) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup7
-\symAMSb=\mathgroup8
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
-Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup9
+\c@minrows=\count302
+\c@columnbadness=\count303
+\c@finalcolumnbadness=\count304
+\last@try=\dimen180
+\multicolovershoot=\dimen181
+\multicolundershoot=\dimen182
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count305
 ) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen182
-\lightrulewidth=\dimen183
-\cmidrulewidth=\dimen184
-\belowrulesep=\dimen185
-\belowbottomsep=\dimen186
-\aboverulesep=\dimen187
-\abovetopsep=\dimen188
-\cmidrulesep=\dimen189
-\cmidrulekern=\dimen190
-\defaultaddspace=\dimen191
-\@cmidla=\count308
-\@cmidlb=\count309
-\@aboverulesep=\dimen192
-\@belowrulesep=\dimen193
-\@thisruleclass=\count310
-\@lastruleclass=\count311
-\@thisrulewidth=\dimen194
+\heavyrulewidth=\dimen183
+\lightrulewidth=\dimen184
+\cmidrulewidth=\dimen185
+\belowrulesep=\dimen186
+\belowbottomsep=\dimen187
+\aboverulesep=\dimen188
+\abovetopsep=\dimen189
+\cmidrulesep=\dimen190
+\cmidrulekern=\dimen191
+\defaultaddspace=\dimen192
+\@cmidla=\count306
+\@cmidlb=\count307
+\@aboverulesep=\dimen193
+\@belowrulesep=\dimen194
+\@thisruleclass=\count308
+\@lastruleclass=\count309
+\@thisrulewidth=\dimen195
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip72
+\bibsep=\skip73
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count310
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/nomencl\nomencl.sty
+Package: nomencl 2021/11/10 v5.6 Nomenclature package
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count311
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbasic.sty
+Package: tocbasic 2021/11/13 v3.35 KOMA-Script package (handling toc-files)
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
+Package: scrlfile 2021/11/13 v3.35 KOMA-Script package (file load hooks)
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
+Package: scrlfile-hook 2021/11/13 v3.35 KOMA-Script package (using LaTeX hooks)
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2021/11/13 v3.35 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
+)
+\scr@dte@tocline@numberwidth=\skip74
+\scr@dte@tocline@numbox=\box97
+)
+Package tocbasic Info: setting babel extension for `nlo' on input line 187.
+Package tocbasic Info: setting babel extension for `nls' on input line 188.
+\nomlabelwidth=\dimen196
+\nom@tempdim=\dimen197
+\nomitemsep=\skip75
+)
+\@nomenclaturefile=\write3
+\openout3 = `template.nlo'.
+
+Package nomencl Info: Writing nomenclature file template.nlo on input line 23.
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
+Package: physics 
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-04-10 L3 programming layer (loader) 
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count312
+\l__pdf_internal_box=\box98
+))
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/doublestroke\dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count313
+\float@exts=\toks26
+\float@box=\box99
+\@float@everytoks=\toks27
+\@floatcapt=\box100
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks28
+\thm@bodyfont=\toks29
+\thm@headfont=\toks30
+\thm@notefont=\toks31
+\thm@headpunct=\toks32
+\thm@preskip=\skip76
+\thm@postskip=\skip77
+\thm@headsep=\skip78
+\dth@everypar=\toks33
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup10
 ) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count312
-\c@@ppsavesec=\count313
-\c@@ppsaveapp=\count314
+\c@@pps=\count314
+\c@@ppsavesec=\count315
+\c@@ppsaveapp=\count316
 ) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
-\c@subfigure=\count315
-\c@subtable=\count316
+\c@subfigure=\count317
+\c@subtable=\count318
 ) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
  (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count317
+\etb@tempcnta=\count319
 )
-\csq@reset=\count318
-\csq@gtype=\count319
-\csq@glevel=\count320
-\csq@qlevel=\count321
-\csq@maxlvl=\count322
-\csq@tshold=\count323
-\csq@ltx@everypar=\toks32
+\csq@reset=\count320
+\csq@gtype=\count321
+\csq@glevel=\count322
+\csq@qlevel=\count323
+\csq@maxlvl=\count324
+\csq@tshold=\count325
+\csq@ltx@everypar=\toks34
  (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
 )
@@ -484,86 +542,104 @@ Package csquotes Info: ... configuration file loaded successfully.
  (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
 )) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count324
-\lst@gtempboxa=\box100
-\lst@token=\toks33
-\lst@length=\count325
-\lst@currlwidth=\dimen195
-\lst@column=\count326
-\lst@pos=\count327
-\lst@lostspace=\dimen196
-\lst@width=\dimen197
-\lst@newlines=\count328
-\lst@lineno=\count329
-\lst@maxwidth=\dimen198
+\lst@mode=\count326
+\lst@gtempboxa=\box101
+\lst@token=\toks35
+\lst@length=\count327
+\lst@currlwidth=\dimen198
+\lst@column=\count328
+\lst@pos=\count329
+\lst@lostspace=\dimen199
+\lst@width=\dimen256
+\lst@newlines=\count330
+\lst@lineno=\count331
+\lst@maxwidth=\dimen257
  (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count330
-\lst@skipnumbers=\count331
-\lst@framebox=\box101
+\c@lstnumber=\count332
+\lst@skipnumbers=\count333
+\lst@framebox=\box102
 ) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+LaTeX Info: Redefining \color on input line 711.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-
-
-LaTeX Warning: Unused global option(s):
-    [12pt,twoside,openany].
-
-(template.aux
+ (template.aux
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
  (resumen.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-) (cap4.aux) (apend1.aux))
+)
+
+LaTeX Warning: Label `lst:cupy' multiply defined.
+
+(cap4.aux) (apend1.aux))
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen199
-\caption@adjustwidth@linewidth=\dimen256
+\caption@adjustwidth@hsize=\dimen258
+\caption@adjustwidth@linewidth=\dimen259
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
-\scratchdimen=\dimen257
-\scratchbox=\box102
-\nofMPsegments=\count333
-\nofMParguments=\count334
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count335
-\MPscratchDim=\dimen258
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count334
+\scratchdimen=\dimen260
+\scratchbox=\box103
+\nofMPsegments=\count335
+\nofMParguments=\count336
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count337
+\MPscratchDim=\dimen261
+\MPnumerator=\count338
+\makeMPintoPDFobject=\count339
+\everyMPtoPDFconversion=\toks37
 ) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -578,24 +654,25 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * hratio: 1:1
+* vratio: 1:1
 * modes: includefoot twoside 
-* h-part:(L,W,R)=(78.24507pt, 441.01772pt, 78.24509pt)
-* v-part:(T,H,B)=(85.35826pt, 728.39055pt, 31.29803pt)
+* h-part:(L,W,R)=(45.52441pt, 506.45905pt, 45.52441pt)
+* v-part:(T,H,B)=(71.13188pt, 745.4622pt, 28.45276pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=441.01772pt
-* \textheight=698.39055pt
-* \oddsidemargin=5.97508pt
-* \evensidemargin=5.9751pt
-* \topmargin=-18.78552pt
+* \textwidth=506.45905pt
+* \textheight=720.16727pt
+* \oddsidemargin=-26.74557pt
+* \evensidemargin=-26.74557pt
+* \topmargin=-31.2056pt
 * \headheight=15.6pt
-* \headsep=19.8738pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=98.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -605,8 +682,8 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package backref Info: ** backref set up for natbib ** on input line 51.
-Package hyperref Info: Link coloring ON on input line 51.
+Package backref Info: ** backref set up for natbib ** on input line 79.
+Package hyperref Info: Link coloring ON on input line 79.
 (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -614,25 +691,29 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count338
+\c@section@level=\count340
 )
-LaTeX Info: Redefining \ref on input line 51.
-LaTeX Info: Redefining \pageref on input line 51.
-LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
  (template.out) (template.out)
-\@outlinefile=\write3
-\openout3 = `template.out'.
+\@outlinefile=\write4
+\openout4 = `template.out'.
 
-\c@lstlisting=\count339
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+\c@lstlisting=\count341
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 84.
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
  (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
  (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 56.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 84.
  (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
@@ -641,26 +722,21 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 {C:/Users/renzo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
 
-] [3] [4
-
 ] (template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
- [5
+)
+\tf@toc=\write5
+\openout5 = `template.toc'.
+
+ [3
 
 
-])
-\tf@toc=\write4
-\openout4 = `template.toc'.
 
-LaTeX Info: Redefining \. on input line 69.
-LaTeX Info: Redefining \% on input line 69.
- [6] [7
+] [4
 
-
-] [8
 
 ] (template.lof
 LaTeX Info: Redefining \. on input line 1.
@@ -668,53 +744,61 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
 
-Underfull \vbox (badness 3302) has occurred while \output is active []
 
- [9
+LaTeX Warning: Reference `S:Modelo SIR espacial hom' on page \es@scroman {v} undefined on input line 10.
+
+)
+\tf@lof=\write6
+\openout6 = `template.lof'.
+
+ [5
 
 
-])
-\tf@lof=\write5
-\openout5 = `template.lof'.
 
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
- [10] (template.lot
+]
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 125.
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Info: Redefining \. on input line 125.
+LaTeX Info: Redefining \% on input line 125.
+ [6] (template.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
 )
-\tf@lot=\write6
-\openout6 = `template.lot'.
+\tf@lot=\write7
+\openout7 = `template.lot'.
 
- [11
+ [7
 
 
 ]
 \openout2 = `resumen.aux'.
 
- (resumen.tex [12
+ (resumen.tex [8
 
 
-] [13
-
-] [14
 
 ]
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
- [15
+ [9
 
 
-] [16
 
 ]
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 ) (cap1.tex
 Cap\'{\i }tulo 1.
+
+LaTeX Warning: Reference `Modelo teÃ³rico' on page 1 undefined on input line 18.
+
 [1
+
+
 \babel@aux{english}{}
 \babel@aux{spanish}{}
 
@@ -729,298 +813,333 @@ Cap\'{\i }tulo 2.
 [3
 
 ]
-<figs//SIR.pdf, id=353, 506.03427pt x 323.15105pt>
-File: figs//SIR.pdf Graphic file (type pdf)
-<use figs//SIR.pdf>
-Package pdftex.def Info: figs//SIR.pdf  used on input line 41.
-(pdftex.def)             Requested size: 396.91324pt x 253.46701pt.
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
- [4 <./figs//SIR.pdf>]
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 73.
- (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (6.87508pt too wide) in paragraph at lines 59--63
+\T1/cmr/m/n/10 rio pa-ra re-sol-ver-lo. Por sim-pli-ci-dad con-si-de-ra-mos que $\OT1/cmr/m/n/10 
+$ \T1/cmr/m/n/10 es una re-gión rec-tan-gu-lar del plano don-de $\OML/cmm/m/it/10 x; y \OMS/cmsy/m/n/10 2  []\OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; L[]\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B  []\OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; L[]\OT1/cmr/m/n/10 ]$\T1/cmr/m/n/10 .
+ []
 
-LaTeX Info: Redefining \. on input line 83.
-LaTeX Info: Redefining \% on input line 83.
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
+[4] (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 127.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 127.
+ (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Info: Redefining \. on input line 171.
+LaTeX Info: Redefining \% on input line 171.
  [5]
-LaTeX Info: Redefining \. on input line 115.
-LaTeX Info: Redefining \% on input line 115.
+LaTeX Info: Redefining \. on input line 233.
+LaTeX Info: Redefining \% on input line 233.
  [6]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 145.
- (C:\Users\renzo\AppData\Local\Programs\MiKTeX\tex/latex/doublestroke\udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
-LaTeX Info: Redefining \. on input line 149.
-LaTeX Info: Redefining \% on input line 149.
+LaTeX Info: Redefining \. on input line 299.
+LaTeX Info: Redefining \% on input line 299.
  [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
+LaTeX Info: Redefining \. on input line 361.
+LaTeX Info: Redefining \% on input line 361.
  [8]
-Underfull \vbox (badness 5696) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 213.
-LaTeX Info: Redefining \% on input line 213.
+LaTeX Info: Redefining \. on input line 426.
+LaTeX Info: Redefining \% on input line 426.
  [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<figs//cpu_gpu_t.pdf, id=538, 629.10974pt x 612.44746pt>
+File: figs//cpu_gpu_t.pdf Graphic file (type pdf)
+<use figs//cpu_gpu_t.pdf>
+Package pdftex.def Info: figs//cpu_gpu_t.pdf  used on input line 479.
+(pdftex.def)             Requested size: 238.03636pt x 231.73251pt.
+<figs//cpu_gpu_ratio.pdf, id=539, 625.73778pt x 612.44746pt>
+File: figs//cpu_gpu_ratio.pdf Graphic file (type pdf)
+<use figs//cpu_gpu_ratio.pdf>
+Package pdftex.def Info: figs//cpu_gpu_ratio.pdf  used on input line 480.
+(pdftex.def)             Requested size: 238.03636pt x 232.97542pt.
 
-LaTeX Info: Redefining \. on input line 250.
-LaTeX Info: Redefining \% on input line 250.
- [10]
-<figs//heterogeneidad_dicot_aleatoria.pdf, id=494, 841.44362pt x 232.88712pt>
-File: figs//heterogeneidad_dicot_aleatoria.pdf Graphic file (type pdf)
-<use figs//heterogeneidad_dicot_aleatoria.pdf>
-Package pdftex.def Info: figs//heterogeneidad_dicot_aleatoria.pdf  used on input line 285.
-(pdftex.def)             Requested size: 441.01772pt x 122.06145pt.
-LaTeX Info: Redefining \. on input line 296.
-LaTeX Info: Redefining \% on input line 296.
- [11]
-<figs//smoth_step.pdf, id=507, 656.65326pt x 293.63339pt>
-File: figs//smoth_step.pdf Graphic file (type pdf)
-<use figs//smoth_step.pdf>
-Package pdftex.def Info: figs//smoth_step.pdf  used on input line 310.
-(pdftex.def)             Requested size: 286.65881pt x 128.1865pt.
-LaTeX Info: Redefining \. on input line 319.
-LaTeX Info: Redefining \% on input line 319.
- [12 <./figs//heterogeneidad_dicot_aleatoria.pdf> <./figs//smoth_step.pdf
 
-pdfTeX warning: pdflatex (file ./figs//smoth_step.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<figs//het_suav.pdf, id=588, 877.07674pt x 232.88712pt>
-File: figs//het_suav.pdf Graphic file (type pdf)
-<use figs//het_suav.pdf>
-Package pdftex.def Info: figs//het_suav.pdf  used on input line 322.
-(pdftex.def)             Requested size: 441.01772pt x 117.10068pt.
-<figs//nsmoth_step.pdf, id=592, 891.15558pt x 232.88712pt>
-File: figs//nsmoth_step.pdf Graphic file (type pdf)
-<use figs//nsmoth_step.pdf>
-Package pdftex.def Info: figs//nsmoth_step.pdf  used on input line 339.
-(pdftex.def)             Requested size: 441.01772pt x 115.25282pt.
-LaTeX Info: Redefining \. on input line 352.
-LaTeX Info: Redefining \% on input line 352.
- [13 <./figs//het_suav.pdf> <./figs//nsmoth_step.pdf
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-pdfTeX warning: pdflatex (file ./figs//nsmoth_step.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<figs//het_suav_dico.pdf, id=698, 853.61407pt x 245.05757pt>
-File: figs//het_suav_dico.pdf Graphic file (type pdf)
-<use figs//het_suav_dico.pdf>
-Package pdftex.def Info: figs//het_suav_dico.pdf  used on input line 361.
-(pdftex.def)             Requested size: 441.01772pt x 126.60802pt.
-<figs//nsmoth_dic_step.pdf, id=700, 856.6203pt x 232.88712pt>
-File: figs//nsmoth_dic_step.pdf Graphic file (type pdf)
-<use figs//nsmoth_dic_step.pdf>
-Package pdftex.def Info: figs//nsmoth_dic_step.pdf  used on input line 371.
-(pdftex.def)             Requested size: 441.01772pt x 119.90088pt.
-) (cap3.tex
+LaTeX Info: Redefining \. on input line 495.
+LaTeX Info: Redefining \% on input line 495.
+[10]) (cap3.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [14 <./figs//het_suav_dico.pdf> <./figs//nsmoth_dic_step.pdf
-
-pdfTeX warning: pdflatex (file ./figs//nsmoth_dic_step.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
+ [11 <./figs//cpu_gpu_t.pdf> <./figs//cpu_gpu_ratio.pdf>]
 Cap\'{\i }tulo 3.
 
-Underfull \vbox (badness 2529) has occurred while \output is active []
+LaTeX Warning: Reference `S:Modelo SIR espacial het' on page 12 undefined on input line 5.
 
- [15
 
-]
-<figs//hom_case_tevol.pdf, id=823, 1612.62473pt x 574.58543pt>
+LaTeX Warning: Reference `Problema' on page 12 undefined on input line 10.
+
+
+LaTeX Warning: Reference `Problema' on page 12 undefined on input line 12.
+
+
+LaTeX Warning: Reference `S:Modelo SIR espacial het' on page 12 undefined on input line 20.
+
+
+LaTeX Warning: Reference `S:Modelo SIR espacial hom' on page 12 undefined on input line 21.
+
+
+LaTeX Warning: Reference `prop' on page 12 undefined on input line 29.
+
+
+LaTeX Warning: Reference `ondas' on page 12 undefined on input line 35.
+
+
+LaTeX Warning: Reference `ondas' on page 12 undefined on input line 38.
+
+
+LaTeX Warning: Reference `campo' on page 12 undefined on input line 39.
+
+<figs//hom_case_tevol.pdf, id=668, 1612.62473pt x 574.58543pt>
 File: figs//hom_case_tevol.pdf Graphic file (type pdf)
 <use figs//hom_case_tevol.pdf>
 Package pdftex.def Info: figs//hom_case_tevol.pdf  used on input line 43.
-(pdftex.def)             Requested size: 396.91324pt x 141.41907pt.
-<figs//u_cm(t).pdf, id=828, 633.56389pt x 300.09427pt>
+(pdftex.def)             Requested size: 455.81004pt x 162.40836pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `centromasa' on page 12 undefined on input line 48.
+
+
+LaTeX Warning: Reference `velocidad' on page 12 undefined on input line 50.
+
+
+LaTeX Warning: Reference `ondas' on page 12 undefined on input line 51.
+
+<figs//u_cm(t).pdf, id=670, 633.56389pt x 300.09427pt>
 File: figs//u_cm(t).pdf Graphic file (type pdf)
 <use figs//u_cm(t).pdf>
 Package pdftex.def Info: figs//u_cm(t).pdf  used on input line 57.
-(pdftex.def)             Requested size: 396.91324pt x 188.00719pt.
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
- [16 <./figs//hom_case_tevol.pdf>]
-<figs//f_I(x)_hom.pdf, id=877, 611.59117pt x 294.25996pt>
+(pdftex.def)             Requested size: 455.81004pt x 215.90742pt.
+[12
+
+]
+
+LaTeX Warning: Reference `perfil' on page 13 undefined on input line 63.
+
+
+LaTeX Warning: Reference `ondas' on page 13 undefined on input line 64.
+
+
+LaTeX Warning: Reference `larika2' on page 13 undefined on input line 64.
+
+
+LaTeX Warning: Reference `larika' on page 13 undefined on input line 65.
+
+<figs//f_I(x)_hom.pdf, id=681, 611.59117pt x 294.25996pt>
 File: figs//f_I(x)_hom.pdf Graphic file (type pdf)
 <use figs//f_I(x)_hom.pdf>
 Package pdftex.def Info: figs//f_I(x)_hom.pdf  used on input line 69.
-(pdftex.def)             Requested size: 396.91324pt x 190.97484pt.
-<figs//hetal_case_tevol.pdf, id=883, 1612.62473pt x 574.58543pt>
+(pdftex.def)             Requested size: 455.81004pt x 219.31598pt.
+
+LaTeX Warning: Reference `S:Modelo SIR espacial hom' on page 13 undefined on input line 71.
+
+
+LaTeX Warning: Reference `S:Modelo SIR espacial hom' on page 13 undefined on input line 71.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `prop' on page 13 undefined on input line 78.
+
+<figs//hetal_case_tevol.pdf, id=684, 1612.62473pt x 574.58543pt>
 File: figs//hetal_case_tevol.pdf Graphic file (type pdf)
 <use figs//hetal_case_tevol.pdf>
 Package pdftex.def Info: figs//hetal_case_tevol.pdf  used on input line 88.
-(pdftex.def)             Requested size: 396.91324pt x 141.41907pt.
+(pdftex.def)             Requested size: 455.81004pt x 162.40836pt.
 
-Underfull \vbox (badness 5563) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 92.
 LaTeX Info: Redefining \% on input line 92.
- [17 <./figs//u_cm(t).pdf> <./figs//f_I(x)_hom.pdf
+ [13 <./figs//hom_case_tevol.pdf> <./figs//u_cm(t).pdf
 
-pdfTeX warning: pdflatex (file ./figs//f_I(x)_hom.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./figs//u_cm(t).pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
+
+LaTeX Warning: Reference `rugosidad' on page 14 undefined on input line 100.
+
 LaTeX Info: Redefining \. on input line 104.
 LaTeX Info: Redefining \% on input line 104.
- [18 <./figs//hetal_case_tevol.pdf>]
-<figs//u_cm(t)_hetal.pdf, id=1028, 587.8546pt x 304.9725pt>
+[14 <./figs//f_I(x)_hom.pdf> <./figs//hetal_case_tevol.pdf
+
+pdfTeX warning: pdflatex (file ./figs//hetal_case_tevol.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<figs//u_cm(t)_hetal.pdf, id=866, 587.8546pt x 304.9725pt>
 File: figs//u_cm(t)_hetal.pdf Graphic file (type pdf)
 <use figs//u_cm(t)_hetal.pdf>
 Package pdftex.def Info: figs//u_cm(t)_hetal.pdf  used on input line 107.
-(pdftex.def)             Requested size: 396.91324pt x 205.91734pt.
-<figs//rugosidad.pdf, id=1029, 586.77243pt x 303.01205pt>
+(pdftex.def)             Requested size: 455.81004pt x 236.47221pt.
+<figs//rugosidad.pdf, id=867, 586.77243pt x 303.01205pt>
 File: figs//rugosidad.pdf Graphic file (type pdf)
 <use figs//rugosidad.pdf>
 Package pdftex.def Info: figs//rugosidad.pdf  used on input line 113.
-(pdftex.def)             Requested size: 396.91324pt x 204.9728pt.
+(pdftex.def)             Requested size: 455.81004pt x 235.38673pt.
 LaTeX Info: Redefining \. on input line 126.
 LaTeX Info: Redefining \% on input line 126.
- [19 <./figs//u_cm(t)_hetal.pdf> <./figs//rugosidad.pdf
+ [15 <./figs//u_cm(t)_hetal.pdf> <./figs//rugosidad.pdf
 
 pdfTeX warning: pdflatex (file ./figs//rugosidad.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figs//velocidad_p.pdf, id=1093, 867.24pt x 433.62pt>
+
+LaTeX Warning: Reference `ondas' on page 16 undefined on input line 129.
+
+<figs//velocidad_p.pdf, id=930, 867.24pt x 433.62pt>
 File: figs//velocidad_p.pdf Graphic file (type pdf)
 <use figs//velocidad_p.pdf>
 Package pdftex.def Info: figs//velocidad_p.pdf  used on input line 137.
-(pdftex.def)             Requested size: 396.91324pt x 198.45529pt.
-
+(pdftex.def)             Requested size: 455.81004pt x 227.90533pt.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 146.
 
+
+LaTeX Warning: Reference `Imax' on page 16 undefined on input line 163.
+
 LaTeX Info: Redefining \. on input line 168.
 LaTeX Info: Redefining \% on input line 168.
-[20 <./figs//velocidad_p.pdf>]
-<figs//amplitud_p.pdf, id=1149, 867.24pt x 433.62pt>
+[16 <./figs//velocidad_p.pdf>]
+<figs//amplitud_p.pdf, id=986, 867.24pt x 433.62pt>
 File: figs//amplitud_p.pdf Graphic file (type pdf)
 <use figs//amplitud_p.pdf>
 Package pdftex.def Info: figs//amplitud_p.pdf  used on input line 187.
-(pdftex.def)             Requested size: 396.91324pt x 198.45529pt.
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
- [21 <./figs//amplitud_p.pdf>]
-<figs//suavizada_tevol.pdf, id=1210, 1612.62473pt x 574.58543pt>
+(pdftex.def)             Requested size: 455.81004pt x 227.90533pt.
+
+
+LaTeX Warning: Reference `factor' on page 17 undefined on input line 194.
+
+
+LaTeX Warning: Reference `S:Modelo SIR espacial het' on page 17 undefined on input line 212.
+
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
+[17 <./figs//amplitud_p.pdf>]
+
+LaTeX Warning: Reference `S:Modelo SIR espacial het' on page 18 undefined on input line 219.
+
+<figs//suavizada_tevol.pdf, id=1043, 1612.62473pt x 574.58543pt>
 File: figs//suavizada_tevol.pdf Graphic file (type pdf)
 <use figs//suavizada_tevol.pdf>
 Package pdftex.def Info: figs//suavizada_tevol.pdf  used on input line 225.
-(pdftex.def)             Requested size: 396.91324pt x 141.41907pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figs//suavizada_dic_tevol.pdf, id=1211, 1612.62473pt x 574.58543pt>
+(pdftex.def)             Requested size: 455.81004pt x 162.40836pt.
+<figs//suavizada_dic_tevol.pdf, id=1044, 1612.62473pt x 574.58543pt>
 File: figs//suavizada_dic_tevol.pdf Graphic file (type pdf)
 <use figs//suavizada_dic_tevol.pdf>
 Package pdftex.def Info: figs//suavizada_dic_tevol.pdf  used on input line 232.
-(pdftex.def)             Requested size: 396.91324pt x 141.41907pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-LaTeX Info: Redefining \. on input line 241.
-LaTeX Info: Redefining \% on input line 241.
-[22]
-<figs//ucm_s.pdf, id=1219, 587.8546pt x 304.9725pt>
+(pdftex.def)             Requested size: 455.81004pt x 162.40836pt.
+<figs//ucm_s.pdf, id=1047, 587.8546pt x 304.9725pt>
 File: figs//ucm_s.pdf Graphic file (type pdf)
 <use figs//ucm_s.pdf>
 Package pdftex.def Info: figs//ucm_s.pdf  used on input line 248.
-(pdftex.def)             Requested size: 396.91324pt x 205.91734pt.
-
+(pdftex.def)             Requested size: 455.81004pt x 236.47221pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs//ucm_sd.pdf, id=1220, 587.8546pt x 304.9725pt>
+<figs//ucm_sd.pdf, id=1048, 587.8546pt x 304.9725pt>
 File: figs//ucm_sd.pdf Graphic file (type pdf)
 <use figs//ucm_sd.pdf>
 Package pdftex.def Info: figs//ucm_sd.pdf  used on input line 254.
-(pdftex.def)             Requested size: 396.91324pt x 205.91734pt.
+(pdftex.def)             Requested size: 455.81004pt x 236.47221pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs//c_all.pdf, id=1224, 625.07907pt x 310.50882pt>
-File: figs//c_all.pdf Graphic file (type pdf)
-<use figs//c_all.pdf>
-Package pdftex.def Info: figs//c_all.pdf  used on input line 267.
-(pdftex.def)             Requested size: 396.91324pt x 197.1709pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `S:Modelo SIR espacial het' on page 18 undefined on input line 262.
 
-LaTeX Info: Redefining \. on input line 278.
-LaTeX Info: Redefining \% on input line 278.
-[23 <./figs//suavizada_tevol.pdf> <./figs//suavizada_dic_tevol.pdf
+LaTeX Info: Redefining \. on input line 264.
+LaTeX Info: Redefining \% on input line 264.
+[18 <./figs//suavizada_tevol.pdf> <./figs//suavizada_dic_tevol.pdf
 
 pdfTeX warning: pdflatex (file ./figs//suavizada_dic_tevol.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Info: Redefining \. on input line 287.
-LaTeX Info: Redefining \% on input line 287.
- [24 <./figs//ucm_s.pdf> <./figs//ucm_sd.pdf
+<figs//c_all.pdf, id=1130, 625.07907pt x 310.50882pt>
+File: figs//c_all.pdf Graphic file (type pdf)
+<use figs//c_all.pdf>
+Package pdftex.def Info: figs//c_all.pdf  used on input line 267.
+(pdftex.def)             Requested size: 455.81004pt x 226.42792pt.
 
-pdfTeX warning: pdflatex (file ./figs//ucm_sd.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<figs//beta_al_zoom.pdf, id=1367, 608.09367pt x 283.56439pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figs//beta_al_zoom.pdf, id=1134, 608.09367pt x 283.56439pt>
 File: figs//beta_al_zoom.pdf Graphic file (type pdf)
 <use figs//beta_al_zoom.pdf>
 Package pdftex.def Info: figs//beta_al_zoom.pdf  used on input line 290.
-(pdftex.def)             Requested size: 308.71104pt x 143.96257pt.
-<figs//beta_dic_zoom.pdf, id=1368, 608.09367pt x 283.56439pt>
+(pdftex.def)             Requested size: 354.51978pt x 165.32417pt.
+<figs//beta_dic_zoom.pdf, id=1135, 608.09367pt x 283.56439pt>
 File: figs//beta_dic_zoom.pdf Graphic file (type pdf)
 <use figs//beta_dic_zoom.pdf>
 Package pdftex.def Info: figs//beta_dic_zoom.pdf  used on input line 297.
-(pdftex.def)             Requested size: 308.71104pt x 143.96257pt.
+(pdftex.def)             Requested size: 354.51978pt x 165.32417pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 302.
-LaTeX Info: Redefining \% on input line 302.
- [25 <./figs//c_all.pdf> <./figs//beta_al_zoom.pdf
+LaTeX Info: Redefining \. on input line 301.
+LaTeX Info: Redefining \% on input line 301.
+ [19 <./figs//ucm_s.pdf>]
+LaTeX Info: Redefining \. on input line 305.
+LaTeX Info: Redefining \% on input line 305.
+ [20 <./figs//ucm_sd.pdf> <./figs//beta_al_zoom.pdf
 
 pdfTeX warning: pdflatex (file ./figs//beta_al_zoom.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figs//beta_dic_zoom.pdf
+
+pdfTeX warning: pdflatex (file ./figs//beta_dic_zoom.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figs//I_all.pdf, id=1443, 625.07907pt x 310.50882pt>
+<figs//I_all.pdf, id=1253, 625.07907pt x 310.50882pt>
 File: figs//I_all.pdf Graphic file (type pdf)
 <use figs//I_all.pdf>
 Package pdftex.def Info: figs//I_all.pdf  used on input line 334.
-(pdftex.def)             Requested size: 396.91324pt x 197.1709pt.
-LaTeX Info: Redefining \. on input line 338.
-LaTeX Info: Redefining \% on input line 338.
- [26 <./figs//beta_dic_zoom.pdf>]
+(pdftex.def)             Requested size: 455.81004pt x 226.42792pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 363.
+LaTeX Info: Redefining \% on input line 363.
+[21 <./figs//c_all.pdf>]
+
+LaTeX Warning: Reference `factor' on page 22 undefined on input line 364.
+
 LaTeX Info: Redefining \. on input line 366.
 LaTeX Info: Redefining \% on input line 366.
- [27 <./figs//I_all.pdf>]
-<figs//width_beta.pdf, id=1521, 628.7804pt x 262.17938pt>
+[22 <./figs//I_all.pdf>]
+<figs//width_beta.pdf, id=1348, 628.7804pt x 262.17938pt>
 File: figs//width_beta.pdf Graphic file (type pdf)
 <use figs//width_beta.pdf>
 Package pdftex.def Info: figs//width_beta.pdf  used on input line 370.
-(pdftex.def)             Requested size: 396.91324pt x 165.50592pt.
-<figs//factor.pdf, id=1522, 615.32387pt x 257.57625pt>
+(pdftex.def)             Requested size: 455.81004pt x 190.06519pt.
+<figs//factor.pdf, id=1349, 615.32387pt x 257.57625pt>
 File: figs//factor.pdf Graphic file (type pdf)
 <use figs//factor.pdf>
 Package pdftex.def Info: figs//factor.pdf  used on input line 378.
-(pdftex.def)             Requested size: 396.91324pt x 166.14915pt.
-LaTeX Info: Redefining \. on input line 391.
-LaTeX Info: Redefining \% on input line 391.
- [28 <./figs//width_beta.pdf> <./figs//factor.pdf
+(pdftex.def)             Requested size: 455.81004pt x 190.80388pt.
+LaTeX Info: Redefining \. on input line 399.
+LaTeX Info: Redefining \% on input line 399.
+ [23 <./figs//width_beta.pdf> <./figs//factor.pdf
 
 pdfTeX warning: pdflatex (file ./figs//factor.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figs//S_1.pdf, id=1604, 621.20522pt x 305.49007pt>
+<figs//S_1.pdf, id=1432, 621.20522pt x 305.49007pt>
 File: figs//S_1.pdf Graphic file (type pdf)
 <use figs//S_1.pdf>
 Package pdftex.def Info: figs//S_1.pdf  used on input line 412.
-(pdftex.def)             Requested size: 396.91324pt x 195.19133pt.
-LaTeX Info: Redefining \. on input line 422.
-LaTeX Info: Redefining \% on input line 422.
- [29 <./figs//S_1.pdf>])
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
- [30]
+(pdftex.def)             Requested size: 455.81004pt x 224.15724pt.
+)
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+ [24 <./figs//S_1.pdf>]
 \openout2 = `cap4.aux'.
 
  (cap4.tex
 Cap\'{\i }tulo 4.
-) [31
+) [25
 
 
 ]
@@ -1028,45 +1147,30 @@ Cap\'{\i }tulo 4.
 
  (apend1.tex
 Ap\'{e}ndice A.
-[32
+[26
 
 
 
 
 ]
-Overfull \hbox (7.78166pt too wide) in paragraph at lines 40--42
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (7.78166pt too wide) in paragraph at lines 43--44
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-<figs//t_vs_N.pdf, id=1658, 621.34637pt x 298.62065pt>
+<figs//t_vs_N.pdf, id=1481, 621.34637pt x 298.62065pt>
 File: figs//t_vs_N.pdf Graphic file (type pdf)
 <use figs//t_vs_N.pdf>
 Package pdftex.def Info: figs//t_vs_N.pdf  used on input line 69.
-(pdftex.def)             Requested size: 352.8155pt x 169.56393pt.
-) [33 <./figs//t_vs_N.pdf>] [34
+(pdftex.def)             Requested size: 405.16878pt x 194.72536pt.
+) [27 <./figs//t_vs_N.pdf>] (template.bbl (template.brf)
+\tf@brf=\write8
+\openout8 = `template.brf'.
 
-
-
-] (template.bbl (template.brf)
-\tf@brf=\write7
-\openout7 = `template.brf'.
-
- [35
-
-])
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
- [36] [37
+) [28
 
 
 
 
-] [38
+] [29
+
+
+
 
 ] (template.aux
 LaTeX Info: Redefining \. on input line 26.
@@ -1075,23 +1179,29 @@ LaTeX Info: Redefining \% on input line 26.
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) (cap4.aux) (apend1.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 1830993C31F0E23A31E811C70CA8B653;4069.
+(rerunfilecheck)             Checksum: 054DF1B6A996FD53846505A046556613;4148.
 Package rerunfilecheck Info: File `template.brf' has not changed.
-(rerunfilecheck)             Checksum: 1727B8852FF910EE8568BF68E550B6C9;892.
+(rerunfilecheck)             Checksum: D797087B145C9F568ED3528A93431C3B;437.
  ) 
 Here is how much of TeX's memory you used:
- 18324 strings out of 478552
- 293986 string characters out of 2841938
- 639501 words of memory out of 3000000
- 35984 multiletter control sequences out of 15000+600000
- 488407 words of font info for 105 fonts, out of 8000000 for 9000
+ 20644 strings out of 478552
+ 332712 string characters out of 2841938
+ 1266896 words of memory out of 3000000
+ 38065 multiletter control sequences out of 15000+600000
+ 501777 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,105p,497b,1067s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0600.pk><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/doublestroke/dsrom12.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on template.pdf (54 pages, 2564519 bytes).
+ 125i,16n,120p,512b,2209s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0500.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk>{C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0500.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1000.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1000.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\renzo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/renzo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on template.pdf (38 pages, 2533051 bytes).
 PDF statistics:
- 1931 PDF objects out of 2073 (max. 8388607)
- 195 named destinations out of 1000 (max. 500000)
- 344 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2352 PDF objects out of 2487 (max. 8388607)
+ 354 named destinations out of 1000 (max. 500000)
+ 319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

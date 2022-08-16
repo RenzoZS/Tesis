@@ -51,8 +51,6 @@
 
 
 \newif\iftitlepage \titlepagetrue % initially true by default
-% For preprint we do not create a title page (?)
-\ifDraft\titlepagefalse\fi
 
 % The Page layout depends on the mode final/preprint
 \ifpapel%

@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
@@ -49,35 +49,6 @@ Romeo-Aznar, V., Paul, R., Telle, O., Pascual, M.
   between vector abundance and human density.
 \newblock \emph{Proceedings of the Royal Society B: Biological Sciences},
   \textbf{285}, 20180826, 08 2018.
-
-\bibitem{Recipes}
-Press, W.~H., Teukolsky, S.~A., Vetterling, W.~T., Flannery, B.~P.
-\newblock Numerical recipes 3rd edition: The art of scientific computing.
-\newblock p\'ags. 907--910. Cambridge University Press, 2007.
-
-\bibitem{Murray2002}
-Murray, J.~D.
-\newblock Mathematical Biology I. An Introduction, tomo~17 de
-  \emph{Interdisciplinary Applied Mathematics}.
-\newblock New York: Springer, 2002.
-
-\bibitem{Murray2003}
-Murray, J.~D.
-\newblock Mathematical Biology II: Spatial Models and Biomedical Applications,
-  tomo~18 de \emph{Interdisciplinary Applied Mathematics}.
-\newblock Springer New York, 2003.
-
-\bibitem{coulson_1958}
-Coulson, C.~A.
-\newblock The mathematics of diffusion. by j. crank. pp. vii, 347. 50s. 1956.
-  (clarendon press).
-\newblock \emph{The Mathematical Gazette}, \textbf{42}~(340), 165–165, 1958.
-
-\bibitem{turing52the}
-Turing, A.
-\newblock The chemical basis of morphogenesis.
-\newblock \emph{Philosophical Transactions of the Royal Society B},
-  \textbf{237}, 37--72, 1952.
 
 \bibitem{barabasi1995fractal}
 Barab{\'a}si, A.-L., Stanley, H.~E., \emph{et~al.}

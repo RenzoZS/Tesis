@@ -102,7 +102,7 @@ class System:
         self.S = S0
         self.I = I0
     
-    def set_plane_initial_conditions(self,x0 = 0):
+    def set_plane_initial_conditions(self,x0 = 1):
         self.I[:,x0] = 1
         self.S[:,x0] = 0
 
@@ -192,9 +192,9 @@ class System:
         self.t += self.dt
         self.t_it += 1
 
-    def update2(self):
-        x1 = int(self.u_cm() - self.Lx/4)
-        x2 = int(self.u_cm() + self.Lx/4)
+    def update2(self,m = 1):
+        x1 = int(self.u_cm() - m*self.Ly)
+        x2 = int(self.u_cm() + m*self.Ly)
         if x1 < 0:
             x1 = 0
         if x2 > self.Lx - 1:

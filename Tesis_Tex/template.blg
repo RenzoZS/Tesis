@@ -12,46 +12,45 @@ A level-1 auxiliary file: apend1.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 Database file #1: mibib.bib
 Warning--empty booktitle in keeling:infectious_diseases
-Warning--empty booktitle in Recipes
-You've used 14 entries,
+You've used 9 entries,
             2634 wiz_defined-function locations,
-            1134 strings with 11730 characters,
-and the built_in function-call counts, 5002 in all, are:
-= -- 334
-> -- 136
-< -- 4
-+ -- 68
-- -- 34
-* -- 272
-:= -- 551
-add.period$ -- 45
-call.type$ -- 14
-change.case$ -- 12
+            1097 strings with 11001 characters,
+and the built_in function-call counts, 3344 in all, are:
+= -- 224
+> -- 104
+< -- 1
++ -- 52
+- -- 26
+* -- 184
+:= -- 375
+add.period$ -- 29
+call.type$ -- 9
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 491
-empty$ -- 527
-format.name$ -- 43
-if$ -- 1117
+cite$ -- 10
+duplicate$ -- 330
+empty$ -- 337
+format.name$ -- 34
+if$ -- 738
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 142
-newline$ -- 76
-num.names$ -- 14
-pop$ -- 218
+int.to.str$ -- 9
+missing$ -- 95
+newline$ -- 51
+num.names$ -- 9
+pop$ -- 143
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 117
+skip$ -- 73
 stack$ -- 0
-substring$ -- 220
-swap$ -- 332
-text.length$ -- 4
+substring$ -- 146
+swap$ -- 223
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 28
-width$ -- 16
-write$ -- 154
-(There were 2 warnings)
+warning$ -- 1
+while$ -- 18
+width$ -- 10
+write$ -- 102
+(There was 1 warning)

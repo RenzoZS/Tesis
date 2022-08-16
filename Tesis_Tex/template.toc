@@ -1,29 +1,29 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {v}}{section*.1}%
-\contentsline {chapter}{\'{I}ndice de s{\'{\i }}mbolos}{\es@scroman {vii}}{section*.3}%
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {ix}}{section*.5}%
-\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {xi}}{section*.7}%
-\contentsline {chapter}{Resumen}{\es@scroman {xiii}}{section*.9}%
-\contentsline {chapter}{Abstract}{\es@scroman {xv}}{section*.11}%
+\contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {iii}}{section*.1}%
+\contentsline {chapter}{\'{I}ndice de s{\'{\i }}mbolos}{\es@scroman {iv}}{section*.3}%
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {v}}{section*.5}%
+\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {vii}}{section*.7}%
+\contentsline {chapter}{Resumen}{\es@scroman {viii}}{section*.9}%
+\contentsline {chapter}{Abstract}{\es@scroman {ix}}{section*.11}%
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Marco teórico}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Modelo SIR}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Modelo SIR de reacción-difusión homogéneo}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Soluciones de onda}{6}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Modelo SIR de reacción-difusión heterogéneo}{9}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Problema y observables}{9}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Tipos de heterogeneidades}{11}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Simulaciones numéricas}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Medios aleatorios}{15}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Caso homogéneo}{16}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Heterogeneidad dicotómica-aleatoria}{18}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Medios correlacionados}{22}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Velocidad y amplitud del frente}{23}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Rugosidad y factor de estructura}{27}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Nocividad}{29}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{31}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Metodología numérica}{32}{appendix.Alph1}%
-\contentsline {chapter}{Bibliograf{\'{\i }}a}{35}{section*.48}%
-\contentsline {chapter}{Agradecimientos}{37}{section*.50}%
+\contentsline {chapter}{\numberline {2}Reseña numérica y computacional}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Diferencias finitas}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Implementaciones en \textit {Python}}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Implementación con \textit {NumPy}}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Implementación serial con \textit {Numba}}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Implementación paralela con \textit {Numba}}{7}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Implementación con \textit {CuPy}}{8}{subsection.2.2.4}%
+\contentsline {chapter}{\numberline {3}Simulaciones numéricas}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Medios aleatorios}{12}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Caso homogéneo}{12}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Heterogeneidad dicotómica-aleatoria}{14}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Medios correlacionados}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Velocidad y amplitud del frente}{18}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Rugosidad y factor de estructura}{21}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Nocividad}{24}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Conclusiones}{25}{chapter.4}%
+\contentsline {chapter}{\numberline {A}Metodología numérica}{26}{appendix.Alph1}%
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{28}{section*.39}%
+\contentsline {chapter}{Agradecimientos}{29}{section*.41}%
