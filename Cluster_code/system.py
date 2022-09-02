@@ -21,14 +21,14 @@ forces = cp.ElementwiseKernel(
 
 
 forces_beta = cp.ElementwiseKernel(
-    'raw float64 S, raw float64 I, float64 beta, float64 gamma, float64 D, uint32 Lx, uint32 Ly',
+    'raw float64 S, raw float64 I, float64 beta, float64 gamma, float64 D, float64 alpha, uint32 Lx, uint32 Ly',
     'float64 fS, float64 fI',
     '''
     int x = i % Lx;
     int y = (int) i/Lx;
 
-    fS = -beta*S[i]*I[i];
-    fI = beta*S[i]*I[i] - gamma*I[i] + D*(I[(x+1)%Lx + Lx*y] + I[(x-1+Lx)%Lx + Lx*y] + I[x + Lx*((y+1)%Ly)] + I[x + Lx*((y-1+Ly)%Ly)] - 4*I[i]);
+    fS = -beta*S[i]*powf(I[i],alpha);
+    fI = beta*S[i]*powf(I[i],alpha) - gamma*I[i] + D*(I[(x+1)%Lx + Lx*y] + I[(x-1+Lx)%Lx + Lx*y] + I[x + Lx*((y+1)%Ly)] + I[x + Lx*((y-1+Ly)%Ly)] - 4*I[i]);
     ''',
     'forces_beta')
 
@@ -60,6 +60,15 @@ smooth = cp.ElementwiseKernel(
 
     ''','smooth')
 
+euler = cp.ElementwiseKernel(
+    'float64 fS, float64 fI, float64 dt','float64 S, float64 I',
+    '''
+    S = S + dt*fS;
+    I = I + dt*fI;
+    ''',
+    'euler')
+
+
 class System:
 
     def __init__(self,Lx=1024,Ly=1024):
@@ -71,6 +80,7 @@ class System:
         self.fI = cp.zeros((Ly,Lx))
         self.beta = 0
         self.gamma = 0
+        self.alpha = 1
         self.D = 0
         self.H = 0
         self.vx = 0 
@@ -86,7 +96,6 @@ class System:
         del self.fS
         del self.fI
         del self.beta
-        cp._default_memory_pool.free_all_blocks()
         return None
 
     def reset(self):
@@ -107,13 +116,18 @@ class System:
         self.S[:,x0] = 0
 
     def set_tilded_initial_conditions(self,m = 0):
+        n = int(cp.round(m*(self.Ly-2)))
         dn = 1/m
         j = 0
-        for i in range(self.Ly):
+        for i in range(1,self.Ly-1):
             self.I[i,j] = 1 
-            self.S[i,:j+1] = 0 
+            self.S[i,j] = 0 
             if i >= (j+1)*dn:
                 j += 1
+        self.I[0,0] = 1
+        self.S[0,0] = 0
+        self.I[-1,n-1] = 1
+        self.S[-1,n-1] = 0
     
     def set_point_initial_conditions(self,x0,y0):
         self.I[x0,y0] = 1
@@ -186,24 +200,22 @@ class System:
         elif self.vx != 0 or self.vy != 0:
             forces_v(self.S,self.I,self.beta,self.gamma,self.D,self.vx,self.vy,self.Lx,self.Ly,self.fS,self.fI)
         else:
-            forces_beta(self.S,self.I,self.beta,self.gamma,self.D,self.Lx,self.Ly,self.fS,self.fI)
-        self.S += self.dt*self.fS
-        self.I += self.dt*self.fI
+            forces_beta(self.S,self.I,self.beta,self.gamma,self.D,self.alpha,self.Lx,self.Ly,self.fS,self.fI)
+        euler(self.fS,self.fI,self.dt,self.S,self.I)    
         self.t += self.dt
         self.t_it += 1
 
-    def update2(self,m = 1):
-        x1 = int(self.u_cm() - m*self.Ly)
-        x2 = int(self.u_cm() + m*self.Ly)
+    def update2(self):
+        x1 = int(self.u_cm() - 1024)
+        x2 = int(self.u_cm() + 1024)
         if x1 < 0:
             x1 = 0
         if x2 > self.Lx - 1:
             x2 = self.Lx - 1
         
-        forces_beta(self.S[:,x1:x2],self.I[:,x1:x2],self.beta[:,x1:x2],self.gamma,self.D,x2-x1,self.Ly,self.fS[:,x1:x2],self.fI[:,x1:x2])
+        forces_beta(self.S[:,x1:x2],self.I[:,x1:x2],self.beta[:,x1:x2],self.gamma,self.D,self.alpha,x2-x1,self.Ly,self.fS[:,x1:x2],self.fI[:,x1:x2])
         self.fS[:,x1] = self.fS[:,x2-1] = self.fI[:,x1] = self.fI[:,x2-1] = 0
-        self.S[:,x1:x2] += self.dt*self.fS[:,x1:x2]
-        self.I[:,x1:x2] += self.dt*self.fI[:,x1:x2]
+        euler(self.fS[:,x1:x2],self.fI[:,x1:x2],self.dt,self.S[:,x1:x2],self.I[:,x1:x2])
         self.t += self.dt
         self.t_it += 1
 
@@ -222,12 +234,11 @@ class System:
         self.S[:,-1] = self.I[:,-1] = 0
     
     def tilded_y(self,m = 0):
-        n = int(cp.round(m*(self.Ly)))
-        self.I[0,:-n] = self.I[-2,n:]
-        self.S[0,:-n] = self.S[-2,n:]
-        self.I[-1,n:] = self.I[1,:-n]
-        self.S[-1,n:] = self.S[1,:-n]
-        self.I[-1,:n] = 0
+        n = int(cp.round(m*(self.Ly-2)))
+        self.I[0,:-(n-1)] = self.I[-2,(n-1):]
+        self.S[0,:-(n-1)] = self.S[-2,(n-1):]
+        self.I[-1,(n-1):] = self.I[1,:-(n-1)]
+        self.S[-1,(n-1):] = self.S[1,:-(n-1)]
     
     def u(self):
         return cp.argmax(self.I,axis=1)

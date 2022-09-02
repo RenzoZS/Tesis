@@ -16,25 +16,23 @@
 # Las lineas que comienzan con #$ son opciones para el sistema de cola
 # Todas explicadas en el man qsub
 #
+# 
 #$ -cwd
 #$ -j y
 #$ -S /bin/bash
-#$ -q gpu@compute-6-9.local,gpu@compute-6-8.local,gpu@compute-6-3.local,gpu@compute-6-0.local
+#$ -q gpu@compute-6-9.local,gpu@compute-6-8.local,gpu@compute-6-0.local,gpu@compute-6-4.local,gpu@compute-6-10.local
 #$ -l gpu=1
 #$ -l memoria_a_usar=10G
 #$ -N dif_SIR
-#$ -o /home/renzo.zagarra/jobGPU
-#$ -e /home/renzo.zagarra/jobGPU
-#$ -M renzo.zagarra@renzo.zagarra@ib.edu.ar
-#$ -m bea
-#$ -t 61-80
-
-
+#$ -o /home/renzo.zagarra/Cluster/jobGPU_O
+#$ -e /home/renzo.zagarra/Cluster/jobGPU_O
+#$ -m ea
+#$ -t 1-10
 
 conda activate gpu
-
 echo DeviceID: $SGE_GPU
+nvidia-smi 
+python simple_run.py -Lx 100000 -Ly 2048 -p .5 -dt .05 -it_max 4000000 -beta .5 -gamma .2 -alpha .5 -n $SGE_TASK_ID
 
-nvidia-smi -q
 
-python simple_run.py -Lx 65536 -Ly 2048 -p .5 -dt .05 -it_max 2000000 -n $SGE_TASK_ID
+# gpu@compute-6-3.local solo hasta 7GB
