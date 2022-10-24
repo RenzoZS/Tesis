@@ -3,27 +3,6 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces bla\relax }}{11}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces bla\relax }}{10}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Evolución del frente de infección/incendio para el problema homogéneo.\relax }}{13}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Posición del centro de masa del frente de propagación en función del tiempo para distintos valores de $\gamma /\beta $ junto con los correspondientes ajustes lineales. Se muestra también la velocidad $c$ del frente obtenida para cada caso.\relax }}{13}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Perfil del frente de propagación $f_I(x)$ para $\gamma /\beta =0.2$. Se muestran también los perfiles asintóticos frontal y posterior del frente de onda calculados en la sección \ref {S:Modelo SIR espacial hom}.\relax }}{14}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Evolución del frente de infección/incendio para el problema heterogéneo dicotómico-aleatorio con $p=0.3$, $\gamma /\beta =0.2$ y $D_{I}=1$.\relax }}{14}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Posición del centro de masa del frente de propagación en función del tiempo para distintos valores de $p$,con $\gamma /\beta =0.2$ y $D_{I}=1$.\relax }}{15}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Rugosidad $w(t)$ en función de la posición del centro de masa para distintos valores de $p$,con $\gamma /\beta =0.2$ y $D_{I}=1$.\relax }}{15}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Velocidad $c$ del frente de propagación en función de $p$ con $\gamma /\beta =0.2$ y $0.4$ y $D_{I}=1$. Se muestran los ajustes con la regla de potencia $c\propto (1-p/p_c)^{\alpha _c}$ sobre la región crítica.\relax }}{16}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Amplitud media $I_{max}$ del frente de propagación en función de $p$ con $\gamma /\beta =0.2$ y $0.4$ y $D_{I}=1$. Se muestran los ajustes con la regla de potencia $I_{max}\propto (1-p/p_c)^{\alpha _I}$ sobre la región crítica.\relax }}{17}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Evolución temporal del sistema para $p=0.3$ con un paso de S.\relax }}{18}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Evolución temporal del sistema para $p=0.3$ con un paso de DC.\relax }}{18}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Posición del centro de masa del frente en función del tiempo sobre el medio S.\relax }}{19}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Posición del centro de masa del frente en función del tiempo sobre el medio DC.\relax }}{20}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Distribución de la tasa de transmisión $\beta _{\vb r}$ del medio DA. A izquierda se muestra la distribución sobre todo el espacio de $1024\times 1024$ y a la derecha un acercamiento a una región de $100\times 100$.\relax }}{20}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Distribución de la tasa de transmisión $\beta _{\vb r}$ del medio DC. A izquierda se muestra la distribución sobre todo el espacio de $1024\times 1024$ y a la derecha un acercamiento a una región de $100\times 100$.\relax }}{20}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Velocidad del frente de infección en función del valor medio de la tasa de transmisión $\overline {\beta _{\vb r}}$ sobre los medios S, DC, DA y H. Se muestran los ajustes con la regla de potencia $c\propto (\beta -\beta _c)^{\alpha _c}$ sobre la región crítica.\relax }}{21}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Amplitud media del frente de infección/incendio $I_{max}$ en función de la tasa de transmisión media $\overline {\beta _{\vb r}}$ para los medios S, DA, DC y H.\relax }}{22}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Rugosidad del frente de infección/incendio en función de la tasa de transmisión media $\overline {\beta _{\vb r}}$ para los medios S, DA y DC.\relax }}{23}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Factor de estructura $S(q)$ sobre el medio DA cerca de la tasa de transmisión cŕitica. Se muestra el ajuste $S(q)\sim 1/q^{1+2\zeta }$ con $\zeta \approx 0.3$.\relax }}{23}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Fracción de susceptibles $S_1$ en función de la tasa de transmisión media $\overline {\beta _{\vb r}}$ para los medios H, S, DA y DC.\relax }}{24}{figure.caption.37}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Tiempo de resolución de un sistema de $N\times N$ sitios y 1000 pasos de Euler con procesadores gráficos (GPU) y con procesadores convencionales (CPU). Se muestran también los ajustes de tipo $t\propto N^a$ con $a\approx 2$ para ambos.\relax }}{27}{figure.caption.38}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Tiempo de resolución de un sistema de $N\times N$ sitios y 1000 pasos de Euler con procesadores gráficos (GPU) y con procesadores convencionales (CPU). Se muestran también los ajustes de tipo $t\propto N^a$ con $a\approx 2$ para ambos.\relax }}{12}{figure.caption.14}%

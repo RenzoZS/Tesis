@@ -1,56 +1,50 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: template.aux
-Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: ibtesis.bst
-Reallocating 'name_of_file' (item size: 1) to 12 items.
 A level-1 auxiliary file: resumen.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-A level-1 auxiliary file: cap4.aux
-Reallocating 'name_of_file' (item size: 1) to 11 items.
 A level-1 auxiliary file: apend1.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
+I found no \citation commands---while reading file template.aux
 Database file #1: mibib.bib
-Warning--empty booktitle in keeling:infectious_diseases
-You've used 9 entries,
+You've used 0 entries,
             2634 wiz_defined-function locations,
-            1097 strings with 11001 characters,
-and the built_in function-call counts, 3344 in all, are:
-= -- 224
-> -- 104
-< -- 1
-+ -- 52
-- -- 26
-* -- 184
-:= -- 375
-add.period$ -- 29
-call.type$ -- 9
-change.case$ -- 9
+            1028 strings with 9231 characters,
+and the built_in function-call counts, 22 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 330
-empty$ -- 337
-format.name$ -- 34
-if$ -- 738
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 95
-newline$ -- 51
-num.names$ -- 9
-pop$ -- 143
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 5
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 73
+skip$ -- 1
 stack$ -- 0
-substring$ -- 146
-swap$ -- 223
-text.length$ -- 1
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 18
-width$ -- 10
-write$ -- 102
-(There was 1 warning)
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 4
+(There was 1 error message)

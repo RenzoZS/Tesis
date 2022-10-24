@@ -1,58 +1,5 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
-
-\bibitem{bressan2009existence}
-Bressan, A., De~Lellis, C.
-\newblock Existence of optimal strategies for a fire confinement problem.
-\newblock \emph{Communications on Pure and Applied Mathematics: A Journal
-  Issued by the Courant Institute of Mathematical Sciences}, \textbf{62}~(6),
-  789--830, 2009.
-
-\bibitem{RILEY201568}
-Riley, S., Eames, K., Isham, V., Mollison, D., Trapman, P.
-\newblock Five challenges for spatial epidemic models.
-\newblock \emph{Epidemics}, \textbf{10}, 68--71, 2015.
-\newblock Challenges in Modelling Infectious Disease Dynamics.
-
-\bibitem{SIR}
-Kermack, W.~O., McKendrick, A.~G., Walker, G.~T.
-\newblock A contribution to the mathematical theory of epidemics.
-\newblock \emph{Proceedings of the Royal Society of London. Series A,
-  Containing Papers of a Mathematical and Physical Character},
-  \textbf{115}~(772), 700--721, 1927.
-
-\bibitem{keeling:infectious_diseases}
-Keeling, M.~J., Rohani, P.
-\newblock Modeling infectious diseases in humans and animals.
-\newblock p\'ags. 15--26. Princeton University Press, 2008.
-
-\bibitem{Noble1974GeographicAT}
-Noble, J.~V.
-\newblock Geographic and temporal development of plagues.
-\newblock \emph{Nature}, \textbf{250}, 726--729, 1974.
-
-\bibitem{kolton}
-Kolton, A.~B., Laneri, K.
-\newblock Rough infection fronts in a random medium.
-\newblock \emph{The European Physical Journal B}, \textbf{92}~(6), Jun 2019.
-
-\bibitem{chuleta}
-Abramson, G., Kenkre, V., Yates, T., Parmenter, R.
-\newblock Traveling waves of infection in the hantavirus epidemics.
-\newblock \emph{Bulletin of mathematical biology}, \textbf{65}, 519--34, 06
-  2003.
-
-\bibitem{mosquito}
-Romeo-Aznar, V., Paul, R., Telle, O., Pascual, M.
-\newblock Mosquito-borne transmission in urban landscapes: The missing link
-  between vector abundance and human density.
-\newblock \emph{Proceedings of the Royal Society B: Biological Sciences},
-  \textbf{285}, 20180826, 08 2018.
-
-\bibitem{barabasi1995fractal}
-Barab{\'a}si, A.-L., Stanley, H.~E., \emph{et~al.}
-\newblock Fractal concepts in surface growth.
-\newblock Cambridge university press, 1995.
 
 \end{thebibliography}
