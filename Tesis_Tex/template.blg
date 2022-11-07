@@ -3,48 +3,51 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: template.aux
 The style file: ibtesis.bst
 A level-1 auxiliary file: resumen.aux
-A level-1 auxiliary file: apend1.aux
-I found no \citation commands---while reading file template.aux
 Database file #1: mibib.bib
-You've used 0 entries,
+Warning--string name "cgo" is undefined
+--line 227 of file mibib.bib
+Warning--empty booktitle in keeling:infectious_diseases
+Warning--empty booktitle in Recipes
+Warning--empty booktitle in LLVM
+You've used 25 entries,
             2634 wiz_defined-function locations,
-            1028 strings with 9231 characters,
-and the built_in function-call counts, 22 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            1199 strings with 15385 characters,
+and the built_in function-call counts, 8934 in all, are:
+= -- 595
+> -- 284
+< -- 6
++ -- 142
+- -- 71
+* -- 465
+:= -- 980
+add.period$ -- 80
+call.type$ -- 25
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 28
+duplicate$ -- 869
+empty$ -- 925
+format.name$ -- 90
+if$ -- 1997
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 5
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 25
+missing$ -- 254
+newline$ -- 130
+num.names$ -- 25
+pop$ -- 412
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 229
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 341
+swap$ -- 581
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 4
-(There was 1 error message)
+warning$ -- 3
+while$ -- 52
+width$ -- 27
+write$ -- 266
+(There were 4 warnings)

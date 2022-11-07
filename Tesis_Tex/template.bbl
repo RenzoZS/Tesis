@@ -1,5 +1,176 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
+
+\bibitem{bressan2009existence}
+Bressan, A., De~Lellis, C.
+\newblock Existence of optimal strategies for a fire confinement problem.
+\newblock \emph{Communications on Pure and Applied Mathematics: A Journal
+  Issued by the Courant Institute of Mathematical Sciences}, \textbf{62}~(6),
+  789--830, 2009.
+
+\bibitem{RILEY201568}
+Riley, S., Eames, K., Isham, V., Mollison, D., Trapman, P.
+\newblock Five challenges for spatial epidemic models.
+\newblock \emph{Epidemics}, \textbf{10}, 68--71, 2015.
+\newblock Challenges in Modelling Infectious Disease Dynamics.
+
+\bibitem{SIR}
+Kermack, W.~O., McKendrick, A.~G., Walker, G.~T.
+\newblock
+  \href{https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.1927.0118}{A
+  contribution to the mathematical theory of epidemics}.
+\newblock \emph{Proceedings of the Royal Society of London. Series A,
+  Containing Papers of a Mathematical and Physical Character},
+  \textbf{115}~(772), 700--721, 1927.
+
+\bibitem{keeling:infectious_diseases}
+Keeling, M.~J., Rohani, P.
+\newblock
+  \href{https://press.princeton.edu/books/hardcover/9780691116174/modeling-infectious-diseases-in-humans-and-animals}{Modeling
+  Infectious Diseases in Humans and Animals}.
+\newblock p\'ags. 15--26. Princeton University Press, 2008.
+
+\bibitem{Noble1974GeographicAT}
+Noble, J.~V.
+\newblock Geographic and temporal development of plagues.
+\newblock \emph{Nature}, \textbf{250}, 726--729, 1974.
+
+\bibitem{kolton}
+Kolton, A.~B., Laneri, K.
+\newblock Rough infection fronts in a random medium.
+\newblock \emph{The European Physical Journal B}, \textbf{92}~(6), Jun 2019.
+
+\bibitem{chuleta}
+Abramson, G., Kenkre, V., Yates, T., Parmenter, R.
+\newblock Traveling waves of infection in the hantavirus epidemics.
+\newblock \emph{Bulletin of mathematical biology}, \textbf{65}, 519--34, 06
+  2003.
+
+\bibitem{mosquito}
+Romeo-Aznar, V., Paul, R., Telle, O., Pascual, M.
+\newblock Mosquito-borne transmission in urban landscapes: The missing link
+  between vector abundance and human density.
+\newblock \emph{Proceedings of the Royal Society B: Biological Sciences},
+  \textbf{285}, 20180826, 08 2018.
+
+\bibitem{black_death}
+Cesana, D., Benedictow, O., Bianucci, R.
+\newblock
+  \href{https://www.jstage.jst.go.jp/article/ase/125/1/125_161011/_article}{The
+  origin and early spread of Black Death in Italy: first evidence of plague
+  victims from 14th century Liguria (Northern Italy)}.
+\newblock \emph{Anthropological Science (Japanese Series)}, \textbf{125}, 03
+  2017.
+
+\bibitem{black_death2}
+Christakos, G., Olea, R.~A., Serre, M.~L., Wang, L.-L., Yu, H.-L.
+\newblock
+  \href{https://link.springer.com/book/10.1007/3-540-28165-7}{Interdisciplinary
+  public health reasoning and epidemic modelling: the case of black death}.
+\newblock Springer, 2005.
+
+\bibitem{Murray2003}
+Murray, J.~D.
+\newblock \href{https://link.springer.com/book/10.1007/b98869}{Mathematical
+  Biology II: Spatial Models and Biomedical Applications}, tomo~18 de
+  \emph{Interdisciplinary Applied Mathematics}.
+\newblock Springer New York, 2003.
+
+\bibitem{gripe2}
+Taubenberger, J.~K.
+\newblock
+  \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2720273/pdf/nihms123030.pdf}{The
+  origin and virulence of the 1918 “Spanish” influenza virus}.
+\newblock \emph{Proceedings of the American Philosophical Society},
+  \textbf{150}~(1), 86, 2006.
+
+\bibitem{gripe3}
+Worobey, M., Han, G.-Z., Rambaut, A.
+\newblock \href{https://www.pnas.org/doi/epdf/10.1073/pnas.1324197111}{Genesis
+  and pathogenesis of the 1918 pandemic H1N1 influenza A virus}.
+\newblock \emph{Proceedings of the National Academy of Sciences},
+  \textbf{111}~(22), 8107--8112, 2014.
+
+\bibitem{gripe}
+Mills, C.~E., Robins, J.~M., Lipsitch, M.
+\newblock \href{https://www.nature.com/articles/nature03063}{Transmissibility
+  of 1918 pandemic influenza}.
+\newblock \emph{Nature}, \textbf{432}~(7019), 904--906, 2004.
+
+\bibitem{sir_sol}
+Harko, T., Lobo, F.~S., Mak, M.
+\newblock \href{https://arxiv.org/pdf/1403.2160.pdf}{Exact analytical solutions
+  of the Susceptible-Infected-Recovered (SIR) epidemic model and of the SIR
+  model with equal death and birth rates}.
+\newblock \emph{Applied Mathematics and Computation}, \textbf{236}, 184--194,
+  2014.
+
+\bibitem{Recipes}
+Press, W.~H., Teukolsky, S.~A., Vetterling, W.~T., Flannery, B.~P.
+\newblock \href{https://dl.acm.org/doi/10.5555/1403886}{Numerical Recipes 3rd
+  Edition: The Art of Scientific Computing}.
+\newblock p\'ags. 907--910. Cambridge University Press, 2007.
+
+\bibitem{Murray2002}
+Murray, J.~D.
+\newblock \href{https://link.springer.com/book/10.1007/b98868}{Mathematical
+  Biology I. An Introduction}, tomo~17 de \emph{Interdisciplinary Applied
+  Mathematics}.
+\newblock New York: Springer, 2002.
+
+\bibitem{crank1979mathematics}
+Crank, J.
+\newblock
+  \href{https://global.oup.com/academic/product/the-mathematics-of-diffusion-9780198534112?cc=us&lang=en&}{The
+  mathematics of diffusion}.
+\newblock Oxford university press, 1979.
+
+\bibitem{turing52the}
+Turing, A.
+\newblock \href{https://cba.mit.edu/events/03.11.ASE/docs/Turing.pdf}{The
+  chemical basis of morphogenesis}.
+\newblock \emph{Philosophical Transactions of the Royal Society B},
+  \textbf{237}, 37--72, 1952.
+
+\bibitem{cuda}
+NVIDIA, Vingelmann, P., Fitzek, F.~H.
+\newblock \href{https://developer.nvidia.com/cuda-toolkit}{CUDA, release:
+  10.2.89}, 2020.
+
+\bibitem{python}
+Van~Rossum, G., Drake, F.~L.
+\newblock \href{https://dl.acm.org/doi/book/10.5555/1593511}{Python 3 Reference
+  Manual}.
+\newblock Scotts Valley, CA: CreateSpace, 2009.
+
+\bibitem{cupy}
+Okuta, R., Unno, Y., Nishino, D., Hido, S., Loomis, C.
+\newblock \href{http://learningsys.org/nips17/assets/papers/paper_16.pdf}{CuPy:
+  A NumPy-Compatible Library for NVIDIA GPU Calculations}.
+\newblock \underline{En}: Proceedings of Workshop on Machine Learning Systems
+  (LearningSys) in The Thirty-first Annual Conference on Neural Information
+  Processing Systems (NIPS). 2017.
+
+\bibitem{numpy}
+Harris, C.~R., Millman, K.~J., van~der Walt, S.~J., Gommers, R., Virtanen, P.,
+  Cournapeau, D., \emph{et~al.}
+\newblock \href{https://doi.org/10.1038/ s41586-020-2649-2}{Array programming
+  with {NumPy}}.
+\newblock \emph{Nature}, \textbf{585}~(7825), 357--362, sep. 2020.
+
+\bibitem{numba}
+Lam, S.~K., Pitrou, A., Seibert, S.
+\newblock \href{https://dl.acm.org/doi/abs/10.1145/2833157.2833162}{Numba: A
+  llvm-based python jit compiler}.
+\newblock \underline{En}: Proceedings of the Second Workshop on the LLVM
+  Compiler Infrastructure in HPC, p\'ags. 1--6. 2015.
+
+\bibitem{LLVM}
+Lattner, C., Adve, V.
+\newblock
+  \href{https://llvm.org/pubs/2003-09-30-LifelongOptimizationTR.pdf}{{LLVM}: A
+  Compilation Framework for Lifelong Program Analysis and Transformation}.
+\newblock p\'ags. 75--88. San Jose, CA, USA, 2004.
 
 \end{thebibliography}

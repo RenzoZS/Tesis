@@ -1,0 +1,38 @@
+#! /bin/bash
+#
+# Este script puede usarse para lanzar un proceso de gpu
+# Se especifica la cola gpu, se solicita una gpu y se solicita 1G RAM para el proceso
+#
+# Para lanzarlo copielo a un directorio en su home y en ese directorio ejecute:
+# qsub ejemploGPU
+#
+# Los procesos en la cola gpu tienen una duración máxima de 3 días
+# Los procesos en la cola gpushort tienen una duración máxima de 20 minutos
+#
+# El sistema de cola devuelve una variable $SGE_GPU que contiene los IDs de los dispositivos requeridos (separados por coma). Ejemplo: 0 o 0,1 dependiendo del numero de recursos pedidos
+# Use este device ID para cudaSetDevice()
+#
+# 
+# Las lineas que comienzan con #$ son opciones para el sistema de cola
+# Todas explicadas en el man qsub
+#
+# 
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#$ -q gpu@compute-6-9.local,gpu@compute-6-8.local,gpu@compute-6-0.local,gpu@compute-6-4.local,gpu@compute-6-10.local
+#$ -l gpu=1
+#$ -l memoria_a_usar=10G
+#$ -N dif_SIR
+#$ -o /home/renzo.zagarra/Cluster/jobGPU_O
+#$ -e /home/renzo.zagarra/Cluster/jobGPU_O
+#$ -m ea
+#$ -t 1-10
+
+conda activate gpu
+echo DeviceID: $SGE_GPU
+nvidia-smi 
+python simple_run.py -Lx 100000 -Ly 2048 -p .5 -dt .05 -it_max 4000000 -beta .5 -gamma .2 -alpha .5 -n $SGE_TASK_ID
+
+
+# gpu@compute-6-3.local solo hasta 7GB

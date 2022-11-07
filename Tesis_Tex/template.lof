@@ -3,6 +3,8 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces bla\relax }}{10}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Mapa de la peste negra en Europa.}}{4}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Solución numérica del modelo S-I-R}}{5}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Solución numérica del modelo S-I-R con distintos valores de $R_0$}}{6}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Tiempo de resolución de un sistema de $N\times N$ sitios y 1000 pasos de Euler con procesadores gráficos (GPU) y con procesadores convencionales (CPU). Se muestran también los ajustes de tipo $t\propto N^a$ con $a\approx 2$ para ambos.\relax }}{12}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \textbf {(a)} Tiempo de simulación en función del tamaño del sistema $N \times N$ para las distintas implementaciones. \textbf {(b)} Aceleración obtenida al usar GPU en función del tamaño del sistema $N \times N$ para las distintas implementaciones.\relax }}{20}{figure.caption.18}%

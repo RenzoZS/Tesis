@@ -7,15 +7,22 @@
 \contentsline {chapter}{Abstract}{\es@scroman {viii}}{section*.11}%
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {1}Modelo SIR}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Modelo SIR}{1}{section.1.1}%
-\contentsline {chapter}{\numberline {2}Reseña numérica y computacional}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Diferencias finitas}{2}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Implementaciones en \textit {Python}}{3}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Implementación con \textit {NumPy}}{4}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Implementación serial con \textit {Numba}}{5}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Implementación paralela con \textit {Numba}}{6}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Implementación con \textit {CuPy}}{7}{subsection.2.2.4}%
-\contentsline {chapter}{\numberline {A}Metodología numérica}{11}{appendix.Alph1}%
-\contentsline {chapter}{Bibliograf{\'{\i }}a}{13}{section*.15}%
-\contentsline {chapter}{Agradecimientos}{14}{section*.17}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Modelo SIR}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Historia}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Modelo SIR de campo medio}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Modelo SIR de reacción-difusión homogéneo}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Soluciones de onda}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Soluciones en sistema de reacción-difusión-convección}{9}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Modelo SIR de reacción-difusión heterogéneo}{10}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Problema y observables}{10}{subsection.2.4.1}%
+\contentsline {chapter}{\numberline {3}Reseña numérica y computacional}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Diferencias finitas}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Implementaciones en \textit {Python}}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Implementación con \textit {NumPy}}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Implementación serial con \textit {Numba}}{15}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Implementación paralela con \textit {Numba}}{16}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Implementación con \textit {CuPy}}{17}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Tamaño del sistema}{19}{section.3.3}%
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{21}{section*.19}%
+\contentsline {chapter}{Agradecimientos}{23}{section*.21}%

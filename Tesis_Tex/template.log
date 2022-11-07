@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.24)  24 OCT 2022 09:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.24)  3 NOV 2022 20:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -591,7 +591,7 @@ LaTeX Info: Redefining \% on input line 6.
 
 LaTeX Warning: Label `lst:cupy' multiply defined.
 
-(./apend1.aux))
+)
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
@@ -775,9 +775,12 @@ LaTeX Info: Redefining \% on input line 23.
 ]
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
-) (./cap2.tex
+) (./cap1.tex
 Cap\'{\i }tulo 1.
-) (./cap2_bis.tex [1
+
+LaTeX Warning: Reference `Modelo teÃ³rico' on page 1 undefined on input line 18.
+
+[1
 
 
 \babel@aux{english}{}
@@ -786,9 +789,78 @@ Cap\'{\i }tulo 1.
 
 
 
-]
+]) (./cap2.tex
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [2]
 Cap\'{\i }tulo 2.
-[2
+<figs/cap2/Black_Death.png, id=215, 1213.53375pt x 867.24pt>
+File: figs/cap2/Black_Death.png Graphic file (type png)
+<use figs/cap2/Black_Death.png>
+Package pdftex.def Info: figs/cap2/Black_Death.png  used on input line 22.
+(pdftex.def)             Requested size: 455.81004pt x 325.74353pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
+ [4 <./figs/cap2/Black_Death.png>]
+<figs/cap2/SIR.pdf, id=259, 506.03427pt x 323.15105pt>
+File: figs/cap2/SIR.pdf Graphic file (type pdf)
+<use figs/cap2/SIR.pdf>
+Package pdftex.def Info: figs/cap2/SIR.pdf  used on input line 97.
+(pdftex.def)             Requested size: 354.51978pt x 226.39154pt.
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
+ [5 <./figs/cap2/SIR.pdf>]
+<figs/cap2/SIR_R.png, id=319, 989.66537pt x 398.9304pt>
+File: figs/cap2/SIR_R.png Graphic file (type png)
+<use figs/cap2/SIR_R.png>
+Package pdftex.def Info: figs/cap2/SIR_R.png  used on input line 124.
+(pdftex.def)             Requested size: 455.81004pt x 183.73543pt.
+LaTeX Info: Redefining \. on input line 144.
+LaTeX Info: Redefining \% on input line 144.
+ [6 <./figs/cap2/SIR_R.png>]
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+ [7]
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 227.
+ (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+
+LaTeX Warning: Reference `S:aleatorios' on page 8 undefined on input line 235.
+
+
+Underfull \vbox (badness 1668) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
+ [8]
+LaTeX Info: Redefining \. on input line 281.
+LaTeX Info: Redefining \% on input line 281.
+ [9]
+LaTeX Info: Redefining \. on input line 332.
+LaTeX Info: Redefining \% on input line 332.
+ [10]
+
+LaTeX Warning: Reference `Simulaciones' on page 11 undefined on input line 371.
+
+) (./cap3.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [11]
+Cap\'{\i }tulo 3.
+[12
 
 ]
 Overfull \hbox (6.87508pt too wide) in paragraph at lines 57--61
@@ -796,13 +868,9 @@ Overfull \hbox (6.87508pt too wide) in paragraph at lines 57--61
 $ \T1/cmr/m/n/10 es una re-gión rec-tan-gu-lar del plano don-de $\OML/cmm/m/it/10 x; y \OMS/cmsy/m/n/10 2  []\OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; L[]\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B  []\OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; L[]\OT1/cmr/m/n/10 ]$\T1/cmr/m/n/10 .
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 104.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
 LaTeX Info: Redefining \. on input line 104.
 LaTeX Info: Redefining \% on input line 104.
- [3] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[13] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 125.
@@ -812,69 +880,56 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Info: Redefining \. on input line 169.
 LaTeX Info: Redefining \% on input line 169.
- [4]
+ [14]
 LaTeX Info: Redefining \. on input line 231.
 LaTeX Info: Redefining \% on input line 231.
- [5]
+ [15]
 LaTeX Info: Redefining \. on input line 297.
 LaTeX Info: Redefining \% on input line 297.
- [6]
-LaTeX Info: Redefining \. on input line 359.
-LaTeX Info: Redefining \% on input line 359.
- [7]
-LaTeX Info: Redefining \. on input line 424.
-LaTeX Info: Redefining \% on input line 424.
- [8]
-<figs//cpu_gpu_t.pdf, id=419, 629.10974pt x 612.44746pt>
-File: figs//cpu_gpu_t.pdf Graphic file (type pdf)
-<use figs//cpu_gpu_t.pdf>
-Package pdftex.def Info: figs//cpu_gpu_t.pdf  used on input line 477.
-(pdftex.def)             Requested size: 238.03636pt x 231.73251pt.
-<figs//cpu_gpu_ratio.pdf, id=420, 625.73778pt x 612.44746pt>
-File: figs//cpu_gpu_ratio.pdf Graphic file (type pdf)
-<use figs//cpu_gpu_ratio.pdf>
-Package pdftex.def Info: figs//cpu_gpu_ratio.pdf  used on input line 478.
-(pdftex.def)             Requested size: 238.03636pt x 232.97542pt.
+ [16]
+LaTeX Info: Redefining \. on input line 358.
+LaTeX Info: Redefining \% on input line 358.
+ [17]
+LaTeX Info: Redefining \. on input line 427.
+LaTeX Info: Redefining \% on input line 427.
+ [18]
+
+LaTeX Warning: Reference `fig:cpuvsgpu' on page 19 undefined on input line 470.
+
+<figs/cap2_bis/cpu_gpu_t.pdf, id=682, 629.10974pt x 612.44746pt>
+File: figs/cap2_bis/cpu_gpu_t.pdf Graphic file (type pdf)
+<use figs/cap2_bis/cpu_gpu_t.pdf>
+Package pdftex.def Info: figs/cap2_bis/cpu_gpu_t.pdf  used on input line 479.
+(pdftex.def)             Requested size: 253.22952pt x 246.52594pt.
+<figs/cap2_bis/cpu_gpu_ratio.pdf, id=683, 625.73778pt x 612.44746pt>
+File: figs/cap2_bis/cpu_gpu_ratio.pdf Graphic file (type pdf)
+<use figs/cap2_bis/cpu_gpu_ratio.pdf>
+Package pdftex.def Info: figs/cap2_bis/cpu_gpu_ratio.pdf  used on input line 484.
+(pdftex.def)             Requested size: 253.22952pt x 247.84361pt.
+
+Overfull \hbox (2.22168pt too wide) in paragraph at lines 477--488
+[]$[]$ $[]$ 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 492.
-LaTeX Info: Redefining \% on input line 492.
-[9])
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
- [10 <./figs//cpu_gpu_t.pdf> <./figs//cpu_gpu_ratio.pdf>]
-\openout2 = `apend1.aux'.
-
- (./apend1.tex
-Ap\'{e}ndice A.
-[11
-
-
-]
-<figs//t_vs_N.pdf, id=554, 621.34637pt x 298.62065pt>
-File: figs//t_vs_N.pdf Graphic file (type pdf)
-<use figs//t_vs_N.pdf>
-Package pdftex.def Info: figs//t_vs_N.pdf  used on input line 69.
-(pdftex.def)             Requested size: 405.16878pt x 194.72536pt.
-)
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
- [12 <./figs//t_vs_N.pdf>] (./template.bbl (./template.brf)
+LaTeX Info: Redefining \. on input line 500.
+LaTeX Info: Redefining \% on input line 500.
+[19])
+LaTeX Info: Redefining \. on input line 143.
+LaTeX Info: Redefining \% on input line 143.
+ [20 <./figs/cap2_bis/cpu_gpu_t.pdf> <./figs/cap2_bis/cpu_gpu_ratio.pdf>] (./template.bbl (./template.brf)
 \tf@brf=\write8
 \openout8 = `template.brf'.
 
+ [21
 
 
-Package natbib Warning: Empty `thebibliography' environment on input line 5.
-
-) [13
-
-
-
-
-] [14
+])
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
+ [22] [23
 
 
 
@@ -885,28 +940,31 @@ LaTeX Info: Redefining \% on input line 26.
  (./resumen.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-) (./apend1.aux))
+))
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: F64A4D6109E0CDF47D537EA82CFC1133;2727.
+(rerunfilecheck)             Checksum: 88A401AF202A8CA16BB916BCE816608C;4265.
 Package rerunfilecheck Info: File `template.brf' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 7C4529C401FDF0E67719D03A61AA3BCF;1243.
  ) 
 Here is how much of TeX's memory you used:
- 20183 strings out of 478287
- 317024 string characters out of 5849288
- 1255796 words of memory out of 5000000
- 37677 multiletter control sequences out of 15000+600000
- 501001 words of font info for 111 fonts, out of 8000000 for 9000
+ 20471 strings out of 478287
+ 321242 string characters out of 5849288
+ 1257620 words of memory out of 5000000
+ 37907 multiletter control sequences out of 15000+600000
+ 502384 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,16n,120p,460b,2204s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on template.pdf (22 pages, 611690 bytes).
+ 125i,16n,120p,459b,2147s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on template.pdf (31 pages, 2487056 bytes).
 PDF statistics:
- 843 PDF objects out of 1000 (max. 8388607)
- 653 compressed objects within 7 object streams
- 295 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1118 PDF objects out of 1200 (max. 8388607)
+ 892 compressed objects within 9 object streams
+ 347 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

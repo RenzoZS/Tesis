@@ -1,429 +1,510 @@
-\chapter{Simulaciones numéricas}
-\graphicspath{{figs/}}
-\label{Simulaciones}
-
-En este capítulo presentamos los resultados obtenidos al resolver el problema propuesto en la sección \ref{S:Modelo SIR espacial het} para los 
-distintos casos de $\beta_{\vb r}$ utilizando métodos numéricos. Se utilizaron para ello técnicas de programación en paralelo para acelerar la
-velocidad de cómputo. En el apéndice \ref{C:ap1} puede encontrarse la descripción de la metodología numérica utilizada, que consiste en un esquema simple de 
-diferencias finitas sobre una grilla regular.
-
-Todas las simulaciones realizadas en este capítulo corresponden al problema presentado en la subsección \ref{Problema} pero con distintas distribuciones de 
-$\beta_{\vb r}$. De modo que las condiciones iniciales y de contorno son las que se indican en dicha subsección, utilizando de manera 
-general $\delta x=1$, $L=1024$ y $S_0=I_0=1$.\footnote{Se recomienda mirar nuevamente la subsección \ref{Problema}.} Por otro lado, cabe mencionar que en el esquema numérico se utilizó, también de manera general, una discretización 
-espacial del sistema de $1024\times1024$ sitios de igual tamaño. Los demás parámetros se especificarán según corresponda y 
-si los mencionados aquí fueran distintos en alguna ocasión se hará mención de ello.
-
-\section{Medios aleatorios}
-
-\label{S:aleatorios}
-En esta sección reproducimos y validamos los resultados obtenidos por A. Kolton y K. Laneri (2019) \cite{kolton} en su trabajo sobre frentes de 
-infección rugosos en medios aleatorios, donde trabajaron con la heterogeneidad dicotómica-aleatoria descrita en la sección \ref{S:Modelo SIR espacial het}. 
-Adicionalmente, se muestran los resultados correspondientes al caso homogéneo de la sección \ref{S:Modelo SIR espacial hom}. De esta manera podremos visualizar 
-y entender la dinámica del problema heterogéneo comparando con el caso homogéneo del cual tenemos mayor entendimiento analítico.
-
-
-
-\subsection{Caso homogéneo}
-\label{hom}
-Recordemos que el problema homogéneo, donde la tasa de transmisión $\beta_{\vb r}=\beta$ es la misma en todo el espacio, es equivalente a usar la distribución 
-\ref{prop} con $p=0$. Se utilizó $\beta = 1$ y $\gamma=0.2$. Se omitirán las unidades por claridad pero es importante recordar que estos valores tienen unidades 
-de $1/t$ ya que son la tasa de infección y recuperación respectivamente\footnote{De manera similar se omitirán las unidades tanto de tiempo como de longitud en 
-la mayoría de las ocasiones. Si esto lo incomoda mucho 
-piense que las unidades de tiempo son u$_{t}$ y las de espacio u$_{l}$, poniendo $\beta$, $\gamma$, $D_{S}$ y $D_{I}$ en estas unidades la dinámica se describe 
-correctamente en dichas unidades.}. Para los coeficientes de difusión se 
-utilizó $D_{S}=0$ y $D_{I}=1$, los cuales deben tener dimensión de área por unidad de tiempo. Podemos ver que $\gamma/\beta=0.2<S_0=1$, de modo que según lo visto en 
-la subsección \ref{ondas} es posible la propagación de la infección a través de una solución de onda.
-
-En la figura \ref{fig:hom_case_tevol} se muestra la evolución del frente de infección/incendio para este caso. Puede observarse que el frente es asimétrico, es decir, se 
-comporta de manera distinta en la parte frontal que en la parte posterior, tal como habíamos anticipado en la subsección \ref{ondas}. Se muestra también  el campo de 
-desplazamiento del frente $u(y,t)$ (\ref{campo}). Puede verse que éste es completamente plano, como es de esperar para un medio homogéneo.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{hom_case_tevol.pdf}
-    \caption{Evolución del frente de infección/incendio para el problema homogéneo.}
-    \label{fig:hom_case_tevol}
-\end{figure}
-
-En la figura \ref{fig:u_cm(t)} se muestra la posición del centro de masa del frente de propagación $u_{cm}(t)$ (\ref{centromasa}) en función del tiempo para distintos valores de $\gamma/\beta$. Puede observarse 
-que para el caso $\gamma/\beta=1$ el sistema cambia notablemente su comportamiento y no es posible identificar un frente de onda propagándose a velocidad constante, en 
-acuerdo con la condición $\gamma/\beta<S_0=1$. Por otro lado, a partir de estos resultados se calculó la velocidad $c$ (\ref{velocidad}) para cada caso a partir de un ajuste lineal
-descartando un periodo transitorio. De ello vemos que la velocidad del frente $c_0= 2\sqrt{D_I\beta(S_0-\gamma/\beta)}$ estimada en la subsección \ref{ondas} concuerda 
-con las velocidades calculadas a partir de la resolución numérica con un error relativo, en promedio, de $4.5\%$. En la mayoría de los casos $c_0$ resulta 
-sobreestimar levemente el valor de $c$, esto puede explicarse recordando que el valor de $c_0$ se obtuvo en una aproximación donde se supone que hay más susceptibles 
-de los que realmente hay y por ello es de esperar que la velocidad $c_0$ estimada sea mayor que la real. 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{u_cm(t).pdf}
-    \caption{Posición del centro de masa del frente de propagación en función del tiempo para distintos valores de $\gamma/\beta$ junto 
-    con los correspondientes ajustes lineales. Se muestra también la velocidad $c$ del frente obtenida para cada caso.}
-    \label{fig:u_cm(t)}
-\end{figure}
-
-Un observable más a destacar en esta instancia es el perfil del frente de propagación $f_I(x)$ (\ref{perfil}), que se observa en la figura \ref{fig:f_I(x)} para 
-$\gamma/\beta=0.2$. Se muestran también los perfiles asintóticos frontal y posterior del frente de onda calculados en la subsección \ref{ondas}, ecuaciones \ref{larika2} y 
-\ref{larika} respectivamente.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{f_I(x)_hom.pdf}
-    \caption{Perfil del frente de propagación $f_I(x)$ para $\gamma/\beta=0.2$. Se muestran también los perfiles asintóticos frontal y posterior 
-    del frente de onda calculados en la sección \ref{S:Modelo SIR espacial hom}.}
-    \label{fig:f_I(x)}
-\end{figure}
-
-\subsection{Heterogeneidad dicotómica-aleatoria}
-\label{al}
-
-Comenzamos el estudio de la heterogeneidad dicotómica-aleatoria, con $\beta_{\vb r}$ dado por \ref{prop}, observando en la figura \ref{fig:hom_case_tevol_hetero} la
-evolución temporal del frente de infección/incendio con $p=0.3$. Puede verse el campo de desplazamiento del frente $u(y,t)$,
-el cual resulta rugoso en esta ocasión como consecuencia del carácter heterogéneo del medio. Vemos también que la velocidad del frente es menor respecto del caso 
-homogéneo, como resulta claro de comparar con la figura \ref{fig:hom_case_tevol}. Este hecho no resulta sorprendente ya que el valor medio de la tasa 
-de transmisión para este caso es $\overline{\beta_{\vb r}}=(1-p)\beta=0.7\beta$, mientras que en el caso homogéneo es mayor ($\beta$). Lo justo 
-sería comparar la velocidad de este caso con uno homogéneo y la misma tasa de transmisión media. Como veremos enseguida, la propagación resulta ser más rápida sobre el 
-medio desordenado que sobre el homogéneo. Otro tema de interés es investigar cómo depende la velocidad o la amplitud media del frente con $p$. Recordemos que $p$ podría 
-representar la fracción de población vacunada, de modo que es relevante determinar cómo influye sobre la dinámica.  
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{hetal_case_tevol.pdf}
-    \caption{Evolución del frente de infección/incendio para el problema heterogéneo dicotómico-aleatorio con $p=0.3$, $\gamma/\beta=0.2$ y $D_{I}=1$.}
-    \label{fig:hom_case_tevol_hetero}
-\end{figure}
-
-\subsubsection*{Velocidad y amplitud del frente}
-
-En la figura \ref{fig:u_cm(t)_hetal} se muestra la posición del centro de masa del frente de propagación $u_{cm}(t)$ en función del tiempo para
-realizaciones de la simulación con $70$ valores distintos de $p\in(0,0.95)$. Puede observarse que para valores de $p$ grandes ($p\geq 0.9$) hay un cambio de comportamiento apreciable, 
-las trayectorias comienzan a ser inestables y la velocidad media del frente se reduce drásticamente, ya que lleva más tiempo llegar al mismo lugar. Este cambio de 
-comportamiento como consecuencia del valor de $p$ es de interés, ya que pareciera haber un valor crítico $p_c$
-para el que el frente de infección reduce drásticamente su velocidad a un punto tal en que es difícil incluso identificar un frente. Este hecho también puede 
-apreciarse en la figura \ref{fig:rugosidad} donde se muestra la rugosidad del campo de desplazamiento del frente (\ref{rugosidad}) en función de la posición del 
-centro de masa. Para valores de $p\geq 0.9$ la rugosidad no deja de crecer mientras que para valores menores de $p$ 
-la rugosidad se estabiliza alrededor de un valor dado. Adicionalmente, la rugosidad es un orden de magnitud mayor en los casos en que $p\geq 0.9$ comparada con las 
-demás, esto también habla de una disipación del frente de onda al punto en que es irreconocible.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\imsizeL]{u_cm(t)_hetal.pdf}
-    \caption{Posición del centro de masa del frente de propagación en función del tiempo para distintos valores de $p$,con $\gamma/\beta=0.2$ y $D_{I}=1$.}
-    \label{fig:u_cm(t)_hetal}
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\imsizeL]{rugosidad.pdf}
-    \caption{Rugosidad $w(t)$ en función de la posición del centro de masa para distintos valores de $p$,con $\gamma/\beta=0.2$ y $D_{I}=1$.}
-    \label{fig:rugosidad}
-\end{figure}
-
-Para poder determinar el valor crítico $p_c$ en el que se produce este cambio de comportamiento, calculamos a partir de los resultados de la figura \ref{fig:u_cm(t)_hetal}
-la velocidad de propagación $c$ para los distintos valores de $p$ usando ajustes lineales. Los resultados obtenidos se muestran en la figura \ref{fig:velocidad_p}.
-Se observa este procedimiento para dos sistemas distintos con $\gamma/\beta=0.2$ y $0.4$ y $D_{I}=1$. Además, se muestran estos mismos resultados para los mismos 
-sistemas simulados sobre un medio homogéneo (H) con una tasa de transmisión igual a la media de sus pares heterogéneos dicotómicos-aleatorios (DA). Vemos que en ambos casos la velocidad 
-del frente es menor sobre el medio homogéneo que sobre el heterogéneo y la diferencia entre ambas velocidades incrementa con $p$. Este tipo de resultado no es 
-trivial y como es propio de los sistemas complejos no siempre es posible desarrollar una intuición apropiada para describir fenómenos emergentes de este tipo.
-Es decir, con la misma tasa de transmisión media, una distribución homogénea sobre el espacio da lugar a un frente de propagación de menor velocidad 
-que una distribución heterogénea dicotómica y aleatoria. 
-
-Se realizó un ajuste con la regla de potencia $c\propto(1-p/p_c)^{\alpha_c}$ para las realizaciones sobre el medio homogéneo en todo el rango de $p$. De lo cual se 
-obtuvo $p_c \approx 0.8$ y $0.6$ para $\gamma/\beta=0.2$ y $0.4$ respectivamente con exponente crítico $\alpha_c \approx 0.5$ para ambos. Esto concuerda con lo que 
-resulta de reemplazar $\beta$ por $(1-p)\beta$ en la ecuación para la velocidad sobre medios homogéneos determinada en \ref{ondas}, es decir,
-
-\[c(p) = 2\sqrt{D_I((1-p)\beta S_0-\gamma)} = c_0(1-p/p_c)^{\alpha_c},\]
-con $p_c=1-\gamma/(\beta S_0)$ y $\alpha_c=0.5$. 
-
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{velocidad_p.pdf}
-    \caption{Velocidad $c$ del frente de propagación en función de $p$ con $\gamma/\beta=0.2$ y $0.4$ y $D_{I}=1$. Se muestran los 
-    ajustes con la regla de potencia $c\propto(1-p/p_c)^{\alpha_c}$ sobre la región crítica.}
-    \label{fig:velocidad_p}
-\end{figure}
-
-Por otro lado, para los medios DA se realizó un ajuste similar sobre las regiones críticas  de $p$. Todos los resultados asociados a los parámetros críticos de 
-la velocidad determinados para cada caso se muestran en la tabla \ref{tab:param_criticos}. 
-
-\begin{table}[]
-    \centering
-    \caption{Parámetros críticos $p_c$ y $\alpha_c$ de los medios H y DA con diferentes $\gamma/\beta$.}
-    \label{tab:param_criticos}
-    \begin{tabular}{@{}cccc@{}}
-    \toprule
-    Medio & $\gamma/\beta$ & $p_c$         & $\alpha_c$    \\ \midrule
-    DA    & 0.2            & $0.92\pm0.04$ & $0.61\pm0.05$ \\
-    H     & 0.2            & $0.80\pm0.01$ & $0.47\pm0.04$ \\
-    DA    & 0.4            & $0.80\pm0.04$ & $0.73\pm0.05$ \\
-    H     & 0.4            & $0.60\pm0.01$ & $0.48\pm0.04$ \\ \bottomrule
-    \end{tabular}
-\end{table}
-
-De estos resultados queda claro otra diferencia importante entre los casos H y DA, y es que el valor crítico de $p$ para el cual se extingue el frente 
-de propagación es apreciablemente mayor en los casos heterogéneos, hasta un $30\%$ mayor en el caso de $\gamma/\beta=0.4$. 
-
-Es posible realizar un procedimiento similar determinando la amplitud media del frente de infección $I_{max}$ (\ref{Imax}) para distintas realizaciones variando el 
-valor de $p$. En la figura \ref{fig:amplitud_p} se muestran los resultados obtenidos. En este caso vemos que sale desfavorecido el medio homogéneo ya que 
-la amplitud media $I_{max}$ del frente de infección resulta ser mayor que en el medio aleatorio.
-Se realizó asimismo un ajuste con la regla $(1-p/p_c)^{\alpha_I}$ para los casos heterogéneos sobre las regiones críticas, en la tabla \ref{tab:param_criticos_I} 
-se muestran los resultados obtenidos.
-
-\begin{table}[h]
-    \centering
-    \caption{Parámetros críticos $p_c$ y $\alpha_I$ del medio DA con diferentes $\gamma/\beta$.}
-    \label{tab:param_criticos_I}
-    \begin{tabular}{@{}cccc@{}}
-    \toprule
-    Medio & $\gamma/\beta$ & $p_c$         & $\alpha_I$    \\ \midrule
-    DA    & 0.2            & $0.90\pm 0.04$ & $1.93 \pm 0.05$ \\
-    DA    & 0.4            & $0.75\pm 0.04$ & $2.12 \pm 0.05$ \\ \bottomrule
-    \end{tabular}
-\end{table}
-
-Puede verse que dentro del error, los resultados obtenidos para $p_c$ concuerdan con los obtenidos del ajuste para la velocidad. Por otro lado, es posible observar que 
-tanto para el caso de la amplitud media como de la velocidad los exponentes críticos difieren del dado en los casos homogéneos y también difieren entre sí.
-
-
- \begin{figure}[H]
-    \centering
-    \includegraphics[width=\imsizeL]{amplitud_p.pdf}
-    \caption{Amplitud media $I_{max}$ del frente de propagación en función de $p$ con $\gamma/\beta=0.2$ y $0.4$ y $D_{I}=1$. Se muestran los 
-    ajustes con la regla de potencia $I_{max}\propto(1-p/p_c)^{\alpha_I}$ sobre la región crítica.}
-    \label{fig:amplitud_p}
- \end{figure}
- 
- Para ver más resultados asociados a esta heterogeneidad se puede consultar el artículo \cite{kolton}. Allí se presentan resultados adicionales acerca del factor de 
- estructura del frente $S(q)$ (\ref{factor}) y del perfil del frente $f_I(x)$. Se encuentra una estructura auto-afín del frente sobre la región crítica, con una ley 
- del tipo $S(q)\propto 1/q^{1+2\zeta}$.
-
- En resumen, los resultados obtenidos aquí pueden describirse cualitativamente de la siguiente manera: 
- \begin{itemize}
-     \item Si el valor medio de la tasa de transmisión $\overline{\beta_{\vb r}}$ es el mismo, la velocidad del frente de infección/incendio es \textit{mayor} sobre el medio 
-     dicotómico-aleatorio que sobre el homogéneo.
-     \item Si el valor medio de la tasa de transmisión $\overline{\beta_{\vb r}}$ es el mismo, la amplitud media del frente de infección/incendio $I_{max}$ es 
-     \textit{mayor} sobre el medio homogéneo que sobre el dicotómico-aleatorio en tanto $p<p_c$, con $p_c$ del medio homogéneo.
-     \item El valor crítico $p_c$ para el cual se extingue el frente de infección/incendio es \textit{mayor} sobre el medio dicotómico-aleatorio que sobre el homogéneo.
-     \item Los exponentes críticos de la velocidad $\alpha_c$ para el medio homogéneo \textit{coinciden} con el estimado por $c_0$ en la aproximación analítica de la solución de onda.
-     \item Los exponentes críticos de la velocidad $\alpha_c$ para el medio dicotómico-aleatorio son \textit{mayores} que para el medio homogéneo y parecen 
-     \textit{variar} con $\gamma/\beta$.
- \end{itemize}
-
- 
-\section{Medios correlacionados}
-
-En esta sección estudiamos las heterogeneidades con correlación introducidas en la sección \ref{S:Modelo SIR espacial het}, estas son las denominadas 
-<<suavizada>> (S) y <<dicotómica-correlacionada>> (DC). 
-
-En las figuras \ref{fig:suavizada} y \ref{fig:suavizada-dicotómica} se muestra la evolución temporal del sistema para 
-$p=0.3$ y con un paso de suavizado para cada caso, es decir, con $\beta_{\vb r}^{(1)}$ y $\tilde{\beta}_{\vb r}^{(1)}$ respectivamente. Puede verse que DC presenta un 
-campo de desplazamiento más rugoso que S y que la velocidad del frente en S es mayor que en DC. Sin embargo, aquí nuevamente resulta que la comparación es injusta 
-ya que, aunque ambas simulaciones están hechas con el mismo valor de $p$, tienen distinta tasa de transmisión media. Como se vió en la sección 
-\ref{S:Modelo SIR espacial het}, el valor medio sobre S es $\overline{\beta_{\vb r}^{(n)}}=(1-p)\beta$ mientras que sobre DC 
-el valor medio de la tasa de transmisión cambia. Por ello utilizaremos de ahora en más como parámetro de referencia el valor medio de la tasa de transmisión y no $p$.
-
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{suavizada_tevol.pdf}
-    \caption{Evolución temporal del sistema para $p=0.3$ con un paso de S.}
-    \label{fig:suavizada}
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{suavizada_dic_tevol.pdf}
-    \caption{Evolución temporal del sistema para $p=0.3$ con un paso de DC.}
-    \label{fig:suavizada-dicotómica}
-\end{figure}
-
-\subsection{Velocidad y amplitud del frente}
-
-En las figuras \ref{fig:ucm_s} y \ref{fig:ucm_sd} se muestra la posición del centro de masa del frente de realizaciones con distinta tasa 
-de transmisión media, para S y DC respectivamente. Se utilizó $\gamma=0.2$, $\beta=1$ y $D_I=1$. 
-
-Se puede apreciar, en ambos casos, que mientras mayor es la tasa 
-de transmisión media, mayor es la velocidad del frente de infección/incendio, esto es algo de esperar. Sin embargo, algo que llama la atención 
-es que el frente de infección parece sostener una velocidad mayor sobre DC que sobre S a medida que disminuye $\overline{\beta_{\vb r}}$.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{ucm_s.pdf}
-    \caption{Posición del centro de masa del frente en función del tiempo sobre el medio S.}
-    \label{fig:ucm_s}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{ucm_sd.pdf}
-    \caption{Posición del centro de masa del frente en función del tiempo sobre el medio DC.}
-    \label{fig:ucm_sd}
-\end{figure}
-
-Lo mencionado anteriormente queda claro al observar la figura \ref{fig:c_all}, donde se muestra la velocidad en función de $\overline{\beta_{\vb r}}$ sobre los medios
-S y DC con un paso de suavizado. Adicionalmente, se muestran las curvas equivalentes para los medios homogéneo (H) y dicotómico-aleatorio (DA), vistos en \ref{S:aleatorios}. 
-Vemos que la curva asociada a S queda entre las curvas de los medios H y DA. Esto es razonable ya que S se genera a partir de DA y como vimos 
-en la sección \ref{S:Modelo SIR espacial het}, el medio S tiende a uno homogéneo con $\overline{\beta_{\vb r}}=(1-p)\beta$ cuando incrementamos los pasos de suavizado.
-Es de esperar entonces que curvas similares sobre S pero con más pasos de suavizado vayan asemejándose cada vez más a la versión homogénea.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{c_all.pdf}
-    \caption{Velocidad del frente de infección en función del valor medio de la tasa de transmisión $\overline{\beta_{\vb r}}$ sobre los medios S, DC, DA y 
-    H. Se muestran los ajustes con la regla de potencia $c\propto(\beta-\beta_c)^{\alpha_c}$ sobre la región crítica.}
-    \label{fig:c_all}
-\end{figure}
-
-Por otro lado, la curva asociada a DC queda alejada de las demás, se observa que la velocidad del frente es apreciablemente más grande que en los 
-demás casos cuando la tasa de transmisión media es chica, $\overline{\beta_{\vb r}}<0.2$. Ahora bien, este resultado por sí mismo es por lo menos curioso, es decir,
-\textbf{un ligero cambio en la estructura del medio sin afectar la tasa de transmisión media produce un cambio notable en la velocidad del frente}. Fundamentalmente, 
-comparando el resultado de DC con el de DA, a pesar de que ambos medios tengan un carácter dicotómico, la correlación espacial introducida en DC genera 
-un cambio notable sobre la velocidad.
-
-Para entender mejor qué es lo que produce este cambio de velocidad entre DA y DC es interesante observar con mayor detenimiento la estructura de estos medios. En las 
-figuras \ref{beta_al_zoom} y \ref{beta_dic_zoom} se muestra la distribución de la tasa de transmisión $\beta_{\vb r}$ sobre el espacio de los medios DA y DC respectivamente. 
-Ambos casos tienen la misma tasa de transmisión media. Observando la distribución espacial de cada uno de ellos 
-a gran escala, sobre el espacio de $1024\times1024$, no es sencillo señalar ninguna diferencia. Sin embargo, al observar la distribución sobre una región acotada de 
-$100\times100$ se puede ver que son estructuralmente distintos en esta escala. La distribución de CD con $n=1$ alcanza a formar un patrón  
-distinguible, se forman regiones agrupadas con tasa de transmisión no nula $\beta$, mientras que en DA, por supuesto, se observa el carácter aleatorio. Este es un 
-fenómeno notable, la velocidad de propagación es mayor si la distribución de la tasa de transmisión forma estructuras como las que se ven en la figura 
-\ref{beta_dic_zoom} en lugar de estar distribuída aleatoriamente, por más que la tasa de transmisión media sea la misma.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\imsize]{beta_al_zoom.pdf}
-    \caption{Distribución de la tasa de transmisión $\beta_{\vb r}$ del medio DA. A izquierda se muestra la distribución sobre 
-    todo el espacio de $1024\times1024$ y a la derecha un acercamiento a una región de $100\times100$.}
-    \label{beta_al_zoom}
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\imsize]{beta_dic_zoom.pdf}
-    \caption{Distribución de la tasa de transmisión $\beta_{\vb r}$ del medio DC. A izquierda se muestra la distribución sobre 
-    todo el espacio de $1024\times1024$ y a la derecha un acercamiento a una región de $100\times100$.}
-    \label{beta_dic_zoom}
-\end{figure}
-
-Se realizaron ajustes con la regla de potencia $c\propto(\beta-\beta_c)^{\alpha_c}$ sobre la región crítica para los medios DC, DA, S y H. De ello se determinó la tasa de 
-transmisión crítica y el exponente crítico para cada uno de ellos. En la tabla \ref{tab:pc} se muestran los resultados obtenidos.
-
-\begin{table}[h]
-    \centering
-    \caption{Parámetros críticos $\beta_c$ y $\alpha_c$ de los medios DC, DA ,S y H.}
-    \label{tab:pc}
-    \begin{tabular}{@{}cccc@{}}
-    \toprule
-    Medio & $\beta_c$     & $\alpha_c$    \\ \midrule
-    H     & $0.20\pm0.01$ & $0.48\pm0.03$ \\
-    DA    & $0.06\pm0.02$ & $0.70\pm0.05$ \\
-    DC    & $0.01\pm0.01$ & $0.39\pm0.05$ \\
-    S     & $0.12\pm0.02$ & $0.55\pm0.05$ \\ \bottomrule
-    \end{tabular}
-\end{table}
-
-Puede verse que los resultados sobre los medios $H$ y $DA$ coinciden con los valores críticos $p_c$ obtenidos en la sección anterior (Tabla \ref{tab:param_criticos}).
-Esto era de esperar dado que sobre estos medios, la tasa de transmisión media y el valor de $p$ están relacionados por $\overline{\beta_{\vb r}}=(1-p)\beta$, de modo que 
-$\beta_c=(1-p_c)\beta$. De estos resultados también queda claro otro fenómeno notable al que da lugar la estructura del medio DC, y es que sobre este la tasa 
-de transmisión crítica es \textit{menor} comparada con las demás. Es decir, basta con una tasa de transmisión extremadamente chica, comparada con los demás medios,
-para que tenga lugar un frente de propagación.
-
-Otro aspecto de inteŕes es observar el efecto que tienen los distintos medios sobre la amplitud media del frente de infección/incendio . En la figura \ref{fig:I_all} se 
-observa la amplitud media del frente como función de la tasa de transmisión media $\overline{\beta_{\vb r}}$ para los medios S, DC, DA y H. En esta ocasión vemos que el
-medio homogéneo es el que sostiene la mayor amplitud del frente cuando $\overline{\beta_{\vb r}}>0.35$. Vemos aquí nuevamente que la curva de S queda entre las dadas 
-por H y DA. Por otro lado, el medio DC, en consistencia con lo observado para la velocidad, otorga la mayor amplitud del frente para valores bajos de la tasa de
-transmisión media $\overline{\beta_{\vb r}}<0.35$. Es decir, el medio DC favorece nuevamente, en este aspecto y sobre este régimen, a la propagación del frente.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{I_all.pdf}
-    \caption{Amplitud media del frente de infección/incendio $I_{max}$ en función de la tasa de transmisión media $\overline{\beta_{\vb r}}$ para los medios S, DA, 
-    DC y H.}
-    \label{fig:I_all}
-\end{figure}
-
-\subsection{Rugosidad y factor de estructura}
-
-Ahora se propone investigar las propiedades geométricas del frente en función de $\overline{\beta_{\vb r}}$ cerca de los valores críticos $\beta_c$ obtenidos 
-previamente para cada medio. En la figura \ref{width_beta} se muestra la rugosidad $\langle w(t)\rangle_t$ del frente de infección/incendio en función de la tasa de 
-transmisión media para realizaciones sobre los medios S, DA y DC.
-
-Para cada una de estas curvas se realizó un ajuste de tipo $\langle w(t)\rangle_t\propto(\beta-\beta_c)^{\alpha_c}$ sobre la región crítica. A partir de lo cual se 
-obtuvieron los resultados que se muestran en la tabla \ref{tab:pc_I} para cada uno de los medios.
-
-\begin{table}[h]
-    \centering
-    \caption{Parámetros críticos $\beta_c$ y $\alpha_w$ de los medios DC, DA y S.}
-    \label{tab:pc_I}
-    \begin{tabular}{@{}cccc@{}}
-    \toprule
-    Medio & $\beta_c$     & $\alpha_w$    \\ \midrule
-    DA    & $0.07\pm0.02$ & $1.61\pm0.05$ \\
-    DC    & $0.01\pm0.01$ & $0.96\pm0.05$ \\
-    S     & $0.11\pm0.02$ & $1.48\pm0.05$ \\ \bottomrule
-    \end{tabular}
-\end{table}
-
-Los valores críticos de $\beta_c$ concuerdan con los obtenidos previamente del estudio de la velocidad del frente, tal como corresponde (Tabla \ref{tab:pc}).
-
-Por otro lado, si observamos el factor de estructura $S(q)$ (\ref{factor}) de los frentes cerca del valor crítico de la tasa de transmisión media, se observa que 
-sobre el medio DA el frente presenta una estructura fractal auto-afín, $S(q)\sim 1/q^{1+2\zeta}$, con exponente de rugosidad $\zeta=0.3$ tal como puede verse de 
-la figura \ref{fig:factor}. Sin embargo, para los medios S y DC no se observa nada similar, los valores de $\zeta$ son indistinguibles de cero.\newpage
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{width_beta.pdf}
-    \caption{Rugosidad del frente de infección/incendio en función de la tasa 
-    de transmisión media $\overline{\beta_{\vb r}}$ para los medios S, DA y DC.}
-    \label{width_beta}
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{factor.pdf}
-    \caption{Factor de estructura $S(q)$ sobre el medio DA cerca de la tasa de transmisión cŕitica. Se muestra el ajuste $S(q)\sim 1/q^{1+2\zeta}$ con $\zeta\approx 0.3$.}
-    \label{fig:factor}
-\end{figure}
-
-Resumiendo esta sección, se tienen los siguientes resultados:
-\begin{itemize}
-    \item Si la tasa de transmisión media es la misma, la velocidad del frente de infección/incendio es \textit{mayor} sobre el medio DC.
-    \item Si la tasa de transmisión media es la misma y $\beta_{\vb r}>0.35$, la amplitud media del frente de infección/incendio es \textit{mayor} sobre el medio H.
-    \item Si la tasa de transmisión media es la misma y $\beta_{\vb r}<0.35$, la amplitud media del frente de infección/incendio es \textit{mayor} sobre el medio DC.
-    \item La tasa de transmisión crítica es la \textit{menor} sobre el medio DC y la \textit{mayor} sobre el medio H.
-    \item Los exponentes críticos de la velocidad sobre los medios H, S, DA y DC parecen ser \textit{diferentes} entre sí, siendo el \textit{mayor} en el medio DA.
-    \item El campo de desplazamiento del frente presenta una estructura auto-afín en el medio DA sobre el régimen crítico, $S(q)\propto q^{-(1+2\zeta)}$ con $\zeta=0.3$.
-\end{itemize}
-
-\section{Nocividad}
-
-Un aspecto de gran importancia en lo que respecta a problemáticas tanto epidemiológicas como de incendios es la posibilidad de cuantificar los daños que
-deja un brote de enfermedad infecciosa o un incendio. En particular, estaremos interesados en estimar el daño que queda tras el paso del frente de infección/incendio. 
-Para ello utilizaremos como cuantificador de daños la fracción de susceptibles $S_1$ que queda tras el paso del frente de onda. Entendiendo que mientras menor sea esta 
-fracción, mayor será el daño ocasionado por el frente.
-
-Para ser más precisos al respecto, tomaremos 
-\[S_1=\langle S(x,y,T)\rangle_{x,y}\]
-con $0.2L<x<u_{cm}(T)-0.2L$, siendo $T$ el tiempo que dure la simulación correspondiente. Utilizando este criterio para todas las simulaciones, podremos comparar 
-la nocividad de cada frente al modificar los parámetros que interesen. En particular, veremos cómo cambia esta magnitud $S_1$ con la tasa de transmisión media 
-$\overline{\beta_{\vb r}}$.
-
-En la figura \ref{fig:S_1} se muestran los resultados obtenidos de $S_1$ en función de $\overline{\beta_{\vb r}}$ sobre los medios H, S, DA y DC. Se puede 
-observar que el frente de propagación más nocivo se da sobre el medio homogéneo, ya que da lugar a la menor fracción de susceptibles $S_1$ tras el paso del frente. Sin 
-embargo, tal como ya hemos apreciado antes (Tabla \ref{tab:pc}), la tasa de transmisión crítica es menor que en los demás casos $\beta_c\approx0.2$.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\imsizeL]{S_1.pdf}
-    \caption{Fracción de susceptibles $S_1$ en función de la tasa de transmisión media $\overline{\beta_{\vb r}}$ para los medios H, S, DA y DC.}
-    \label{fig:S_1}
-\end{figure}
-
-El siguiente medio de nocividad elevada es S, mientras que los medios DC y DA presentan curvas similares de carácter lineal. Estos nuevos resultados dan una perspectiva 
-nueva acerca de los medios. Por ejemplo, habíamos visto que la velocidad de propagación del frente es mayor sobre el medio DC que sobre los demás, lo cual es una 
-característica indeseable en problemáticas tanto epidemiológicas como de incendios. Sin embargo, vemos ahora que a pesar de ello la nocividad del frente, tal como la
-hemos caracterizado aquí, es menor sobre DC que sobre los demás medios, lo cual es deseable. A modo cualitativo es entendible que si el frente se desplaza a mayor 
-velocidad tenga menos tiempo de ocasionar grandes daños. 
-
-En resumen:
+\chap{Reseña numérica y computacional}{code}
+\graphicspath{{figs/cap2_bis}}
+%\label{chap:code}
+
+La idea de este capítulo es dejar documentación que muestre con claridad el trabajo de investigación y elaboración técnico, a nivel computacional, realizado 
+para llevar a cabo este proyecto. Adicionalmente, está en mi intención ser lo más genérico, claro y acotado posible, para que sea de utilidad a cualquier 
+otra persona que esté interesada en resolver ecuaciones diferenciales parciales haciendo uso de programación en paralelo. En particular, usando 
+\href{https://developer.nvidia.com/cuda-toolkit}{\textit{CUDA}} \cite{cuda} a través de las bondades que ofrece \href{https://www.python.org/}{\textit{Python}} \cite{python} mediante 
+la librería \href{https://cupy.dev/}{\textit{CuPy}} \cite{cupy}.
+
+Este capítulo cuenta con un material complementario en formato de \textit{Jupyter Notebook} en \textit{Google Colab} al cual puede acceder desde 
+\href{https://colab.research.google.com/drive/13dfbe0GnIngJ2q3w2jLOlSO6mtFYZmA7?usp=sharing}{aquí}. \textit{Google Colab} da acceso gratuito a GPUs,
+lo cual está fantástico para aprender a usarlas, aunque evidentemente es con tiempo limitado. En este \textit{Jupyter Notebook} esencialmente 
+encontrará todo el código presentado aquí y un poco más, para que pueda interactuar y hacer las modificaciones que quiera.
+
+A continuación dejamos constancia del \textit{software} y \textit{hardware} utilizado en la ejecución de los códigos de este capítulo.
 
 \begin{itemize}
-    \item Si $\overline{\beta_{\vb r}}>0.2$, el frente de infección/incendio \textit{más nocivo} se da sobre el medio H.
-    \item Si $\overline{\beta_{\vb r}}<0.2$, el frente de infección/incendio \textit{más nocivo} se da sobre el medio DC.
-    \item Sobre los medios dicotómicos DC y DA, la \textit{nocividad} es directamente proporcional a la tasa de transmisión media, $S_1\propto\overline{\beta_{\vb r}}$.
+  \item Python: 3.9.7
+  \item CUDA Version: 11.6
+  \item CPU: AMD Ryzen 9 5900HX
+  \item GPU: NVIDIA GeForce RTX 3060 Laptop
+  \item Memoria de GPU: 6GB
+  \item CUDA cores: 3840
+  \item RAM: 32GB
 \end{itemize}
+
+\section{Diferencias finitas}
+\label{S:diferencias finitas}
+
+El objetivo es resolver numéricamente ecuaciones diferenciales parciales de la manera más simple y eficiente posible. Para la física este tipo de ecuaciones son de gran 
+interés, ya que se usan ampliamente para modelar todo tipo de fenómenos. 
+
+Para reducir la complejidad del problema, acotamos la discusión mostrando en detalle el proceso de resolución de un sistema de 
+dos ecuaciones de reacción-difusión con dos dimensiones espaciales $(x,y)$ en cierta región $\Omega \in \mathbb{R}^2$. Esto es conveniente porque 
+este problema corresponde con el tipo de sistemas usados en este trabajo. Explícitamente, queremos resolver,
+
+\begin{equation}
+\begin{split}
+ \partial_t u & = f_u(u,v) + D_u \laplacian{u}\\
+ \partial_t v & = f_v(u,v) + D_v \laplacian{v}, 
+\label{eq:sist_rf}
+\end{split}
+\end{equation}
+donde $u$ y $v$ son las variables dinámicas que dependen de las variables $(t,x,y)$, $f_u$ y $f_v$ son funciones suaves, mientras que $D_u$ y $D_v$ 
+son los coeficientes de difusión de $u$ y $v$ respectivamente. Estas ecuaciones deben resolverse teniendo en cuenta determinadas condiciones iniciales y 
+de contorno para el problema en cuestión, podemos expresarlas genéricamente de la siguiente manera,
+
+\begin{align*}
+u(t = 0,x,y) & = g_u(x,y) & \forall x,y \in \Omega &&|&& u(t,x,y) = h_u(t,x,y) && \forall t\in \mathbb{R};\; \forall x,y \in \delta \Omega\\
+v(t = 0,x,y) & = g_v(x,y) & \forall x,y \in \Omega &&|&& v(t,x,y) = h_v(t,x,y) && \forall t\in \mathbb{R};\; \forall x,y \in \delta \Omega.
+\label{eq:ic}
+\end{align*}
+Donde las funciones $g_u$ y $g_v$ denotan las condiciones iniciales del sistema, las funciones $h_u$ y $h_v$ las 
+condiciones de contorno y $\delta \Omega$ es el borde de $\Omega$.
+
+De esta manera queda completamente definido el problema y procedemos al armado del esquema numérico necesario para resolverlo. Por simplicidad consideramos que 
+$\Omega$ es una región rectangular del plano donde $x,y \in ~ [0,L_x] \times ~[0,L_y]$. Segmentamos este espacio en $N_x \times N_y$ cuadrantes de dimensiones $d_x = L_x/N_x$ y 
+$d_y=L_y/N_y$ y denominamos $u_{ij}$ y $v_{ij}$ a los valores de las funciones $u$ y $v$ a tiempo $t$ en el cuadrante $(i,j)$ correspondiente a la región 
+$[jd_x,(j+1)d_x) \times [id_y,(i+1)d_y)$, con $i =0,1,...,N_y-1$ y $j = 0,1,...,N_x-1$.
+
+A continuación, la idea consiste en reducir el sistema de ecuaciones diferenciales parciales \ref{eq:sist_rf} en un sistema de ecuaciones diferenciales ordinarias, donde 
+cada ecuación describe la evolución de las variables dinámicas en un cuadrante distinto. Para ello necesitamos llevar los laplacianos de las ecuaciones al nuevo esquema 
+espacial discretizado. Lo hacemos usando la siguiente aproximación por diferencias finitas para los laplacianos,
+
+\begin{equation}
+  \begin{split}
+    (\laplacian u)_{ij} &= \frac{1}{d^2}(u_{i+1,j}+u_{i-1,j}+u_{i,j+1}+u_{i,j-1}-4u_{ij})\\
+    (\laplacian v)_{ij} &= \frac{1}{d^2}(v_{i+1,j}+v_{i-1,j}+v_{i,j+1}+v_{i,j-1}-4v_{ij})
+    \label{eq:lap}
+  \end{split}
+\end{equation}
+donde usamos que $d = d_x = d_y$.  Utilizando la notación dada para la discretización espacial, tenemos el siguiente sistema 
+de ecuaciones diferenciales ordinarias,
+
+\begin{equation}
+  \begin{split}
+  \dv{u_{ij}}{t} & = f_u(u_{ij},v_{ij}) + D_u (\laplacian u)_{ij} \\
+  \dv{v_{ij}}{t} & = f_v(u_{ij},v_{ij}) + D_v (\laplacian v)_{ij}.
+  \label{eq:sist_ord}
+  \end{split}
+\end{equation}
+
+Finalmente, discretizamos el espacio temporal con un intervalo $dt$ y aproximamos la derivada temporal a primer orden. Usando $n\in \mathbb{N}$ como índice temporal, notamos $u_{ij}^n$ 
+y $v_{ij}^n$ como el valor de las funciones $u$ y $v$ en el instante $t = n*dt$ sobre el cuadrante $(i,j)$. De esta manera obtenemos el siguiente 
+esquema explícito de Euler para la resolución numérica del sistema \ref{eq:sist_rf},
+
+\begin{equation}
+  \begin{split}
+    u_{ij}^{n+1} & = u_{ij}^n + dt \, \left(f_u(u_{ij}^n,v_{ij}^n) + D_u (\laplacian u)_{ij}^n\right) \\
+    v_{ij}^{n+1} & = v_{ij}^n + dt \, \left(f_v(u_{ij}^n,v_{ij}^n) + D_v (\laplacian v)_{ij}^n\right),  
+    \label{eq:euler}
+  \end{split}
+\end{equation}
+a partir del cual podemos iterar para obtener la solución. En la siguiente sección se describe cómo hacer esto usando \textit{Python} con diferentes niveles de eficiencia.
+
+
+\section{Implementaciones en \textit{Python}}
+\label{S:Python}
+
+En esta sección se describen brevemente 4 implementaciones distintas para la resolución del esquema numérico \ref{eq:euler} hallado en la sección anterior. Comenzamos con una
+implementación usando la librería \href{https://numpy.org/}{\textit{NumPy}} \cite{numpy} en un esquema serial, luego vamos optimizando las implementaciones
+hasta llegar a la más eficiente obtenida, correspondiente a la utilización de \textit{CUDA} a través de la librería \textit{CuPy}. 
+
+La razón para hacer esto reside nuevamente en la idea de dejar documentación que pueda llegar a ser de utilidad para alguien más lidiando 
+con problemas numéricos donde la eficiencia de la resolución es relevante. Además, antes de llegar a la versión final, donde usamos \textit{CUDA} y 
+consecuentemente es necesario un procesador gráfico (GPU) compatible con \textit{CUDA}, se muestran implementaciones que son notablemente eficientes sin necesidad 
+de una GPU, y que pueden ser usadas por una computadora más modesta.
+
+\subsection{Implementación con \textit{NumPy}}
+\label{SS:NumPy}
+\textit{NumPy} es una de las librerías fundamentales para hacer computación científica en \textit{Python}. Ofrece los invaluables \textit{NumPy Arrays}, que están diseñados 
+específicamente para ser lo más eficiente posible en la manipulación numérica sin perder la simplicidad y elegancia de \textit{Python}. Utilizando \textit{NumPy} 
+se obtienen mejores resultados que usando \textit{Python} nativo porque integra código de \textit{C,C++ y Fortran} dentro de \textit{Python}, adicionalmente la mayoría 
+de los métodos implementados para la operación con \textit{NumPy arrays} están paralelizados.
+
+El código \ref{lst:NumPy} muestra la implementación propuesta usando \textit{NumPy}. Nótese que hay más líneas de comentarios que de código. Esencialmente, 
+primero definimos una función que llamamos \textit{laplacian}, que toma un \textit{array} 2D 
+y devuelve su laplaciano, para ello usamos la función \textit{roll} de \textit{NumPy} que desplaza un \textit{array} sobre un eje dado
+cuanto queramos y con condiciones periódicas.
+Luego, sumamos y restamos estas matrices desplazadas según \ref{eq:lap} y obtenemos el laplaciano. Finalmente, definimos la función \textit{cpu\_numpy\_solver}, que toma 
+por argumentos las condiciones iniciales del problema, las funciones de reacción $f_u$ y $f_v$, los coeficientes de difusión, 
+el intervalo de integración temporal $dt$ y espacial $d$ y la cantidad de iteraciones $it$. 
+
+\begin{lstlisting}[language=Python,caption = Implementación con NumPy.,label = {lst:NumPy}]
+import numpy as np
+
+def laplacian(X):
+  '''
+  Take the Laplacian of a 2D array with periodic boundary conditions.
+  '''
+  return np.roll(X,1,axis = 0) + np.roll(X,-1,axis = 0) + np.roll(X,1,axis = 1) + np.roll(X,-1,axis = 1) - 4*X
+
+def cpu_numpy_solver(u, v, fu, fv, Ds, dt = .01, d = 1, it = 1000):
+  '''
+  Solve a 2D reaction-diffusion equation for two dynamical variables with periodic boundary conditions using NumPy.
+
+  u: Intial conditions for the first dynamical variable. 2d NumPy array.
+  v: Intial conditions for the second dynamical variable. 2d NumPy array.
+  fu: Reaction term for the first dynamical variable. Function.
+  fv: Reaction term for the second dynamical variable. Function.
+  Ds: Diffusion coefficients for the first and second dynamical variables. List or array of length 2.
+  dt: Time step. Default value is 0.01.
+  d: Space step. Default value is 1.
+  it: Number of iterations. Default value is 1000.
+  '''
+  
+  Du,Dv = Ds
+  for _ in range(it):
+      u = u + dt*(fu(u,v) + Du*laplacian(u)/d**2)
+      v = v + dt*(fv(u,v) + Dv*laplacian(v)/d**2)
+
+  return u,v
+
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Python, caption = Ejemplo de uso de la implementación con \textit{NumPy}.,label = {lst:numpy_ex}]
+def fu(u,v,beta):
+  return -beta*u*v
+
+def fv(u,v,beta,gamma):
+  return beta*u*v - gamma*v
+
+L = 1024
+beta = 1
+gamma = .2
+u = np.ones((L,L))
+v = np.zeros((L,L))
+u[:,0] = 0
+v[:,0] = 1
+Ds = [0,1]
+
+uf,vf = cpu_numpy_solver(u,v,fu,fv,Ds)
+\end{lstlisting}
+En el código \ref{lst:numpy_ex} se muestra un ejemplo de uso utilizando las siguientes funciones de reacción,
+
+\begin{equation}
+  \begin{split}
+    f_u(u,v) &= -\beta u v,\\
+    f_v(u,v) &= \beta uv - \gamma v,\\
+  \end{split}
+\end{equation}
+donde $\beta$ y $\gamma$ son constantes.
+
+Finalmente, a continuación se muestra la velocidad de la resolución con un sistema de $1024\times 1024$ utilizando todos los parámetros y funciones 
+del ejemplo \ref{lst:numpy_ex}. Para una justa comparación con las demás implementaciones, utilizaremos exactamente los mismos parámetros y funciones.
+\begin{lstlisting}[language=Python,label = {lst:numpy_re}]
+  %timeit cpu_numpy_solver(u,v,fu,fv,Ds)
+  1min +- 1.53 s per loop (mean +- std. dev. of 7 runs, 1 loop each)
+\end{lstlisting}
+
+\subsection{Implementación serial con \textit{Numba}}
+
+Otra de las librerías fundamentales para cálculo numérico en \textit{Python} es \href{https://numba.pydata.org/}{\textit{Numba}} \cite{numba}. \textit{Numba} toma código 
+nativo de \textit{Python} y genera código de máquina optimizado usando \href{https://llvm.org/}{\textit{LLVM compiler infrastructure}} \cite{LLVM}. También es capaz de 
+procesar \textit{NumPy} con una gran cantidad de sus métodos.\footnote{Para ver más detalles consultar la 
+\href{https://numba.readthedocs.io/en/stable/reference/numpysupported.html}{documentación de \textit{Numba}}.} 
+
+Lo mejor de todo esto es que \textit{Numba} lo hace de manera completamente autónoma, solo hay que decirle que lo haga. Para ello utilizamos el decorador 
+\textit{@njit}, que indica a \textit{Numba} que la función en cuestión debe ser procesada. El código \ref{lst:numba} muestra cómo sería la 
+implementación en este caso. Se define la función \textit{cpu\_numba\_solver} que toma los mismos argumentos que la función \textit{cpu\_numpy\_solver} 
+vista anteriormente. Dentro de la función iteramos temporalmente y para calcular los laplacianos y términos de reacción en cada cuadrante
+recorremos las matrices con un ciclo \textit{for}. Usualmente es posible 
+tomar las funciones o implementaciones realizadas con \textit{Numpy} y decorarlas con \textit{@njit} para obtener el resultado deseado. Sin embargo, 
+en este caso no podemos hacerlo con las funciones del código \ref{lst:NumPy} porque \textit{Numba} no soporta la función \textit{roll} de \textit{NumPy}. Por 
+lo cual estamos forzados a calcular el laplaciano de una manera más explicita para que \textit{Numba} lo entienda.    
+
+\begin{lstlisting}[language=Python,caption = Implementación serial con \textit{Numba}.,label = {lst:numba}]
+from numba import njit
+import numpy as np
+
+@njit()
+def cpu_numba_solver(u, v, fu, fv, Ds, dt=.01, d = 1, it = 1000):
+  '''
+  Solve a 2D reaction-diffusion equation for two dynamical variables with periodic boundary conditions using Numba 
+  in a serial implementation.
+
+  u: Intial conditions for the first dynamical variable. 2d NumPy array of shape (Ly,Lx).
+  v: Intial conditions for the second dynamical variable. 2d NumPy array of shape (Ly,Lx).
+  fu: Reaction term for the first dynamical variable. Function.
+  fv: Reaction term for the second dynamical variable. Function.
+  Ds: Diffusion coefficients for the first and second dynamical variables. List or array of length 2.
+  dt: Time step. Default value is 0.01.
+  d: Space step. Default value is 1.
+  it: Number of iterations. Default value is 1000.
+  '''    
+
+  Ly,Lx = u.shape
+  u = u.reshape(Ly*Lx)
+  v = v.reshape(Ly*Lx)
+  Fu = np.zeros_like(u)
+  Fv = np.zeros_like(v)
+  Du,Dv = Ds
+  for _ in range(it):
+    for i in range(Lx*Ly):
+      x = i % Lx
+      y = i // Lx
+      Lu = (u[(x+1)%Lx + Lx*y] + u[(x-1+Lx)%Lx+Lx*y] + u[x + Lx*((y+1)%Ly)] + u[x + Lx*((y-1+Ly)%Ly)] - 4*u[i])/d**2
+      Lv = (v[(x+1)%Lx + Lx*y] + v[(x-1+Lx)%Lx+Lx*y] + v[x + Lx*((y+1)%Ly)] + v[x + Lx*((y-1+Ly)%Ly)] - 4*v[i])/d**2
+      Fu[i] = fu(u[i],v[i]) + Du*Lu 
+      Fv[i] = fv(u[i],v[i]) + Dv*Lv
+    u = u + dt*Fu
+    v = v + dt*Fv
+  return u.reshape(Ly,Lx),v.reshape(Ly,Lx) 
+\end{lstlisting}
+
+En cuanto al ejemplo de uso, sería idéntico al mostrado en \ref{lst:numpy_ex}, con la única salvedad de que las funciones $f_u$ y $f_v$ también deben estar decoradas 
+con \textit{@njit}. A continuación se muestra el tiempo de resolución para sistemas de $1024\times1024$ en esta versión. Resulta cerca de 3 veces más rápido 
+que \ref{lst:NumPy}.
+
+\begin{lstlisting}[language=Python,label = {lst:numba_re}]
+%timeit cpu_numba_solver(u,v,fu,fv,Ds)
+18.1 s +- 564 ms per loop (mean +- std. dev. of 7 runs, 1 loop each)
+\end{lstlisting}
+
+\subsection{Implementación paralela con \textit{Numba}}
+
+En esta ocasión la idea es utilizar \textit{Numba} aprovechando que una parte del algoritmo se puede realizar en paralelo. Esto simplemente quiere decir que 
+hay un conjunto de operaciones que puede realizarse en simultáneo en lugar de una por una. Este es el caso para el ciclo \textit{for} que se utiliza 
+para calcular los laplacianos y términos de reacción en cada cuadrante. Es decir, no es necesario calcular el valor correspondiente al cuadrante $(i,j)$ para 
+luego calcular el del cuadrante $(i',j')$, se pueden calcular simultáneamente, en paralelo.
+
+Lo mejor del caso, nuevamente, es que podemos indicarle de una manera muy sencilla a \textit{Numba} que determinado \textit{for} es paralelizable y listo,
+\textit{Numba} se encargará de darle las instrucciones en paralelo al procesador. Para ello, todo lo que tenemos que hacer es importar la función \textit{prange}
+de \textit{Numba} que sirve para indicarle a \textit{Numba} que el ciclo \textit{for} es paralelizable y pasar la opción \textit{parallel = True} al decorador 
+\textit{@njit}. Por completitud mostramos el código de la función \textit{cpu\_numba\_parallel\_solver} en \ref{lst:numba_p}, pero las únicas diferencias con 
+la versión serial \ref{lst:numba} son las indicadas aquí.
+
+\begin{lstlisting}[language=Python,caption = Implementación paralela con \textit{Numba}.,label = {lst:numba_p}]
+from numba import njit,prange
+import numpy as np
+
+@njit(parallel = True)
+def cpu_numba_parallel_solver(u, v, fu, fv, Ds, dt=.01, d = 1, it = 1000):
+  '''
+  Solve a 2D reaction-diffusion equation for two dynamical variables with periodic boundary conditions using Numba 
+  with a parallel implementation.
+
+  u: Intial conditions for the first dynamical variable. 2d NumPy array of shape (Ly,Lx).
+  v: Intial conditions for the second dynamical variable. 2d NumPy array of shape (Ly,Lx).
+  fu: Reaction term for the first dynamical variable. Function.
+  fv: Reaction term for the second dynamical variable. Function.
+  Ds: Diffusion coefficients for the first and second dynamical variables. List or array of length 2.
+  dt: Time step. Default value is 0.01.
+  d: Space step. Default value is 1.
+  it: Number of iterations. Default value is 1000.
+  '''   
+
+  Ly,Lx = u.shape
+  u = u.reshape(Ly*Lx)
+  v = v.reshape(Ly*Lx)
+  Fu = np.zeros_like(u)
+  Fv = np.zeros_like(v)
+  Du,Dv = Ds
+  
+  for _ in range(it):
+    for i in prange(Lx*Ly):
+      x = i % Lx
+      y = i // Lx
+      L_u = (u[(x+1)%Lx + Lx*y] + u[(x-1+Lx)%Lx+Lx*y] + u[x + Lx*((y+1)%Ly)] + u[x + Lx*((y-1+Ly)%Ly)] - 4*u[i])/d**2
+      L_v = (v[(x+1)%Lx + Lx*y] + v[(x-1+Lx)%Lx+Lx*y] + v[x + Lx*((y+1)%Ly)] + v[x + Lx*((y-1+Ly)%Ly)] - 4*v[i])/d**2
+      Fu[i] = fu(u[i],v[i]) + Du*L_u 
+      Fv[i] = fv(u[i],v[i]) + Dv*L_v
+    u = u + dt*Fu
+    v = v + dt*Fv
+  return u.reshape(Ly,Lx),v.reshape(Ly,Lx)
+\end{lstlisting}
+
+A continuación mostramos el rendimiento obtenido con esta nueva versión, observamos que es cerca de 3 veces más rápido que la versión serial \ref{lst:numba} y 
+10 veces más rápido que la versión de \textit{NumPy} \ref{lst:NumPy}. Esto muestra una primera aproximación al poder de la programación en paralelo y cómo es 
+posible implementarla sin la necesidad de una GPU.
+
+\begin{lstlisting}[language=Python,label = {lst:numba_p_re}]
+%timeit cpu_numba_parallel_solver(u,v,fu,fv,Ds)
+6.31 s +- 439 ms per loop (mean +- std. dev. of 7 runs, 1 loop each)
+\end{lstlisting}
+
+\subsection{Implementación con \textit{CuPy}}
+
+\textit{CuPy} es una librería de código abierto desarrollada para facilitar el acceso a las GPU compatibles con \textit{CUDA}\footnote{Está en fase experimental la posibilidad 
+de usar GPUs con \href{https://rocmdocs.amd.com/en/latest/}{ROCm}.} en \textit{Python}. \textit{Cupy} ofrece prácticamente todos los métodos de 
+\textit{NumPy} y se encarga de lidiar de forma autónoma y eficiente con el problema de pasar las instrucciones a la GPU. Esta característica por sí 
+sola ya es sorprendente, dado que ofrece la posibilidad de explotar las capacidades de la GPU sin saber nada de CUDA. Ello quiere decir, que en muchos 
+casos basta escrbir el código tal como lo haríamos con \textit{NumPy} pero usando \textit{CuPy}, y eso bastaría para tener una mejora decisiva en la 
+eficiencia. De hecho, hagamos la prueba, si tomamos el código \ref{lst:NumPy} y lo único que hacemos es cambiar \textit{NumPy} por \textit{CuPy}, el 
+resultado obtenido es el siguiente.
+
+\begin{lstlisting}[language=Python,label = {lst:cupy}]
+%timeit gpu_simple_cupy_solver(u,v,fu,fv,Ds)
+3.12 s +- 3.51 ms per loop (mean +- std. dev. of 7 runs, 1 loop each)
+\end{lstlisting}
+
+Esto es cerca de 19 veces más rápido que la versión de \textit{NumPy} y además la más rápida hasta ahora, lograda con un esfuerzo mínimo. Cabe recordar que 
+el tamaño del sistema que estamos resolviendo, es de $1024\times1024$ en todos los casos, este es un terreno favorable para el uso de GPU, dado que 
+es un sistema lo suficientemente grande como para que la capacidad de paralelización masiva de la GPU marque la diferencia. Esto es de carácter elemental 
+en lo que respecta al uso de procesadores gráficos para cálculo numérico, sin embargo no está de más recordarlo. No siempre es preferible usar la GPU,
+hay que ponderar el carácter del algoritmo a utilizar y la magnitud de operaciones susceptibles de ser paralelizadas. Si corremos los mismos códigos 
+con un sistema de $100\times100$, las cosas cambian rotundamente.
+\begin{lstlisting}[language=Python,label = {lst:cupy}]
+#Sistemas de 100x100
+#Numpy
+%timeit cpu_numpy_solver(u,v,fu,fv,Ds)
+163 ms +- 502 us per loop (mean +- std. dev. of 7 runs, 10 loops each)
+#Cupy
+%timeit gpu_simple_cupy_solver(u,v,fu,fv,Ds)
+1.07 s +- 3.91 ms per loop (mean +- std. dev. of 7 runs, 1 loop each)
+\end{lstlisting}
+
+Ahora bien, volviendo a sistemas grandes, podría decirse que una mejora en un factor $19$ es sorprendente, sin embargo esto es así solo si comparamos
+con la implementación de \textit{NumPy}, pero si miramos la mejora respecto de la implementación con \textit{Numba} en paralelo, el factor de 
+mejora es cerca de $2$. En este caso alguien podría decir, con razón, que la utilización de la \textit{GPU} no está justificada, dado que la 
+mejora en eficiencia no vale el costo que implica el acceso a la GPU.  
+
+Para sortear esta razonable objeción, solo debemos profundizar un poco más en las herramientas que nos ofrece \textit{CuPy}. Como decíamos al principio, 
+el hecho de que \textit{CuPy} ofrezca la posibilidad de acceder a la computación en GPU de una manera extremadamente sencilla y con buenos resultados, es 
+sorprendente. Sin embargo, como es habitual, esa sencillez no viene gratis, paga un peaje a la potencia de cómputo real que puede ofrecer una GPU. 
+
+En lo que sigue se muestra cómo es posible sacar más provecho de la GPU, sin salirnos del entorno que ofrece \textit{CuPy}. La razón por la que estamos 
+desperdiciando potencia de cómputo al resolver el problema reemplazando \textit{CuPy} por \textit{NumPy} es porque estamos lanzando demasiados 
+\textit{kernels} de manera de innecesaria. Es radicalmente más eficiente si conseguimos juntar todas las operaciones necesarias en una menor 
+cantidad de \textit{kernels}. Por cierto, se le dice \textit{kernel} a una función que se ejecuta en la GPU, comúnmente esta función 
+representan operaciones elementales que se realizan en paralelo en la GPU. Para entender esto, vamos a ver un ejemplo sencillo antes de atacar el 
+problema original.
+
+Supongamos que queremos multiplicar las matrices $A$ y $B$, elemento a elemento, y luego sumar el resultado a la matriz $C$. Utilizando 
+\textit{CuPy arrays} la función en cuestión y el resultado obtenido es el siguiente.
+
+\begin{lstlisting}[language=Python,label = {lst:sum_add}]
+import cupy as cp
+def mul_add(A,B,C):
+    return A*B + C
+
+L = 1024
+A = cp.ones((L,L))
+B = cp.ones((L,L))
+C = cp.ones((L,L))
+mul_add(A,B,C)
+%timeit mul_add(A,B,C)
+215 us +- 6.81 us per loop (mean +- std. dev. of 7 runs, 1,000 loops each)
+\end{lstlisting}
+
+Ahora bien, podemos hacerlo mejor, el problema con la función anterior es que está utilizando dos \textit{kernels} en lugar de uno, uno para multiplicar 
+y el otro para sumar. Sin embargo sería mejor si pudiéramos usar un solo \textit{kernel} que hiciera las dos cosas a la vez. Para ello, \textit{CuPy} 
+ofrece la posibilidad de escribir \textit{kernels} personalizados, una de las maneras de hacerlo, es utilizando la función \textit{cupy.ElementwiseKernel}.
+A continuación se muestra cómo quedaría la función y su resultado utilizando esta alternativa.
+
+\begin{lstlisting}[language=Python,label = {lst:sum_add_kernel}]
+import cupy as cp
+mul_add_kernel = cp.ElementwiseKernel(
+  'float64 A, float64 B, float64 C', 'float64 out',
+  'out = A*B + C', 'mul_add')
+  
+L = 1024
+A = cp.ones((L,L))
+B = cp.ones((L,L))
+C = cp.ones((L,L))
+mul_add_kernel(A,B,C)
+%timeit mul_add_kernel(A,B,C)
+136 us +- 273 ns per loop (mean +- std. dev. of 7 runs, 10,000 loops each)
+\end{lstlisting}
+Vemos que la velocidad aumentó apreciablemente aún en un ejemplo tan sencillo como este, si aplicamos esta misma idea a algoritmos más 
+complejos tenemos la posibilidad de mejorar la eficiencia sorprendentemente. No voy a entrar en los detalles de utilización de la función 
+\textit{cupy.ElementwiseKernel}, para más detalles recomiendo la siguiente \href{https://docs.cupy.dev/en/stable/user_guide/kernel.html}{documentación}.
+
+Ahora procedemos finalmente con la propuesta para la resolución del problema original usando esta nueva idea de fusionar \textit{kernels} 
+(Código \ref{lst:CuPy}). Para ello lo que haremos será concentrar en un único \textit{kernel} los cálculos necesarios para evaluar las funciones 
+de reacción y los laplacianos. Nuevamente, no me detendré a explicar los detalles de la implementación, pero espero que el código sea lo suficientemente
+claro como para motivar el interés del lector.
+
+\begin{lstlisting}[language=Python,caption = Implementación con \textit{CuPy}.,label = {lst:CuPy}]
+import cupy as cp
+
+forces = cp.ElementwiseKernel(
+  'raw float64 u, raw float64 v, float64 beta, float64 gamma, float64 Du, float64 Dv, uint32 Lx, uint32 Ly',
+  'float64 Fu, float64 Fv',
+  '''
+  int x = i % Lx;
+  int y = (int) i / Lx;
+  Fu = -beta*u[i]*v[i] + Du*(u[(x+1)%Lx+Lx*y] + u[(x-1+Lx)%Lx+Lx*y] + u[x+Lx*((y+1)%Ly)] + u[x+Lx*((y-1+Ly)%Ly)]
+        - 4*u[i]);
+  Fv = beta*u[i]*v[i] - gamma*v[i] + Dv*(v[(x+1)%Lx + Lx*y] + v[(x-1+Lx)%Lx+Lx*y] + v[x + Lx*((y+1)%Ly)] 
+        + v[x + Lx*((y-1+Ly)%Ly)] - 4*v[i]);
+  ''',
+  'forces')
+
+euler = cp.ElementwiseKernel(
+  'float64 Fu, float64 Fv, float64 dt','float64 u, float64 v',
+  '''
+  u = u + dt*Fu;
+  v = v + dt*Fv;
+  ''',
+  'euler')
+
+def gpu_cupy_solver(u, v, Ds, beta = 1.,gamma = .2, dt = .01, d = 1, it = 1000):
+  '''
+  Solve a 2D reaction-diffusion equation for two dynamical variables with periodic boundary conditions using CuPy.
+
+  u: Intial conditions for the first dynamical variable. 2d CuPy array of shape (Ly,Lx).
+  v: Intial conditions for the second dynamical variable. 2d CuPy array of shape (Ly,Lx).
+  Ds: Diffusion coefficients for the first and second dynamical variables. List or array of length 2.
+  dt: Time step. Default value is 0.01.
+  d: Space step. Default value is 1.
+  it: Number of iterations. Default value is 1000.
+  ''' 
+  Ly,Lx = u.shape
+  Du,Dv = Ds
+  Fu = cp.zeros_like(u)
+  Fv = cp.zeros_like(v)
+
+  for _ in range(it):
+    forces(u,v,beta,gamma,Du,Dv,Lx,Ly,Fu,Fv)
+    euler(Fu,Fv,dt,u,v)
+  return u,v
+\end{lstlisting}
+
+Este es el tipo de implementación utilizada en este proyecto de tesis, el resultado obtenido en esta ocasión es el siguiente,
+\begin{lstlisting}[language=Python]
+  %timeit gpu_cupy_solver(u,v,Ds)
+  511 ms +- 12.3 ms per loop (mean +- std. dev. of 7 runs, 1 loop each)
+\end{lstlisting}
+esto es, mejor en un factor $6$ que la versión estándar de \textit{CuPy}, 12 veces mejor que la implementación con \textit{Numba} en paralelo 
+(la mejor sin usar GPU), y 117 veces más rápido que la versión con \textit{NumPy}. Ahora sí, vemos que la diferencia entre usar una GPU y no usarla es, 
+por lo menos, en un factor de 12, la diferencia entre una simulación de un 1 día  y una de 12 días.
+
+\section{Tamaño del sistema}
+
+Por último, quisiera terminar este capítulo con algunos comentarios. Por un lado, recordar que todas las comparaciones de velocidad en las diferentes 
+implementaciones se realizaron con los mismos parámetros, y fundamentalmente con sistemas relativamente grandes, $1024\times1024$, donde la GPU se ve 
+favorecida sobre la CPU. Diferente es el caso para sistemas chicos, por completitud en este sentido, en la figura \ref{fig:cpuvsgpu} mostramos 
+los resultados de velocidad de las distintas implementaciones para distintos tamaños de sistemas. Por otro lado, la mayoría de los resultados presentados  
+en este proyecto fueron obtenidos con sistemas de $2^{16} \times 2^{11}$, en un sistema de dos ecuaciones de reacción-difusión como el discutido aquí,
+esto implica cuatro matrices con $2^{27}$ elementos cada una, considerando que además utilizamos un formato en coma flotante de doble precisión, cada 
+matriz ocupa alrededor de $1GB$ de memoria. El tiempo que llevaría resolver sistemas de este tamaño sin GPU sería completamente inviable. 
+
+\begin{figure}[h]
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{cpu_gpu_t.pdf}
+  \caption{}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{cpu_gpu_ratio.pdf}
+  \caption{}
+\end{subfigure}
+\caption{\textbf{(a)} Tiempo de simulación en función del tamaño del sistema $N \times N$ para las distintas implementaciones. \textbf{(b)} Aceleración 
+obtenida al usar GPU en función del tamaño del sistema $N \times N$ para las distintas implementaciones.}
+\end{figure}
+
+Finalmente, es posible que quienes estén más interiorizados con \textit{CUDA} tal vez estén sorprendidos por el carácter superficial con el que 
+usamos la GPU aquí. Es decir, cuando escribimos el \textit{kernel} no lo escribimos en \textit{CUDA C} o \textit{CUDA C++}, es algo similar, pero 
+es distinto, lo cual puede confundir un poco. Además, en ningún momento indicamos cantidad de hilos por bloque ni cantidad de bloques en la grilla. 
+Esto es, nuevamente, porque \textit{CuPy} intenta simplificar todo lo posible el uso de la GPU, para que sea accesible a usuarios sin conocimientos 
+de \textit{CUDA}. Sin embargo, \textit{CuPy} ofrece también todo el acceso al detalle, tal como podría hacerse con \textit{CUDA C} por ejemplo,
+y admite la escritura de \textit{kernels} directamente en \textit{CUDA C} a través de la función 
+\href{https://docs.cupy.dev/en/stable/user_guide/kernel.html}{\textit{cupy.RawKernel}}. En el material complementario de este capítulo, dejo la 
+implementación usando esta función que da acceso completo a \textit{CUDA}. No la agrego acá porque entiendo que no aporta demasiado, adicionalmente, no 
+pude obtener ninguna mejora notable respecto al \textit{kernel} escrito con \textit{cupy.ElementwiseKernel}.
+
+
+
+
+
+
+
+
+
+
+
