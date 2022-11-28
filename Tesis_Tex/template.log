@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.24)  28 NOV 2022 02:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.24)  28 NOV 2022 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -845,7 +845,11 @@ Underfull \vbox (badness 1917) has occurred while \output is active []
 
 
 
-]) (./cap2.tex
+]
+
+LaTeX Warning: Reference `cap:conclusiones' on page 2 undefined on input line 23.
+
+) (./cap2.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [2]
@@ -856,12 +860,12 @@ Cap\'{\i }tulo 2.
 LaTeX Info: Redefining \. on input line 54.
 LaTeX Info: Redefining \% on input line 54.
  [4]
-<figs/cap2/paper_burned.png, id=513, 813.0375pt x 623.32875pt>
+<figs/cap2/paper_burned.png, id=512, 813.0375pt x 623.32875pt>
 File: figs/cap2/paper_burned.png Graphic file (type png)
 <use figs/cap2/paper_burned.png>
 Package pdftex.def Info: figs/cap2/paper_burned.png  used on input line 57.
 (pdftex.def)             Requested size: 308.71104pt x 236.67715pt.
-<figs/cap2/bee_wave.png, id=524, 545.60864pt x 265.93568pt>
+<figs/cap2/bee_wave.png, id=523, 545.60864pt x 265.93568pt>
 File: figs/cap2/bee_wave.png Graphic file (type png)
 <use figs/cap2/bee_wave.png>
 Package pdftex.def Info: figs/cap2/bee_wave.png  used on input line 71.
@@ -869,7 +873,7 @@ Package pdftex.def Info: figs/cap2/bee_wave.png  used on input line 71.
 LaTeX Info: Redefining \. on input line 75.
 LaTeX Info: Redefining \% on input line 75.
  [5 <./figs/cap2/paper_burned.png> <./figs/cap2/bee_wave.png>]
-<figs/cap2/Bacteria.png, id=548, 639.38875pt x 500.87125pt>
+<figs/cap2/Bacteria.png, id=547, 639.38875pt x 500.87125pt>
 File: figs/cap2/Bacteria.png Graphic file (type png)
 <use figs/cap2/Bacteria.png>
 Package pdftex.def Info: figs/cap2/Bacteria.png  used on input line 85.
@@ -877,7 +881,7 @@ Package pdftex.def Info: figs/cap2/Bacteria.png  used on input line 85.
 LaTeX Info: Redefining \. on input line 99.
 LaTeX Info: Redefining \% on input line 99.
  [6 <./figs/cap2/Bacteria.png>]
-<figs/cap2/peste_eeuu.png, id=563, 573.46245pt x 359.54324pt>
+<figs/cap2/peste_eeuu.png, id=562, 573.46245pt x 359.54324pt>
 File: figs/cap2/peste_eeuu.png Graphic file (type png)
 <use figs/cap2/peste_eeuu.png>
 Package pdftex.def Info: figs/cap2/peste_eeuu.png  used on input line 103.
@@ -885,7 +889,7 @@ Package pdftex.def Info: figs/cap2/peste_eeuu.png  used on input line 103.
 LaTeX Info: Redefining \. on input line 125.
 LaTeX Info: Redefining \% on input line 125.
  [7 <./figs/cap2/peste_eeuu.png>]
-<figs/cap2/BD.png, id=575, 447.92343pt x 339.51843pt>
+<figs/cap2/BD.png, id=574, 447.92343pt x 339.51843pt>
 File: figs/cap2/BD.png Graphic file (type png)
 <use figs/cap2/BD.png>
 Package pdftex.def Info: figs/cap2/BD.png  used on input line 128.
@@ -893,7 +897,7 @@ Package pdftex.def Info: figs/cap2/BD.png  used on input line 128.
 LaTeX Info: Redefining \. on input line 148.
 LaTeX Info: Redefining \% on input line 148.
  [8 <./figs/cap2/BD.png>]
-<figs/cap2/width.pdf, id=589, 856.22069pt x 503.22192pt>
+<figs/cap2/width.pdf, id=588, 856.22069pt x 503.22192pt>
 File: figs/cap2/width.pdf Graphic file (type pdf)
 <use figs/cap2/width.pdf>
 Package pdftex.def Info: figs/cap2/width.pdf  used on input line 162.
@@ -901,12 +905,12 @@ Package pdftex.def Info: figs/cap2/width.pdf  used on input line 162.
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
  [9 <./figs/cap2/width.pdf>]
-<figs/cap2/width_L.pdf, id=633, 622.24033pt x 503.22192pt>
+<figs/cap2/width_L.pdf, id=632, 622.24033pt x 503.22192pt>
 File: figs/cap2/width_L.pdf Graphic file (type pdf)
 <use figs/cap2/width_L.pdf>
 Package pdftex.def Info: figs/cap2/width_L.pdf  used on input line 199.
 (pdftex.def)             Requested size: 242.56108pt x 196.1636pt.
-<figs/cap2/width_L_colapse.pdf, id=634, 635.23553pt x 503.22192pt>
+<figs/cap2/width_L_colapse.pdf, id=633, 635.23553pt x 503.22192pt>
 File: figs/cap2/width_L_colapse.pdf Graphic file (type pdf)
 <use figs/cap2/width_L_colapse.pdf>
 Package pdftex.def Info: figs/cap2/width_L_colapse.pdf  used on input line 204.
@@ -925,17 +929,17 @@ LaTeX Info: Redefining \% on input line 219.
 LaTeX Info: Redefining \. on input line 255.
 LaTeX Info: Redefining \% on input line 255.
  [11]
-<figs/cap2/self_aff.png, id=715, 660.90915pt x 325.215pt>
+<figs/cap2/self_aff.png, id=714, 660.90915pt x 325.215pt>
 File: figs/cap2/self_aff.png Graphic file (type png)
 <use figs/cap2/self_aff.png>
 Package pdftex.def Info: figs/cap2/self_aff.png  used on input line 274.
 (pdftex.def)             Requested size: 308.71104pt x 151.90822pt.
-<figs/cap2/Sq.pdf, id=716, 632.121pt x 616.46246pt>
+<figs/cap2/Sq.pdf, id=715, 632.121pt x 616.46246pt>
 File: figs/cap2/Sq.pdf Graphic file (type pdf)
 <use figs/cap2/Sq.pdf>
 Package pdftex.def Info: figs/cap2/Sq.pdf  used on input line 283.
 (pdftex.def)             Requested size: 242.56108pt x 236.55334pt.
-<figs/cap2/Sq_colapse.pdf, id=717, 636.77902pt x 620.11674pt>
+<figs/cap2/Sq_colapse.pdf, id=716, 636.77902pt x 620.11674pt>
 File: figs/cap2/Sq_colapse.pdf Graphic file (type pdf)
 <use figs/cap2/Sq_colapse.pdf>
 Package pdftex.def Info: figs/cap2/Sq_colapse.pdf  used on input line 288.
@@ -954,12 +958,12 @@ LaTeX Info: Redefining \% on input line 320.
 LaTeX Info: Redefining \. on input line 335.
 LaTeX Info: Redefining \% on input line 335.
  [14 <./figs/cap2/Sq.pdf> <./figs/cap2/Sq_colapse.pdf>]
-<figs/cap2/diffusive_term.png, id=834, 606.265pt x 580.1675pt>
+<figs/cap2/diffusive_term.png, id=833, 606.265pt x 580.1675pt>
 File: figs/cap2/diffusive_term.png Graphic file (type png)
 <use figs/cap2/diffusive_term.png>
 Package pdftex.def Info: figs/cap2/diffusive_term.png  used on input line 349.
 (pdftex.def)             Requested size: 242.56108pt x 232.12485pt.
-<figs/cap2/non_linear_term.png, id=835, 898.35625pt x 840.13875pt>
+<figs/cap2/non_linear_term.png, id=834, 898.35625pt x 840.13875pt>
 File: figs/cap2/non_linear_term.png Graphic file (type png)
 <use figs/cap2/non_linear_term.png>
 Package pdftex.def Info: figs/cap2/non_linear_term.png  used on input line 354.
@@ -979,7 +983,7 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [16]
 Cap\'{\i }tulo 3.
-<figs/cap3/Black_Death.png, id=859, 1213.53375pt x 867.24pt>
+<figs/cap3/Black_Death.png, id=858, 1213.53375pt x 867.24pt>
 File: figs/cap3/Black_Death.png Graphic file (type png)
 <use figs/cap3/Black_Death.png>
 Package pdftex.def Info: figs/cap3/Black_Death.png  used on input line 26.
@@ -995,7 +999,7 @@ LaTeX Info: Redefining \% on input line 46.
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
  [19]
-<figs/cap3/SIR.pdf, id=905, 506.03427pt x 323.15105pt>
+<figs/cap3/SIR.pdf, id=904, 506.03427pt x 323.15105pt>
 File: figs/cap3/SIR.pdf Graphic file (type pdf)
 <use figs/cap3/SIR.pdf>
 Package pdftex.def Info: figs/cap3/SIR.pdf  used on input line 112.
@@ -1003,7 +1007,7 @@ Package pdftex.def Info: figs/cap3/SIR.pdf  used on input line 112.
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
  [20]
-<figs/cap3/SIR_R.png, id=918, 989.66537pt x 398.9304pt>
+<figs/cap3/SIR_R.png, id=917, 989.66537pt x 398.9304pt>
 File: figs/cap3/SIR_R.png Graphic file (type png)
 <use figs/cap3/SIR_R.png>
 Package pdftex.def Info: figs/cap3/SIR_R.png  used on input line 141.
@@ -1052,12 +1056,12 @@ LaTeX Info: Redefining \% on input line 387.
 LaTeX Info: Redefining \. on input line 423.
 LaTeX Info: Redefining \% on input line 423.
  [30]
-<figs/cap3/heterogeneidad_dicot_aleatoria.pdf, id=1088, 841.44362pt x 232.88712pt>
+<figs/cap3/heterogeneidad_dicot_aleatoria.pdf, id=1087, 841.44362pt x 232.88712pt>
 File: figs/cap3/heterogeneidad_dicot_aleatoria.pdf Graphic file (type pdf)
 <use figs/cap3/heterogeneidad_dicot_aleatoria.pdf>
 Package pdftex.def Info: figs/cap3/heterogeneidad_dicot_aleatoria.pdf  used on input line 429.
 (pdftex.def)             Requested size: 441.01772pt x 122.06145pt.
-<figs/cap3/smoth_step.pdf, id=1091, 656.65326pt x 293.63339pt>
+<figs/cap3/smoth_step.pdf, id=1090, 656.65326pt x 293.63339pt>
 File: figs/cap3/smoth_step.pdf Graphic file (type pdf)
 <use figs/cap3/smoth_step.pdf>
 Package pdftex.def Info: figs/cap3/smoth_step.pdf  used on input line 453.
@@ -1065,12 +1069,12 @@ Package pdftex.def Info: figs/cap3/smoth_step.pdf  used on input line 453.
 LaTeX Info: Redefining \. on input line 462.
 LaTeX Info: Redefining \% on input line 462.
  [31 <./figs/cap3/heterogeneidad_dicot_aleatoria.pdf>]
-<figs/cap3/het_suav.pdf, id=1148, 877.07674pt x 232.88712pt>
+<figs/cap3/het_suav.pdf, id=1147, 877.07674pt x 232.88712pt>
 File: figs/cap3/het_suav.pdf Graphic file (type pdf)
 <use figs/cap3/het_suav.pdf>
 Package pdftex.def Info: figs/cap3/het_suav.pdf  used on input line 465.
 (pdftex.def)             Requested size: 396.91324pt x 105.39166pt.
-<figs/cap3/nsmoth_step.pdf, id=1149, 891.15558pt x 232.88712pt>
+<figs/cap3/nsmoth_step.pdf, id=1148, 891.15558pt x 232.88712pt>
 File: figs/cap3/nsmoth_step.pdf Graphic file (type pdf)
 <use figs/cap3/nsmoth_step.pdf>
 Package pdftex.def Info: figs/cap3/nsmoth_step.pdf  used on input line 471.
@@ -1087,12 +1091,12 @@ pdfTeX warning: pdflatex (file ./figs/cap3/het_suav.pdf): PDF inclusion: multipl
 
 pdfTeX warning: pdflatex (file ./figs/cap3/nsmoth_step.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figs/cap3/het_suav_dico.pdf, id=1283, 853.61407pt x 245.05757pt>
+<figs/cap3/het_suav_dico.pdf, id=1282, 853.61407pt x 245.05757pt>
 File: figs/cap3/het_suav_dico.pdf Graphic file (type pdf)
 <use figs/cap3/het_suav_dico.pdf>
 Package pdftex.def Info: figs/cap3/het_suav_dico.pdf  used on input line 505.
 (pdftex.def)             Requested size: 396.91324pt x 113.94684pt.
-<figs/cap3/nsmoth_dic_step.pdf, id=1284, 856.6203pt x 232.88712pt>
+<figs/cap3/nsmoth_dic_step.pdf, id=1283, 856.6203pt x 232.88712pt>
 File: figs/cap3/nsmoth_dic_step.pdf Graphic file (type pdf)
 <use figs/cap3/nsmoth_dic_step.pdf>
 Package pdftex.def Info: figs/cap3/nsmoth_dic_step.pdf  used on input line 511.
@@ -1145,12 +1149,12 @@ LaTeX Info: Redefining \% on input line 429.
 LaTeX Info: Redefining \. on input line 474.
 LaTeX Info: Redefining \% on input line 474.
  [45]
-<figs/cap4/cpuvsgpu.pdf, id=1709, 636.29283pt x 613.09048pt>
+<figs/cap4/cpuvsgpu.pdf, id=1708, 636.29283pt x 613.09048pt>
 File: figs/cap4/cpuvsgpu.pdf Graphic file (type pdf)
 <use figs/cap4/cpuvsgpu.pdf>
 Package pdftex.def Info: figs/cap4/cpuvsgpu.pdf  used on input line 480.
 (pdftex.def)             Requested size: 264.61331pt x 254.96103pt.
-<figs/cap4/cpuvsgpu_ratio.pdf, id=1710, 627.25908pt x 613.09048pt>
+<figs/cap4/cpuvsgpu_ratio.pdf, id=1709, 627.25908pt x 613.09048pt>
 File: figs/cap4/cpuvsgpu_ratio.pdf Graphic file (type pdf)
 <use figs/cap4/cpuvsgpu_ratio.pdf>
 Package pdftex.def Info: figs/cap4/cpuvsgpu_ratio.pdf  used on input line 485.
@@ -1168,17 +1172,17 @@ Cap\'{\i }tulo 5.
 [47
 
 ]
-<figs/cap5/h_case.pdf, id=1843, 893.26558pt x 378.09505pt>
+<figs/cap5/h_case.pdf, id=1842, 893.26558pt x 378.09505pt>
 File: figs/cap5/h_case.pdf Graphic file (type pdf)
 <use figs/cap5/h_case.pdf>
 Package pdftex.def Info: figs/cap5/h_case.pdf  used on input line 45.
 (pdftex.def)             Requested size: 383.68326pt x 162.40462pt.
-<figs/cap5/f_I(x)_hom.pdf, id=1844, 611.59117pt x 294.25996pt>
+<figs/cap5/f_I(x)_hom.pdf, id=1843, 611.59117pt x 294.25996pt>
 File: figs/cap5/f_I(x)_hom.pdf Graphic file (type pdf)
 <use figs/cap5/f_I(x)_hom.pdf>
 Package pdftex.def Info: figs/cap5/f_I(x)_hom.pdf  used on input line 50.
 (pdftex.def)             Requested size: 383.68326pt x 184.61246pt.
-<figs/cap5/u_cm(t).pdf, id=1845, 633.56389pt x 300.09427pt>
+<figs/cap5/u_cm(t).pdf, id=1844, 633.56389pt x 300.09427pt>
 File: figs/cap5/u_cm(t).pdf Graphic file (type pdf)
 <use figs/cap5/u_cm(t).pdf>
 Package pdftex.def Info: figs/cap5/u_cm(t).pdf  used on input line 55.
@@ -1199,12 +1203,12 @@ LaTeX Info: Redefining \% on input line 76.
 
 pdfTeX warning: pdflatex (file ./figs/cap5/u_cm(t).pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figs/cap5/da_case.pdf, id=1986, 893.26558pt x 378.09505pt>
+<figs/cap5/da_case.pdf, id=1985, 893.26558pt x 378.09505pt>
 File: figs/cap5/da_case.pdf Graphic file (type pdf)
 <use figs/cap5/da_case.pdf>
 Package pdftex.def Info: figs/cap5/da_case.pdf  used on input line 81.
 (pdftex.def)             Requested size: 396.91324pt x 168.0008pt.
-<figs/cap5/cc.png, id=1987, 925.4575pt x 503.8825pt>
+<figs/cap5/cc.png, id=1986, 925.4575pt x 503.8825pt>
 File: figs/cap5/cc.png Graphic file (type png)
 <use figs/cap5/cc.png>
 Package pdftex.def Info: figs/cap5/cc.png  used on input line 97.
@@ -1222,7 +1226,7 @@ Underfull \vbox (badness 2042) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 149.
 LaTeX Info: Redefining \% on input line 149.
  [52]
-<figs/cap5/amplitud_p.pdf, id=2044, 867.24pt x 433.62pt>
+<figs/cap5/amplitud_p.pdf, id=2043, 867.24pt x 433.62pt>
 File: figs/cap5/amplitud_p.pdf Graphic file (type pdf)
 <use figs/cap5/amplitud_p.pdf>
 Package pdftex.def Info: figs/cap5/amplitud_p.pdf  used on input line 164.
@@ -1233,7 +1237,7 @@ LaTeX Info: Redefining \% on input line 171.
 LaTeX Info: Redefining \. on input line 199.
 LaTeX Info: Redefining \% on input line 199.
  [54]
-<figs/cap5/c_all.pdf, id=2108, 625.07907pt x 301.61557pt>
+<figs/cap5/c_all.pdf, id=2107, 625.07907pt x 301.61557pt>
 File: figs/cap5/c_all.pdf Graphic file (type pdf)
 <use figs/cap5/c_all.pdf>
 Package pdftex.def Info: figs/cap5/c_all.pdf  used on input line 220.
@@ -1241,12 +1245,12 @@ Package pdftex.def Info: figs/cap5/c_all.pdf  used on input line 220.
 LaTeX Info: Redefining \. on input line 232.
 LaTeX Info: Redefining \% on input line 232.
  [55]
-<figs/cap5/beta_al_zoom.pdf, id=2118, 608.09367pt x 283.56439pt>
+<figs/cap5/beta_al_zoom.pdf, id=2117, 608.09367pt x 283.56439pt>
 File: figs/cap5/beta_al_zoom.pdf Graphic file (type pdf)
 <use figs/cap5/beta_al_zoom.pdf>
 Package pdftex.def Info: figs/cap5/beta_al_zoom.pdf  used on input line 235.
 (pdftex.def)             Requested size: 308.71104pt x 143.96257pt.
-<figs/cap5/beta_dic_zoom.pdf, id=2119, 608.09367pt x 283.56439pt>
+<figs/cap5/beta_dic_zoom.pdf, id=2118, 608.09367pt x 283.56439pt>
 File: figs/cap5/beta_dic_zoom.pdf Graphic file (type pdf)
 <use figs/cap5/beta_dic_zoom.pdf>
 Package pdftex.def Info: figs/cap5/beta_dic_zoom.pdf  used on input line 242.
@@ -1254,7 +1258,7 @@ Package pdftex.def Info: figs/cap5/beta_dic_zoom.pdf  used on input line 242.
 LaTeX Info: Redefining \. on input line 269.
 LaTeX Info: Redefining \% on input line 269.
  [56 <./figs/cap5/c_all.pdf>]
-<figs/cap5/I_max.png, id=2180, 1078.0275pt x 530.98375pt>
+<figs/cap5/I_max.png, id=2179, 1078.0275pt x 530.98375pt>
 File: figs/cap5/I_max.png Graphic file (type png)
 <use figs/cap5/I_max.png>
 Package pdftex.def Info: figs/cap5/I_max.png  used on input line 274.
@@ -1272,7 +1276,7 @@ pdfTeX warning: pdflatex (file ./figs/cap5/beta_dic_zoom.pdf): PDF inclusion: mu
 LaTeX Info: Redefining \. on input line 298.
 LaTeX Info: Redefining \% on input line 298.
  [58 <./figs/cap5/I_max.png>]
-<figs/cap5/S1_all.png, id=2244, 1078.0275pt x 530.98375pt>
+<figs/cap5/S1_all.png, id=2243, 1078.0275pt x 530.98375pt>
 File: figs/cap5/S1_all.png Graphic file (type png)
 <use figs/cap5/S1_all.png>
 Package pdftex.def Info: figs/cap5/S1_all.png  used on input line 301.
@@ -1290,12 +1294,12 @@ Cap\'{\i }tulo 6.
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
  [62]
-<figs/cap6/omegas.pdf, id=2274, 726.6209pt x 449.51878pt>
+<figs/cap6/omegas.pdf, id=2277, 726.6209pt x 449.51878pt>
 File: figs/cap6/omegas.pdf Graphic file (type pdf)
 <use figs/cap6/omegas.pdf>
 Package pdftex.def Info: figs/cap6/omegas.pdf  used on input line 61.
 (pdftex.def)             Requested size: 396.91324pt x 245.5556pt.
-<figs/cap6/omega1_Ls.pdf, id=2275, 839.2824pt x 616.46246pt>
+<figs/cap6/omega1_Ls.pdf, id=2278, 839.2824pt x 616.46246pt>
 File: figs/cap6/omega1_Ls.pdf Graphic file (type pdf)
 <use figs/cap6/omega1_Ls.pdf>
 Package pdftex.def Info: figs/cap6/omega1_Ls.pdf  used on input line 71.
@@ -1309,12 +1313,12 @@ LaTeX Info: Redefining \% on input line 74.
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
  [64 <./figs/cap6/omega1_Ls.pdf>]
-<figs/cap6/omegavsL.pdf, id=2357, 503.22691pt x 507.81721pt>
+<figs/cap6/omegavsL.pdf, id=2360, 503.22691pt x 507.81721pt>
 File: figs/cap6/omegavsL.pdf Graphic file (type pdf)
 <use figs/cap6/omegavsL.pdf>
 Package pdftex.def Info: figs/cap6/omegavsL.pdf  used on input line 98.
 (pdftex.def)             Requested size: 251.38332pt x 253.67552pt.
-<figs/cap6/txvsL.pdf, id=2358, 520.10246pt x 507.81721pt>
+<figs/cap6/txvsL.pdf, id=2361, 520.10246pt x 507.81721pt>
 File: figs/cap6/txvsL.pdf Graphic file (type pdf)
 <use figs/cap6/txvsL.pdf>
 Package pdftex.def Info: figs/cap6/txvsL.pdf  used on input line 103.
@@ -1330,7 +1334,7 @@ Underfull \vbox (badness 3568) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 127.
 LaTeX Info: Redefining \% on input line 127.
  [65 <./figs/cap6/omegavsL.pdf> <./figs/cap6/txvsL.pdf>]
-<figs/cap6/colapse.pdf, id=2425, 766.59378pt x 510.82846pt>
+<figs/cap6/colapse.pdf, id=2428, 766.59378pt x 510.82846pt>
 File: figs/cap6/colapse.pdf Graphic file (type pdf)
 <use figs/cap6/colapse.pdf>
 Package pdftex.def Info: figs/cap6/colapse.pdf  used on input line 132.
@@ -1341,12 +1345,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 141.
 LaTeX Info: Redefining \% on input line 141.
  [66 <./figs/cap6/colapse.pdf>]
-<figs/cap6/tilted_velocity.pdf, id=2470, 508.9671pt x 499.81859pt>
+<figs/cap6/tilted_velocity.pdf, id=2474, 508.9671pt x 499.81859pt>
 File: figs/cap6/tilted_velocity.pdf Graphic file (type pdf)
 <use figs/cap6/tilted_velocity.pdf>
 Package pdftex.def Info: figs/cap6/tilted_velocity.pdf  used on input line 165.
 (pdftex.def)             Requested size: 242.56108pt x 238.20183pt.
-<figs/cap6/lambdavsc.pdf, id=2471, 515.35033pt x 499.81859pt>
+<figs/cap6/lambdavsc.pdf, id=2475, 515.35033pt x 499.81859pt>
 File: figs/cap6/lambdavsc.pdf Graphic file (type pdf)
 <use figs/cap6/lambdavsc.pdf>
 Package pdftex.def Info: figs/cap6/lambdavsc.pdf  used on input line 170.
@@ -1370,7 +1374,7 @@ Underfull \vbox (badness 1112) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 193.
 LaTeX Info: Redefining \% on input line 193.
  [68 <./figs/cap6/tilted_velocity.pdf> <./figs/cap6/lambdavsc.pdf>]
-<figs/cap6/Sq_t.pdf, id=2557, 763.35187pt x 524.81819pt>
+<figs/cap6/Sq_t.pdf, id=2562, 763.35187pt x 524.81819pt>
 File: figs/cap6/Sq_t.pdf Graphic file (type pdf)
 <use figs/cap6/Sq_t.pdf>
 Package pdftex.def Info: figs/cap6/Sq_t.pdf  used on input line 196.
@@ -1381,12 +1385,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 208.
 LaTeX Info: Redefining \% on input line 208.
  [69 <./figs/cap6/Sq_t.pdf>]
-<figs/cap6/Sq_est.pdf, id=2609, 539.31487pt x 524.81819pt>
+<figs/cap6/Sq_est.pdf, id=2614, 539.31487pt x 524.81819pt>
 File: figs/cap6/Sq_est.pdf Graphic file (type pdf)
 <use figs/cap6/Sq_est.pdf>
 Package pdftex.def Info: figs/cap6/Sq_est.pdf  used on input line 213.
 (pdftex.def)             Requested size: 242.56108pt x 236.03787pt.
-<figs/cap6/Sq_sat.pdf, id=2610, 524.76048pt x 505.16669pt>
+<figs/cap6/Sq_sat.pdf, id=2615, 524.76048pt x 505.16669pt>
 File: figs/cap6/Sq_sat.pdf Graphic file (type pdf)
 <use figs/cap6/Sq_sat.pdf>
 Package pdftex.def Info: figs/cap6/Sq_sat.pdf  used on input line 218.
@@ -1402,7 +1406,7 @@ Underfull \vbox (badness 3514) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 236.
 LaTeX Info: Redefining \% on input line 236.
  [70 <./figs/cap6/Sq_est.pdf> <./figs/cap6/Sq_sat.pdf>]
-<figs/cap6/Sq_colapse.pdf, id=2695, 758.835pt x 453.17307pt>
+<figs/cap6/Sq_colapse.pdf, id=2700, 758.835pt x 453.17307pt>
 File: figs/cap6/Sq_colapse.pdf Graphic file (type pdf)
 <use figs/cap6/Sq_colapse.pdf>
 Package pdftex.def Info: figs/cap6/Sq_colapse.pdf  used on input line 239.
@@ -1424,15 +1428,19 @@ LaTeX Info: Redefining \% on input line 179.
  [76]
 LaTeX Info: Redefining \. on input line 267.
 LaTeX Info: Redefining \% on input line 267.
- [77])
+ [77]
+LaTeX Info: Redefining \. on input line 363.
+LaTeX Info: Redefining \% on input line 363.
+ [78])
 LaTeX Info: Redefining \. on input line 152.
 LaTeX Info: Redefining \% on input line 152.
- [78] [79
+ [79] [80
+
+] [81
 
 
 
-
-] [80
+] [82
 
 ] (./template.aux
 LaTeX Info: Redefining \. on input line 26.
@@ -1442,24 +1450,27 @@ LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ))
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 623DB488B5DFFBFCCDD1C08BF20160C2;8001.
  ) 
 Here is how much of TeX's memory you used:
- 21023 strings out of 478287
- 333667 string characters out of 5849288
- 1221512 words of memory out of 5000000
- 38192 multiletter control sequences out of 15000+600000
+ 21038 strings out of 478287
+ 333972 string characters out of 5849288
+ 1221598 words of memory out of 5000000
+ 38202 multiletter control sequences out of 15000+600000
  505965 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,20n,120p,1766b,2164s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 125i,20n,120p,1799b,2164s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on template.pdf (98 pages, 18256873 bytes).
+Output written on template.pdf (100 pages, 18259428 bytes).
 PDF statistics:
- 3168 PDF objects out of 3580 (max. 8388607)
- 1964 compressed objects within 20 object streams
- 561 named destinations out of 1000 (max. 500000)
+ 3192 PDF objects out of 3580 (max. 8388607)
+ 1986 compressed objects within 20 object streams
+ 566 named destinations out of 1000 (max. 500000)
  575 words of extra memory for PDF output out of 10000 (max. 10000000)
 

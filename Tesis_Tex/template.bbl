@@ -338,4 +338,26 @@ Lattner, C., Adve, V.
   Compilation Framework for Lifelong Program Analysis and Transformation}.
 \newblock p\'ags. 75--88. San Jose, CA, USA, 2004.
 
+\bibitem{kertesz1988noise}
+Kertesz, J., Wolf, D.~E.
+\newblock
+  \href{https://iopscience.iop.org/article/10.1088/0305-4470/21/3/030/meta}{Noise
+  reduction in Eden models: II. Surface structure and intrinsic width}.
+\newblock \emph{Journal of Physics A: Mathematical and General},
+  \textbf{21}~(3), 747, 1988.
+
+\bibitem{wolf1987surface}
+Wolf, D., Kertesz, J.
+\newblock
+  \href{https://iopscience.iop.org/article/10.1209/0295-5075/4/6/003/meta}{Surface
+  width exponents for three-and four-dimensional eden growth}.
+\newblock \emph{EPL (Europhysics Letters)}, \textbf{4}~(6), 651, 1987.
+
+\bibitem{krug1990mechanism}
+Krug, J., Spohn, H.
+\newblock
+  \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.64.2332}{Mechanism
+  for rough-to-rough transitions in surface growth}.
+\newblock \emph{Physical review letters}, \textbf{64}~(19), 2332, 1990.
+
 \end{thebibliography}
