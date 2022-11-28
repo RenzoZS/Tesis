@@ -6,48 +6,49 @@ A level-1 auxiliary file: resumen.aux
 Database file #1: mibib.bib
 Warning--string name "cgo" is undefined
 --line 227 of file mibib.bib
+Warning--empty booktitle in Jullien1992SurfaceD
+Warning--empty journal in mate_sist_bio
 Warning--empty booktitle in keeling:infectious_diseases
-Warning--empty booktitle in Recipes
 Warning--empty booktitle in LLVM
-You've used 25 entries,
+You've used 48 entries,
             2634 wiz_defined-function locations,
-            1199 strings with 15385 characters,
-and the built_in function-call counts, 8934 in all, are:
-= -- 595
-> -- 284
+            1340 strings with 21237 characters,
+and the built_in function-call counts, 17576 in all, are:
+= -- 1151
+> -- 620
 < -- 6
-+ -- 142
-- -- 71
-* -- 465
-:= -- 980
-add.period$ -- 80
-call.type$ -- 25
-change.case$ -- 25
++ -- 310
+- -- 155
+* -- 958
+:= -- 1949
+add.period$ -- 148
+call.type$ -- 48
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 869
-empty$ -- 925
-format.name$ -- 90
-if$ -- 1997
+cite$ -- 52
+duplicate$ -- 1734
+empty$ -- 1751
+format.name$ -- 193
+if$ -- 3838
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 254
-newline$ -- 130
-num.names$ -- 25
-pop$ -- 412
+int.to.str$ -- 48
+missing$ -- 511
+newline$ -- 245
+num.names$ -- 48
+pop$ -- 787
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 229
+skip$ -- 415
 stack$ -- 0
-substring$ -- 341
-swap$ -- 581
+substring$ -- 695
+swap$ -- 1191
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 52
-width$ -- 27
-write$ -- 266
-(There were 4 warnings)
+warning$ -- 4
+while$ -- 105
+width$ -- 50
+write$ -- 512
+(There were 5 warnings)

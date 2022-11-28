@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.24)  3 NOV 2022 20:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.24)  28 NOV 2022 02:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -10,8 +10,8 @@ L3 programming layer <2022-01-21> (./ibtesis.cls
 Document Class: ibtesis 2010/10/25 v0.8 (a4 paper) IB - UnCuyo
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@chapter=\count186
@@ -255,23 +255,9 @@ Package hyperref Info: Hyper figures OFF on input line 4192.
 Package hyperref Info: Link nesting OFF on input line 4197.
 Package hyperref Info: Hyper index ON on input line 4200.
 Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing ON on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
-Package: backref 2021/02/04 v1.41 Bibliographical back referencing
- (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
- (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
-with kernel methods
-) (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
-))
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
-))
 \c@Hy@tempcnt=\count288
  (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -281,14 +267,16 @@ LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen169
  (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
 \Fld@menulength=\count289
 \Field@Width=\dimen170
 \Fld@charsize=\dimen171
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
-Package hyperref Info: backreferencing ON on input line 6089.
+Package hyperref Info: backreferencing OFF on input line 6091.
 Package hyperref Info: Link coloring OFF on input line 6096.
 Package hyperref Info: Link coloring with OCG OFF on input line 6101.
 Package hyperref Info: PDF/A mode OFF on input line 6106.
@@ -305,12 +293,23 @@ package with kernel methods
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
 \Fld@listcount=\count293
 \c@bookmark@seq@number=\count294
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
 \Hy@SectionHShift=\skip64
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 79.
-LaTeX Info: Redefining \es@scroman on input line 93.
+Package hyperref Info: Option `colorlinks' set `true' on input line 78.
+LaTeX Info: Redefining \es@scroman on input line 92.
 \imsizeL=\skip65
 \imsize=\skip66
 \imsizeS=\skip67
@@ -576,12 +575,24 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen257
+\WF@size=\dimen258
+\c@WF@wrappedlines=\count334
+\WF@box=\box103
+\WF@everypar=\toks36
+Package: wrapfig 2003/01/31  v 3.6
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
- (./template.aux
+
+
+LaTeX Warning: Unused global option(s):
+    [12pt,twoside].
+
+(./template.aux
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
  (./resumen.aux
@@ -591,50 +602,63 @@ LaTeX Info: Redefining \% on input line 6.
 
 LaTeX Warning: Label `lst:cupy' multiply defined.
 
+
+LaTeX Warning: Label `Seqdif' multiply defined.
+
+
+LaTeX Warning: Label `Ieqdif' multiply defined.
+
+
+LaTeX Warning: Label `Seqdif' multiply defined.
+
+
+LaTeX Warning: Label `Ieqdif' multiply defined.
+
 )
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen257
-\caption@adjustwidth@linewidth=\dimen258
+\caption@adjustwidth@hsize=\dimen259
+\caption@adjustwidth@linewidth=\dimen260
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count334
-\scratchdimen=\dimen259
-\scratchbox=\box103
-\nofMPsegments=\count335
-\nofMParguments=\count336
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count337
-\MPscratchDim=\dimen260
-\MPnumerator=\count338
-\makeMPintoPDFobject=\count339
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count335
+\scratchdimen=\dimen261
+\scratchbox=\box104
+\nofMPsegments=\count336
+\nofMParguments=\count337
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count338
+\MPscratchDim=\dimen262
+\MPnumerator=\count339
+\makeMPintoPDFobject=\count340
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -649,25 +673,24 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * hratio: 1:1
-* vratio: 1:1
 * modes: includefoot twoside 
-* h-part:(L,W,R)=(45.52441pt, 506.45905pt, 45.52441pt)
-* v-part:(T,H,B)=(71.13188pt, 745.4622pt, 28.45276pt)
+* h-part:(L,W,R)=(78.24507pt, 441.01772pt, 78.24509pt)
+* v-part:(T,H,B)=(85.35826pt, 728.39055pt, 31.29803pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=506.45905pt
-* \textheight=720.16727pt
-* \oddsidemargin=-26.74557pt
-* \evensidemargin=-26.74557pt
-* \topmargin=-31.2056pt
+* \textwidth=441.01772pt
+* \textheight=698.39055pt
+* \oddsidemargin=5.97508pt
+* \evensidemargin=5.9751pt
+* \topmargin=-18.78552pt
 * \headheight=15.6pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -677,7 +700,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 79.
+Package hyperref Info: Link coloring ON on input line 81.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -685,30 +708,29 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count340
+\c@section@level=\count341
 )
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 81.
+LaTeX Info: Redefining \pageref on input line 81.
+LaTeX Info: Redefining \nameref on input line 81.
  (./template.out) (./template.out)
 \@outlinefile=\write4
 \openout4 = `template.out'.
 
-Package backref Info: ** backref set up for natbib ** on input line 79.
-\c@lstlisting=\count341
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 84.
+\c@lstlisting=\count342
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 86.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 84.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 86.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
@@ -717,34 +739,56 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
+] [3] [4
+
 ] (./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
-)
+ [5
+
+
+])
 \tf@toc=\write5
 \openout5 = `template.toc'.
 
- [3
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 99.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 100--127
+
+ []
+
+[7
 
 
-
-] [4
-
+] [8
 
 ] (./template.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
-)
+ [9
+
+
+]
+Underfull \vbox (badness 1852) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
+ [10])
 \tf@lof=\write6
 \openout6 = `template.lof'.
 
- [5
-
-
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
+ [11] [12
 
 ] (./template.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -755,184 +799,640 @@ LaTeX Info: Redefining \% on input line 3.
 \tf@lot=\write7
 \openout7 = `template.lot'.
 
- [6
-
+ [13
 
 ]
 \openout2 = `resumen.aux'.
 
- (./resumen.tex [7
+ (./resumen.tex [14
 
 
+] [15
 
-]
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
- [8
-
-
+] [16
 
 ]
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+
+Overfull \hbox (11.8425pt too wide) in paragraph at lines 29--29
+\T1/cmr/bx/n/12 Keywords: \T1/cmr/m/n/12 DY-NAMIC SYS-TEMS, DIS-OR-DERED ME-DIA, REACTION-DIFFUSION
+ []
+
+
+Overfull \hbox (0.355pt too wide) in paragraph at lines 29--29
+\T1/cmr/m/n/12 EQUA-TIONS, SIR MODEL, EPI-DEMI-OL-OGY, SELF-AFFINITY, SCAL-ING LAWS,
+ []
+
+[17
+
+
+] [18
+
+]
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 ) (./cap1.tex
 Cap\'{\i }tulo 1.
 
-LaTeX Warning: Reference `Modelo teÃ³rico' on page 1 undefined on input line 18.
+Underfull \vbox (badness 1917) has occurred while \output is active []
 
-[1
-
-
+ [1
 \babel@aux{english}{}
 \babel@aux{spanish}{}
 
 
 
 
+
 ]) (./cap2.tex
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [2]
 Cap\'{\i }tulo 2.
-<figs/cap2/Black_Death.png, id=215, 1213.53375pt x 867.24pt>
-File: figs/cap2/Black_Death.png Graphic file (type png)
-<use figs/cap2/Black_Death.png>
-Package pdftex.def Info: figs/cap2/Black_Death.png  used on input line 22.
-(pdftex.def)             Requested size: 455.81004pt x 325.74353pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [3
+
+]
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
+ [4]
+<figs/cap2/paper_burned.png, id=513, 813.0375pt x 623.32875pt>
+File: figs/cap2/paper_burned.png Graphic file (type png)
+<use figs/cap2/paper_burned.png>
+Package pdftex.def Info: figs/cap2/paper_burned.png  used on input line 57.
+(pdftex.def)             Requested size: 308.71104pt x 236.67715pt.
+<figs/cap2/bee_wave.png, id=524, 545.60864pt x 265.93568pt>
+File: figs/cap2/bee_wave.png Graphic file (type png)
+<use figs/cap2/bee_wave.png>
+Package pdftex.def Info: figs/cap2/bee_wave.png  used on input line 71.
+(pdftex.def)             Requested size: 343.99327pt x 167.67021pt.
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
+ [5 <./figs/cap2/paper_burned.png> <./figs/cap2/bee_wave.png>]
+<figs/cap2/Bacteria.png, id=548, 639.38875pt x 500.87125pt>
+File: figs/cap2/Bacteria.png Graphic file (type png)
+<use figs/cap2/Bacteria.png>
+Package pdftex.def Info: figs/cap2/Bacteria.png  used on input line 85.
+(pdftex.def)             Requested size: 220.50885pt x 172.73961pt.
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+ [6 <./figs/cap2/Bacteria.png>]
+<figs/cap2/peste_eeuu.png, id=563, 573.46245pt x 359.54324pt>
+File: figs/cap2/peste_eeuu.png Graphic file (type png)
+<use figs/cap2/peste_eeuu.png>
+Package pdftex.def Info: figs/cap2/peste_eeuu.png  used on input line 103.
+(pdftex.def)             Requested size: 396.91324pt x 248.85864pt.
+LaTeX Info: Redefining \. on input line 125.
+LaTeX Info: Redefining \% on input line 125.
+ [7 <./figs/cap2/peste_eeuu.png>]
+<figs/cap2/BD.png, id=575, 447.92343pt x 339.51843pt>
+File: figs/cap2/BD.png Graphic file (type png)
+<use figs/cap2/BD.png>
+Package pdftex.def Info: figs/cap2/BD.png  used on input line 128.
+(pdftex.def)             Requested size: 308.71104pt x 234.00375pt.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
+ [8 <./figs/cap2/BD.png>]
+<figs/cap2/width.pdf, id=589, 856.22069pt x 503.22192pt>
+File: figs/cap2/width.pdf Graphic file (type pdf)
+<use figs/cap2/width.pdf>
+Package pdftex.def Info: figs/cap2/width.pdf  used on input line 162.
+(pdftex.def)             Requested size: 396.91324pt x 233.28166pt.
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+ [9 <./figs/cap2/width.pdf>]
+<figs/cap2/width_L.pdf, id=633, 622.24033pt x 503.22192pt>
+File: figs/cap2/width_L.pdf Graphic file (type pdf)
+<use figs/cap2/width_L.pdf>
+Package pdftex.def Info: figs/cap2/width_L.pdf  used on input line 199.
+(pdftex.def)             Requested size: 242.56108pt x 196.1636pt.
+<figs/cap2/width_L_colapse.pdf, id=634, 635.23553pt x 503.22192pt>
+File: figs/cap2/width_L_colapse.pdf Graphic file (type pdf)
+<use figs/cap2/width_L_colapse.pdf>
+Package pdftex.def Info: figs/cap2/width_L_colapse.pdf  used on input line 204.
+(pdftex.def)             Requested size: 242.56108pt x 192.15541pt.
+
+Overfull \hbox (20.87268pt too wide) in paragraph at lines 196--207
+[]|  $[]$ $[]$ 
+ []
+
+
+Underfull \vbox (badness 1983) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 219.
+LaTeX Info: Redefining \% on input line 219.
+ [10 <./figs/cap2/width_L.pdf> <./figs/cap2/width_L_colapse.pdf>]
+LaTeX Info: Redefining \. on input line 255.
+LaTeX Info: Redefining \% on input line 255.
+ [11]
+<figs/cap2/self_aff.png, id=715, 660.90915pt x 325.215pt>
+File: figs/cap2/self_aff.png Graphic file (type png)
+<use figs/cap2/self_aff.png>
+Package pdftex.def Info: figs/cap2/self_aff.png  used on input line 274.
+(pdftex.def)             Requested size: 308.71104pt x 151.90822pt.
+<figs/cap2/Sq.pdf, id=716, 632.121pt x 616.46246pt>
+File: figs/cap2/Sq.pdf Graphic file (type pdf)
+<use figs/cap2/Sq.pdf>
+Package pdftex.def Info: figs/cap2/Sq.pdf  used on input line 283.
+(pdftex.def)             Requested size: 242.56108pt x 236.55334pt.
+<figs/cap2/Sq_colapse.pdf, id=717, 636.77902pt x 620.11674pt>
+File: figs/cap2/Sq_colapse.pdf Graphic file (type pdf)
+<use figs/cap2/Sq_colapse.pdf>
+Package pdftex.def Info: figs/cap2/Sq_colapse.pdf  used on input line 288.
+(pdftex.def)             Requested size: 242.56108pt x 236.21454pt.
+
+Overfull \hbox (20.87268pt too wide) in paragraph at lines 280--291
+[]|  $[]$ $[]$ 
+ []
+
+LaTeX Info: Redefining \. on input line 309.
+LaTeX Info: Redefining \% on input line 309.
+[12]
+LaTeX Info: Redefining \. on input line 320.
+LaTeX Info: Redefining \% on input line 320.
+ [13 <./figs/cap2/self_aff.png>]
+LaTeX Info: Redefining \. on input line 335.
+LaTeX Info: Redefining \% on input line 335.
+ [14 <./figs/cap2/Sq.pdf> <./figs/cap2/Sq_colapse.pdf>]
+<figs/cap2/diffusive_term.png, id=834, 606.265pt x 580.1675pt>
+File: figs/cap2/diffusive_term.png Graphic file (type png)
+<use figs/cap2/diffusive_term.png>
+Package pdftex.def Info: figs/cap2/diffusive_term.png  used on input line 349.
+(pdftex.def)             Requested size: 242.56108pt x 232.12485pt.
+<figs/cap2/non_linear_term.png, id=835, 898.35625pt x 840.13875pt>
+File: figs/cap2/non_linear_term.png Graphic file (type png)
+<use figs/cap2/non_linear_term.png>
+Package pdftex.def Info: figs/cap2/non_linear_term.png  used on input line 354.
+(pdftex.def)             Requested size: 242.56108pt x 226.84048pt.
+
+Overfull \hbox (20.87268pt too wide) in paragraph at lines 346--357
+[]|  $[]$ $[]$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 370.
+LaTeX Info: Redefining \% on input line 370.
+ [15 <./figs/cap2/diffusive_term.png> <./figs/cap2/non_linear_term.png>]) (./cap3.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [16]
+Cap\'{\i }tulo 3.
+<figs/cap3/Black_Death.png, id=859, 1213.53375pt x 867.24pt>
+File: figs/cap3/Black_Death.png Graphic file (type png)
+<use figs/cap3/Black_Death.png>
+Package pdftex.def Info: figs/cap3/Black_Death.png  used on input line 26.
+(pdftex.def)             Requested size: 396.91324pt x 283.64935pt.
+[17
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
- [4 <./figs/cap2/Black_Death.png>]
-<figs/cap2/SIR.pdf, id=259, 506.03427pt x 323.15105pt>
-File: figs/cap2/SIR.pdf Graphic file (type pdf)
-<use figs/cap2/SIR.pdf>
-Package pdftex.def Info: figs/cap2/SIR.pdf  used on input line 97.
-(pdftex.def)             Requested size: 354.51978pt x 226.39154pt.
-LaTeX Info: Redefining \. on input line 109.
-LaTeX Info: Redefining \% on input line 109.
- [5 <./figs/cap2/SIR.pdf>]
-<figs/cap2/SIR_R.png, id=319, 989.66537pt x 398.9304pt>
-File: figs/cap2/SIR_R.png Graphic file (type png)
-<use figs/cap2/SIR_R.png>
-Package pdftex.def Info: figs/cap2/SIR_R.png  used on input line 124.
-(pdftex.def)             Requested size: 455.81004pt x 183.73543pt.
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
- [6 <./figs/cap2/SIR_R.png>]
-LaTeX Info: Redefining \. on input line 197.
-LaTeX Info: Redefining \% on input line 197.
- [7]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 227.
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+ [18 <./figs/cap3/Black_Death.png>]
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
+ [19]
+<figs/cap3/SIR.pdf, id=905, 506.03427pt x 323.15105pt>
+File: figs/cap3/SIR.pdf Graphic file (type pdf)
+<use figs/cap3/SIR.pdf>
+Package pdftex.def Info: figs/cap3/SIR.pdf  used on input line 112.
+(pdftex.def)             Requested size: 308.71104pt x 197.14156pt.
+LaTeX Info: Redefining \. on input line 124.
+LaTeX Info: Redefining \% on input line 124.
+ [20]
+<figs/cap3/SIR_R.png, id=918, 989.66537pt x 398.9304pt>
+File: figs/cap3/SIR_R.png Graphic file (type png)
+<use figs/cap3/SIR_R.png>
+Package pdftex.def Info: figs/cap3/SIR_R.png  used on input line 141.
+(pdftex.def)             Requested size: 396.91324pt x 159.98935pt.
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
+ [21 <./figs/cap3/SIR.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 171.
+LaTeX Info: Redefining \% on input line 171.
+ [22 <./figs/cap3/SIR_R.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+ [23]
+LaTeX Info: Redefining \. on input line 229.
+LaTeX Info: Redefining \% on input line 229.
+ [24]
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 245.
  (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
+Underfull \vbox (badness 3872) has occurred while \output is active []
 
-LaTeX Warning: Reference `S:aleatorios' on page 8 undefined on input line 235.
+LaTeX Info: Redefining \. on input line 255.
+LaTeX Info: Redefining \% on input line 255.
+ [25]
+Underfull \vbox (badness 1342) has occurred while \output is active []
 
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+ [26]
+LaTeX Info: Redefining \. on input line 303.
+LaTeX Info: Redefining \% on input line 303.
+ [27]
+LaTeX Info: Redefining \. on input line 340.
+LaTeX Info: Redefining \% on input line 340.
+ [28]
+Underfull \vbox (badness 2735) has occurred while \output is active []
 
-Underfull \vbox (badness 1668) has occurred while \output is active []
+LaTeX Info: Redefining \. on input line 387.
+LaTeX Info: Redefining \% on input line 387.
+ [29]
+LaTeX Info: Redefining \. on input line 423.
+LaTeX Info: Redefining \% on input line 423.
+ [30]
+<figs/cap3/heterogeneidad_dicot_aleatoria.pdf, id=1088, 841.44362pt x 232.88712pt>
+File: figs/cap3/heterogeneidad_dicot_aleatoria.pdf Graphic file (type pdf)
+<use figs/cap3/heterogeneidad_dicot_aleatoria.pdf>
+Package pdftex.def Info: figs/cap3/heterogeneidad_dicot_aleatoria.pdf  used on input line 429.
+(pdftex.def)             Requested size: 441.01772pt x 122.06145pt.
+<figs/cap3/smoth_step.pdf, id=1091, 656.65326pt x 293.63339pt>
+File: figs/cap3/smoth_step.pdf Graphic file (type pdf)
+<use figs/cap3/smoth_step.pdf>
+Package pdftex.def Info: figs/cap3/smoth_step.pdf  used on input line 453.
+(pdftex.def)             Requested size: 264.61331pt x 118.32944pt.
+LaTeX Info: Redefining \. on input line 462.
+LaTeX Info: Redefining \% on input line 462.
+ [31 <./figs/cap3/heterogeneidad_dicot_aleatoria.pdf>]
+<figs/cap3/het_suav.pdf, id=1148, 877.07674pt x 232.88712pt>
+File: figs/cap3/het_suav.pdf Graphic file (type pdf)
+<use figs/cap3/het_suav.pdf>
+Package pdftex.def Info: figs/cap3/het_suav.pdf  used on input line 465.
+(pdftex.def)             Requested size: 396.91324pt x 105.39166pt.
+<figs/cap3/nsmoth_step.pdf, id=1149, 891.15558pt x 232.88712pt>
+File: figs/cap3/nsmoth_step.pdf Graphic file (type pdf)
+<use figs/cap3/nsmoth_step.pdf>
+Package pdftex.def Info: figs/cap3/nsmoth_step.pdf  used on input line 471.
+(pdftex.def)             Requested size: 396.91324pt x 103.72859pt.
 
-LaTeX Info: Redefining \. on input line 237.
-LaTeX Info: Redefining \% on input line 237.
- [8]
-LaTeX Info: Redefining \. on input line 281.
-LaTeX Info: Redefining \% on input line 281.
- [9]
-LaTeX Info: Redefining \. on input line 332.
-LaTeX Info: Redefining \% on input line 332.
- [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `Simulaciones' on page 11 undefined on input line 371.
+LaTeX Info: Redefining \. on input line 491.
+LaTeX Info: Redefining \% on input line 491.
+ [32 <./figs/cap3/smoth_step.pdf> <./figs/cap3/het_suav.pdf
 
-) (./cap3.tex
+pdfTeX warning: pdflatex (file ./figs/cap3/het_suav.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figs/cap3/nsmoth_step.pdf
+
+pdfTeX warning: pdflatex (file ./figs/cap3/nsmoth_step.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<figs/cap3/het_suav_dico.pdf, id=1283, 853.61407pt x 245.05757pt>
+File: figs/cap3/het_suav_dico.pdf Graphic file (type pdf)
+<use figs/cap3/het_suav_dico.pdf>
+Package pdftex.def Info: figs/cap3/het_suav_dico.pdf  used on input line 505.
+(pdftex.def)             Requested size: 396.91324pt x 113.94684pt.
+<figs/cap3/nsmoth_dic_step.pdf, id=1284, 856.6203pt x 232.88712pt>
+File: figs/cap3/nsmoth_dic_step.pdf Graphic file (type pdf)
+<use figs/cap3/nsmoth_dic_step.pdf>
+Package pdftex.def Info: figs/cap3/nsmoth_dic_step.pdf  used on input line 511.
+(pdftex.def)             Requested size: 396.91324pt x 107.9076pt.
+) (./cap4.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [11]
-Cap\'{\i }tulo 3.
-[12
+ [33 <./figs/cap3/het_suav_dico.pdf> <./figs/cap3/nsmoth_dic_step.pdf
+
+pdfTeX warning: pdflatex (file ./figs/cap3/nsmoth_dic_step.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [34
 
 ]
-Overfull \hbox (6.87508pt too wide) in paragraph at lines 57--61
-\T1/cmr/m/n/10 rio pa-ra re-sol-ver-lo. Por sim-pli-ci-dad con-si-de-ra-mos que $\OT1/cmr/m/n/10 
-$ \T1/cmr/m/n/10 es una re-gión rec-tan-gu-lar del plano don-de $\OML/cmm/m/it/10 x; y \OMS/cmsy/m/n/10 2  []\OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; L[]\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B  []\OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; L[]\OT1/cmr/m/n/10 ]$\T1/cmr/m/n/10 .
- []
-
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
-[13] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+Cap\'{\i }tulo 4.
+[35]
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
+ [36]
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
+ [37] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 125.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 125.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 124.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 124.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Info: Redefining \. on input line 169.
-LaTeX Info: Redefining \% on input line 169.
- [14]
-LaTeX Info: Redefining \. on input line 231.
-LaTeX Info: Redefining \% on input line 231.
- [15]
-LaTeX Info: Redefining \. on input line 297.
-LaTeX Info: Redefining \% on input line 297.
- [16]
-LaTeX Info: Redefining \. on input line 358.
-LaTeX Info: Redefining \% on input line 358.
- [17]
-LaTeX Info: Redefining \. on input line 427.
-LaTeX Info: Redefining \% on input line 427.
- [18]
+LaTeX Info: Redefining \. on input line 154.
+LaTeX Info: Redefining \% on input line 154.
+ [38]
+LaTeX Info: Redefining \. on input line 207.
+LaTeX Info: Redefining \% on input line 207.
+ [39]
+LaTeX Info: Redefining \. on input line 252.
+LaTeX Info: Redefining \% on input line 252.
+ [40]
+LaTeX Info: Redefining \. on input line 300.
+LaTeX Info: Redefining \% on input line 300.
+ [41]
+LaTeX Info: Redefining \. on input line 339.
+LaTeX Info: Redefining \% on input line 339.
+ [42]
+LaTeX Info: Redefining \. on input line 386.
+LaTeX Info: Redefining \% on input line 386.
+ [43]
+LaTeX Info: Redefining \. on input line 429.
+LaTeX Info: Redefining \% on input line 429.
+ [44]
+LaTeX Info: Redefining \. on input line 474.
+LaTeX Info: Redefining \% on input line 474.
+ [45]
+<figs/cap4/cpuvsgpu.pdf, id=1709, 636.29283pt x 613.09048pt>
+File: figs/cap4/cpuvsgpu.pdf Graphic file (type pdf)
+<use figs/cap4/cpuvsgpu.pdf>
+Package pdftex.def Info: figs/cap4/cpuvsgpu.pdf  used on input line 480.
+(pdftex.def)             Requested size: 264.61331pt x 254.96103pt.
+<figs/cap4/cpuvsgpu_ratio.pdf, id=1710, 627.25908pt x 613.09048pt>
+File: figs/cap4/cpuvsgpu_ratio.pdf Graphic file (type pdf)
+<use figs/cap4/cpuvsgpu_ratio.pdf>
+Package pdftex.def Info: figs/cap4/cpuvsgpu_ratio.pdf  used on input line 485.
+(pdftex.def)             Requested size: 264.61331pt x 258.63754pt.
 
-LaTeX Warning: Reference `fig:cpuvsgpu' on page 19 undefined on input line 470.
+Overfull \hbox (45.0603pt too wide) in paragraph at lines 477--489
+[]|  $[]$ $[]$ 
+ []
 
-<figs/cap2_bis/cpu_gpu_t.pdf, id=682, 629.10974pt x 612.44746pt>
-File: figs/cap2_bis/cpu_gpu_t.pdf Graphic file (type pdf)
-<use figs/cap2_bis/cpu_gpu_t.pdf>
-Package pdftex.def Info: figs/cap2_bis/cpu_gpu_t.pdf  used on input line 479.
-(pdftex.def)             Requested size: 253.22952pt x 246.52594pt.
-<figs/cap2_bis/cpu_gpu_ratio.pdf, id=683, 625.73778pt x 612.44746pt>
-File: figs/cap2_bis/cpu_gpu_ratio.pdf Graphic file (type pdf)
-<use figs/cap2_bis/cpu_gpu_ratio.pdf>
-Package pdftex.def Info: figs/cap2_bis/cpu_gpu_ratio.pdf  used on input line 484.
-(pdftex.def)             Requested size: 253.22952pt x 247.84361pt.
+) (./cap5.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [46 <./figs/cap4/cpuvsgpu.pdf> <./figs/cap4/cpuvsgpu_ratio.pdf>]
+Cap\'{\i }tulo 5.
+[47
 
-Overfull \hbox (2.22168pt too wide) in paragraph at lines 477--488
-[]$[]$ $[]$ 
+]
+<figs/cap5/h_case.pdf, id=1843, 893.26558pt x 378.09505pt>
+File: figs/cap5/h_case.pdf Graphic file (type pdf)
+<use figs/cap5/h_case.pdf>
+Package pdftex.def Info: figs/cap5/h_case.pdf  used on input line 45.
+(pdftex.def)             Requested size: 383.68326pt x 162.40462pt.
+<figs/cap5/f_I(x)_hom.pdf, id=1844, 611.59117pt x 294.25996pt>
+File: figs/cap5/f_I(x)_hom.pdf Graphic file (type pdf)
+<use figs/cap5/f_I(x)_hom.pdf>
+Package pdftex.def Info: figs/cap5/f_I(x)_hom.pdf  used on input line 50.
+(pdftex.def)             Requested size: 383.68326pt x 184.61246pt.
+<figs/cap5/u_cm(t).pdf, id=1845, 633.56389pt x 300.09427pt>
+File: figs/cap5/u_cm(t).pdf Graphic file (type pdf)
+<use figs/cap5/u_cm(t).pdf>
+Package pdftex.def Info: figs/cap5/u_cm(t).pdf  used on input line 55.
+(pdftex.def)             Requested size: 383.68326pt x 181.74303pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
+[48]
+
+LaTeX Warning: Text page 49 contains only floats.
+
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
+[49 <./figs/cap5/h_case.pdf> <./figs/cap5/f_I(x)_hom.pdf> <./figs/cap5/u_cm(t).pdf
+
+pdfTeX warning: pdflatex (file ./figs/cap5/u_cm(t).pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<figs/cap5/da_case.pdf, id=1986, 893.26558pt x 378.09505pt>
+File: figs/cap5/da_case.pdf Graphic file (type pdf)
+<use figs/cap5/da_case.pdf>
+Package pdftex.def Info: figs/cap5/da_case.pdf  used on input line 81.
+(pdftex.def)             Requested size: 396.91324pt x 168.0008pt.
+<figs/cap5/cc.png, id=1987, 925.4575pt x 503.8825pt>
+File: figs/cap5/cc.png Graphic file (type png)
+<use figs/cap5/cc.png>
+Package pdftex.def Info: figs/cap5/cc.png  used on input line 97.
+(pdftex.def)             Requested size: 396.91324pt x 216.10397pt.
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+ [50 <./figs/cap5/da_case.pdf>]
+Underfull \vbox (badness 2529) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+ [51 <./figs/cap5/cc.png>]
+Underfull \vbox (badness 2042) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+ [52]
+<figs/cap5/amplitud_p.pdf, id=2044, 867.24pt x 433.62pt>
+File: figs/cap5/amplitud_p.pdf Graphic file (type pdf)
+<use figs/cap5/amplitud_p.pdf>
+Package pdftex.def Info: figs/cap5/amplitud_p.pdf  used on input line 164.
+(pdftex.def)             Requested size: 396.91324pt x 198.45529pt.
+LaTeX Info: Redefining \. on input line 171.
+LaTeX Info: Redefining \% on input line 171.
+ [53 <./figs/cap5/amplitud_p.pdf>]
+LaTeX Info: Redefining \. on input line 199.
+LaTeX Info: Redefining \% on input line 199.
+ [54]
+<figs/cap5/c_all.pdf, id=2108, 625.07907pt x 301.61557pt>
+File: figs/cap5/c_all.pdf Graphic file (type pdf)
+<use figs/cap5/c_all.pdf>
+Package pdftex.def Info: figs/cap5/c_all.pdf  used on input line 220.
+(pdftex.def)             Requested size: 396.91324pt x 191.52374pt.
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+ [55]
+<figs/cap5/beta_al_zoom.pdf, id=2118, 608.09367pt x 283.56439pt>
+File: figs/cap5/beta_al_zoom.pdf Graphic file (type pdf)
+<use figs/cap5/beta_al_zoom.pdf>
+Package pdftex.def Info: figs/cap5/beta_al_zoom.pdf  used on input line 235.
+(pdftex.def)             Requested size: 308.71104pt x 143.96257pt.
+<figs/cap5/beta_dic_zoom.pdf, id=2119, 608.09367pt x 283.56439pt>
+File: figs/cap5/beta_dic_zoom.pdf Graphic file (type pdf)
+<use figs/cap5/beta_dic_zoom.pdf>
+Package pdftex.def Info: figs/cap5/beta_dic_zoom.pdf  used on input line 242.
+(pdftex.def)             Requested size: 308.71104pt x 143.96257pt.
+LaTeX Info: Redefining \. on input line 269.
+LaTeX Info: Redefining \% on input line 269.
+ [56 <./figs/cap5/c_all.pdf>]
+<figs/cap5/I_max.png, id=2180, 1078.0275pt x 530.98375pt>
+File: figs/cap5/I_max.png Graphic file (type png)
+<use figs/cap5/I_max.png>
+Package pdftex.def Info: figs/cap5/I_max.png  used on input line 274.
+(pdftex.def)             Requested size: 396.91324pt x 195.49675pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 281.
+LaTeX Info: Redefining \% on input line 281.
+[57 <./figs/cap5/beta_al_zoom.pdf> <./figs/cap5/beta_dic_zoom.pdf
+
+pdfTeX warning: pdflatex (file ./figs/cap5/beta_dic_zoom.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+LaTeX Info: Redefining \. on input line 298.
+LaTeX Info: Redefining \% on input line 298.
+ [58 <./figs/cap5/I_max.png>]
+<figs/cap5/S1_all.png, id=2244, 1078.0275pt x 530.98375pt>
+File: figs/cap5/S1_all.png Graphic file (type png)
+<use figs/cap5/S1_all.png>
+Package pdftex.def Info: figs/cap5/S1_all.png  used on input line 301.
+(pdftex.def)             Requested size: 396.91324pt x 195.49675pt.
+LaTeX Info: Redefining \. on input line 316.
+LaTeX Info: Redefining \% on input line 316.
+ [59 <./figs/cap5/S1_all.png>]) (./cap6.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [60]
+Cap\'{\i }tulo 6.
+[61
+
+]
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+ [62]
+<figs/cap6/omegas.pdf, id=2274, 726.6209pt x 449.51878pt>
+File: figs/cap6/omegas.pdf Graphic file (type pdf)
+<use figs/cap6/omegas.pdf>
+Package pdftex.def Info: figs/cap6/omegas.pdf  used on input line 61.
+(pdftex.def)             Requested size: 396.91324pt x 245.5556pt.
+<figs/cap6/omega1_Ls.pdf, id=2275, 839.2824pt x 616.46246pt>
+File: figs/cap6/omega1_Ls.pdf Graphic file (type pdf)
+<use figs/cap6/omega1_Ls.pdf>
+Package pdftex.def Info: figs/cap6/omega1_Ls.pdf  used on input line 71.
+(pdftex.def)             Requested size: 396.91324pt x 291.54343pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 74.
+LaTeX Info: Redefining \% on input line 74.
+ [63 <./figs/cap6/omegas.pdf>]
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
+ [64 <./figs/cap6/omega1_Ls.pdf>]
+<figs/cap6/omegavsL.pdf, id=2357, 503.22691pt x 507.81721pt>
+File: figs/cap6/omegavsL.pdf Graphic file (type pdf)
+<use figs/cap6/omegavsL.pdf>
+Package pdftex.def Info: figs/cap6/omegavsL.pdf  used on input line 98.
+(pdftex.def)             Requested size: 251.38332pt x 253.67552pt.
+<figs/cap6/txvsL.pdf, id=2358, 520.10246pt x 507.81721pt>
+File: figs/cap6/txvsL.pdf Graphic file (type pdf)
+<use figs/cap6/txvsL.pdf>
+Package pdftex.def Info: figs/cap6/txvsL.pdf  used on input line 103.
+(pdftex.def)             Requested size: 251.38332pt x 245.44644pt.
+
+Overfull \hbox (24.29077pt too wide) in paragraph at lines 95--106
+[]|  $[]$ $[]$ 
+ []
+
+
+Underfull \vbox (badness 3568) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+ [65 <./figs/cap6/omegavsL.pdf> <./figs/cap6/txvsL.pdf>]
+<figs/cap6/colapse.pdf, id=2425, 766.59378pt x 510.82846pt>
+File: figs/cap6/colapse.pdf Graphic file (type pdf)
+<use figs/cap6/colapse.pdf>
+Package pdftex.def Info: figs/cap6/colapse.pdf  used on input line 132.
+(pdftex.def)             Requested size: 396.91324pt x 264.49431pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+ [66 <./figs/cap6/colapse.pdf>]
+<figs/cap6/tilted_velocity.pdf, id=2470, 508.9671pt x 499.81859pt>
+File: figs/cap6/tilted_velocity.pdf Graphic file (type pdf)
+<use figs/cap6/tilted_velocity.pdf>
+Package pdftex.def Info: figs/cap6/tilted_velocity.pdf  used on input line 165.
+(pdftex.def)             Requested size: 242.56108pt x 238.20183pt.
+<figs/cap6/lambdavsc.pdf, id=2471, 515.35033pt x 499.81859pt>
+File: figs/cap6/lambdavsc.pdf Graphic file (type pdf)
+<use figs/cap6/lambdavsc.pdf>
+Package pdftex.def Info: figs/cap6/lambdavsc.pdf  used on input line 170.
+(pdftex.def)             Requested size: 242.56108pt x 235.25034pt.
+
+Overfull \hbox (20.87268pt too wide) in paragraph at lines 162--173
+[]|  $[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 500.
-LaTeX Info: Redefining \% on input line 500.
-[19])
-LaTeX Info: Redefining \. on input line 143.
-LaTeX Info: Redefining \% on input line 143.
- [20 <./figs/cap2_bis/cpu_gpu_t.pdf> <./figs/cap2_bis/cpu_gpu_ratio.pdf>] (./template.bbl (./template.brf)
-\tf@brf=\write8
-\openout8 = `template.brf'.
 
- [21
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 182.
+LaTeX Info: Redefining \% on input line 182.
+ [67]
+Underfull \vbox (badness 1112) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
+ [68 <./figs/cap6/tilted_velocity.pdf> <./figs/cap6/lambdavsc.pdf>]
+<figs/cap6/Sq_t.pdf, id=2557, 763.35187pt x 524.81819pt>
+File: figs/cap6/Sq_t.pdf Graphic file (type pdf)
+<use figs/cap6/Sq_t.pdf>
+Package pdftex.def Info: figs/cap6/Sq_t.pdf  used on input line 196.
+(pdftex.def)             Requested size: 396.91324pt x 272.88301pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 208.
+LaTeX Info: Redefining \% on input line 208.
+ [69 <./figs/cap6/Sq_t.pdf>]
+<figs/cap6/Sq_est.pdf, id=2609, 539.31487pt x 524.81819pt>
+File: figs/cap6/Sq_est.pdf Graphic file (type pdf)
+<use figs/cap6/Sq_est.pdf>
+Package pdftex.def Info: figs/cap6/Sq_est.pdf  used on input line 213.
+(pdftex.def)             Requested size: 242.56108pt x 236.03787pt.
+<figs/cap6/Sq_sat.pdf, id=2610, 524.76048pt x 505.16669pt>
+File: figs/cap6/Sq_sat.pdf Graphic file (type pdf)
+<use figs/cap6/Sq_sat.pdf>
+Package pdftex.def Info: figs/cap6/Sq_sat.pdf  used on input line 218.
+(pdftex.def)             Requested size: 242.56108pt x 233.5049pt.
+
+Overfull \hbox (6.6463pt too wide) in paragraph at lines 210--221
+[]|  $[]$ $[]$ 
+ []
 
 
-])
-LaTeX Info: Redefining \. on input line 145.
-LaTeX Info: Redefining \% on input line 145.
- [22] [23
+Underfull \vbox (badness 3514) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 236.
+LaTeX Info: Redefining \% on input line 236.
+ [70 <./figs/cap6/Sq_est.pdf> <./figs/cap6/Sq_sat.pdf>]
+<figs/cap6/Sq_colapse.pdf, id=2695, 758.835pt x 453.17307pt>
+File: figs/cap6/Sq_colapse.pdf Graphic file (type pdf)
+<use figs/cap6/Sq_colapse.pdf>
+Package pdftex.def Info: figs/cap6/Sq_colapse.pdf  used on input line 239.
+(pdftex.def)             Requested size: 396.91324pt x 237.04123pt.
+) (./cap7.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [71 <./figs/cap6/Sq_colapse.pdf>] [72
+
+]
+Cap\'{\i }tulo 7.
+) [73] [74
+
+] (./template.bbl [75
+
+]
+LaTeX Info: Redefining \. on input line 179.
+LaTeX Info: Redefining \% on input line 179.
+ [76]
+LaTeX Info: Redefining \. on input line 267.
+LaTeX Info: Redefining \% on input line 267.
+ [77])
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+ [78] [79
 
 
 
+
+] [80
 
 ] (./template.aux
 LaTeX Info: Redefining \. on input line 26.
@@ -942,29 +1442,24 @@ LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ))
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 88A401AF202A8CA16BB916BCE816608C;4265.
-Package rerunfilecheck Info: File `template.brf' has not changed.
-(rerunfilecheck)             Checksum: 7C4529C401FDF0E67719D03A61AA3BCF;1243.
+(rerunfilecheck)             Checksum: 623DB488B5DFFBFCCDD1C08BF20160C2;8001.
  ) 
 Here is how much of TeX's memory you used:
- 20471 strings out of 478287
- 321242 string characters out of 5849288
- 1257620 words of memory out of 5000000
- 37907 multiletter control sequences out of 15000+600000
- 502384 words of font info for 116 fonts, out of 8000000 for 9000
+ 21023 strings out of 478287
+ 333667 string characters out of 5849288
+ 1221512 words of memory out of 5000000
+ 38192 multiletter control sequences out of 15000+600000
+ 505965 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,16n,120p,459b,2147s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on template.pdf (31 pages, 2487056 bytes).
+ 125i,20n,120p,1766b,2164s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on template.pdf (98 pages, 18256873 bytes).
 PDF statistics:
- 1118 PDF objects out of 1200 (max. 8388607)
- 892 compressed objects within 9 object streams
- 347 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3168 PDF objects out of 3580 (max. 8388607)
+ 1964 compressed objects within 20 object streams
+ 561 named destinations out of 1000 (max. 500000)
+ 575 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\documentclass[12pt,papel,twoside]{ibtesis}
-\documentclass[screen,preprint,pagebackref]{ibtesis}
+\documentclass[12pt,screen,twoside]{ibtesis}
+%\documentclass[screen,preprint,pagebackref]{ibtesis}
+%\documentclass[screen,twoside,pagebackref]{ibtesis}
 %\documentclass[12pt,papel,singlespace,oneside]{ibtesis}
 %\documentclass[12pt,papel,preprint,singlespace,oneside]{ibtesis}
 
@@ -26,6 +27,7 @@
 \usepackage{xcolor}
 \usepackage{courier}
 \usepackage{caption}
+\usepackage{wrapfig}
 \renewcommand{\lstlistingname}{Código}
 \decimalpoint %Decimales con punto
 
@@ -57,15 +59,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%% Informacion sobre la tesis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Frentes de onda en ecuaciones de reacción-difusión-convección sobre medios heterogéneos}
-\author{Lic. Renzo Zagarra Saez}
+\author{Renzo Zagarra Saez}
 \director{Dr. Alejandro Kolton}
 \carrera{Tesis Maestría en Física}
 \grado{Maestrando}
-\laboratorio{Teoría de la Materia Condensada -- Centro At\'{o}mico Bariloche}
-\jurado{Dr. Ezequiel Ferrero}
+\laboratorio{Grupo de Teoría de la Materia Condensada -- Centro At\'{o}mico Bariloche}
+\jurado{Dr. Ezequiel Ferrero \\[.2cm] Dr. Eduardo Jagla \\[.1cm] Dr. Guillermo Abramson}
 
-\palabrasclave{Sistemas complejos, Medios Desordenados, Ecuaciones de Difusión, Modelo SIR}
-\keywords{Dynamic Systems, Disordered Media, Diffusion Equations, SIR Model}
+\palabrasclave{Sistemas complejos, Medios Desordenados, Ecuaciones de  Reacción-Difusión, Modelo SIR, Epidemiología, Auto-Afinidad, Leyes de escaleo, KPZ}
+\keywords{Dynamic Systems, Disordered Media, Reaction-Diffusion Equations, SIR Model, Epidemiology, Self-Affinity, Scaling Laws, KPZ}
 % Si queremos poner la fecha manualmente:
 % \date{Diciembre de 2099}
 
@@ -101,10 +103,11 @@ A mi novia, Sol, \\por acompañarme y entenderme como nadie.
   $R(x,y,t)$ \hspace*{.3cm} Fracción de recuperados en la posición $(x,y)$ en el instante $t$.\\
   $\beta$ \hspace*{.3cm} Tasa de transmisión.\\
   $\gamma$ \hspace*{.3cm} Tasa de recuperación.\\
-  $S_0$ \hspace*{.3cm} Distribución inicial de la fracción de susceptibles.\\
+  $S_0$ \hspace*{.3cm} Fracción inicial de susceptibles.\\
   $S_c$ \hspace*{.3cm} Fracción de susceptibles crítica.\\
   $R_0$ \hspace*{.3cm} Coeficiente de reproducción.\\
-  $D_{x}$ \hspace*{.3cm} Coeficiente de dispersión de $x$.\\
+  $D_{I}$ \hspace*{.3cm} Coeficiente de difusión de $I$.\\
+  $D_{S}$ \hspace*{.3cm} Coeficiente de difusión de $S$.\\
   $u(y,t)$ \hspace*{.3cm} Campo de desplazamiento del frente de onda.\\
   $u_{cm}(t)$ \hspace*{.3cm} Centro de masa del frente de onda.\\
   $I_{max}$ \hspace*{.3cm} Amplitud media del frente de onda.\\
@@ -116,10 +119,12 @@ A mi novia, Sol, \\por acompañarme y entenderme como nadie.
   H \hspace*{.3cm} Medio homogéneo\\
   DA \hspace*{.3cm} Heterogeneidad dicotómica-aleatoria.\\
   S \hspace*{.3cm} Heterogeneidad suavizada.\\
-  DC \hspace*{.3cm} Heterogeneidad dicotómica-correlacionada.}
+  DC \hspace*{.3cm} Heterogeneidad dicotómica-correlacionada.\\
+  BD \hspace*{.3cm} Crecimiento balístico.\\
+  KPZ \hspace*{.3cm} Kardar-Parisi-Zhang\\
+  EW \hspace*{.3cm} Edwards-Wilkinson\\
+  }
 \end{abreviaturas}
-
-               %\'{I}ndice
 
 \listoffigures
 \listoftables
@@ -134,8 +139,10 @@ A mi novia, Sol, \\por acompañarme y entenderme como nadie.
 \input{cap1}
 \input{cap2}
 \input{cap3}
-%\input{cap3}
-%\input{cap4}
+\input{cap4}
+\input{cap5}
+\input{cap6}
+\input{cap7}
 
 %\appendix
 %\include{apend1}
@@ -145,7 +152,6 @@ A mi novia, Sol, \\por acompañarme y entenderme como nadie.
 \end{biblio}
 
 \begin{postliminary}
-
 \begin{seccion}{Agradecimientos}
 Agradezco al Instituto Balseiro, a la Universidad Nacional de Cuyo y a la Comisión Nacional de Energía Atómica por hacer posible mis estudios universitarios. 
 Agradezco enteramente a todo el personal de estas instituciones que hacen posible, con gran esfuerzo y a pesar todas las complicaciones dadas por la pandemia, que 
@@ -154,7 +160,6 @@ por su gran apoyo en el desarrollo de este trabajo y buena predisposición para 
 Llauradó, Esteban \textit{El Leches} Acerbo, Marco Madile, Ezequiel Saidman, Martín Famá y Francisco \textit{El Bbto} Gymnich por estar siempre presentes y ayudar a 
 liberar las tensiones de la vida universitaria.
 \end{seccion}
-
 \end{postliminary}
 
 \end{document}

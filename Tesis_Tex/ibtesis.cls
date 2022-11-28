@@ -1,4 +1,3 @@
-%%
 %% This is file `ibtesis.cls' 
 %%
 %% The style has the following options

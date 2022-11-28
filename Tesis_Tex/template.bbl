@@ -2,57 +2,186 @@
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
-\bibitem{bressan2009existence}
-Bressan, A., De~Lellis, C.
-\newblock Existence of optimal strategies for a fire confinement problem.
-\newblock \emph{Communications on Pure and Applied Mathematics: A Journal
-  Issued by the Courant Institute of Mathematical Sciences}, \textbf{62}~(6),
-  789--830, 2009.
-
 \bibitem{RILEY201568}
 Riley, S., Eames, K., Isham, V., Mollison, D., Trapman, P.
-\newblock Five challenges for spatial epidemic models.
+\newblock \href{https://pubmed.ncbi.nlm.nih.gov/25843387/}{Five challenges for
+  spatial epidemic models}.
 \newblock \emph{Epidemics}, \textbf{10}, 68--71, 2015.
 \newblock Challenges in Modelling Infectious Disease Dynamics.
 
-\bibitem{SIR}
-Kermack, W.~O., McKendrick, A.~G., Walker, G.~T.
+\bibitem{barabasi}
+Barab{\'a}si, A.-L., Stanley, H.~E., \emph{et~al.}
 \newblock
-  \href{https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.1927.0118}{A
-  contribution to the mathematical theory of epidemics}.
-\newblock \emph{Proceedings of the Royal Society of London. Series A,
-  Containing Papers of a Mathematical and Physical Character},
-  \textbf{115}~(772), 700--721, 1927.
+  \href{https://www.cambridge.org/core/books/fractal-concepts-in-surface-growth/0D9076FC287B60B2B1126BB165112F13}{Fractal
+  concepts in surface growth}.
+\newblock Cambridge university press, 1995.
 
-\bibitem{keeling:infectious_diseases}
-Keeling, M.~J., Rohani, P.
+\bibitem{zhang1992modeling}
+Zhang, J., Zhang, Y.-C., Alstr{\o}m, P., Levinsen, M.
 \newblock
-  \href{https://press.princeton.edu/books/hardcover/9780691116174/modeling-infectious-diseases-in-humans-and-animals}{Modeling
-  Infectious Diseases in Humans and Animals}.
-\newblock p\'ags. 15--26. Princeton University Press, 2008.
+  \href{https://www.sciencedirect.com/science/article/abs/pii/037843719290050Z}{Modeling
+  forest fire by a paper-burning experiment, a realization of the interface
+  growth mechanism}.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  \textbf{189}~(3-4), 383--389, 1992.
 
-\bibitem{Noble1974GeographicAT}
-Noble, J.~V.
-\newblock Geographic and temporal development of plagues.
-\newblock \emph{Nature}, \textbf{250}, 726--729, 1974.
+\bibitem{provatas1995scaling}
+Provatas, N., Ala-Nissila, T., Grant, M., Elder, K., Pich{\'e}, L.
+\newblock \href{https://arxiv.org/pdf/cond-mat/9506017.pdf}{Scaling,
+  propagation, and kinetic roughening of flame fronts in random media}.
+\newblock \emph{Journal of statistical physics}, \textbf{81}~(3), 737--759,
+  1995.
 
-\bibitem{kolton}
-Kolton, A.~B., Laneri, K.
-\newblock Rough infection fronts in a random medium.
-\newblock \emph{The European Physical Journal B}, \textbf{92}~(6), Jun 2019.
+\bibitem{PhysRevLett.79.1515}
+Maunuksela, J., Myllys, M., K\"ahk\"onen, O.-P., Timonen, J., Provatas, N.,
+  Alava, M.~J., \emph{et~al.}
+\newblock
+  \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.79.1515}{Kinetic
+  Roughening in Slow Combustion of Paper}.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{79}, 1515--1518, Aug 1997.
 
-\bibitem{chuleta}
-Abramson, G., Kenkre, V., Yates, T., Parmenter, R.
-\newblock Traveling waves of infection in the hantavirus epidemics.
-\newblock \emph{Bulletin of mathematical biology}, \textbf{65}, 519--34, 06
-  2003.
+\bibitem{Jullien1992SurfaceD}
+Jullien, R., Kert{\'e}sz, J., Meakin, P., Wolf, D.~E.
+\newblock Surface disordering : growth, roughening, and phase transitions.
+\newblock 1992.
 
-\bibitem{mosquito}
-Romeo-Aznar, V., Paul, R., Telle, O., Pascual, M.
-\newblock Mosquito-borne transmission in urban landscapes: The missing link
-  between vector abundance and human density.
-\newblock \emph{Proceedings of the Royal Society B: Biological Sciences},
-  \textbf{285}, 20180826, 08 2018.
+\bibitem{PhysRevLett.110.035501}
+Yunker, P.~J., Lohr, M.~A., Still, T., Borodin, A., Durian, D.~J., Yodh, A.~G.
+\newblock
+  \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.110.035501}{Effects
+  of Particle Shape on Growth Dynamics at Edges of Evaporating Drops of
+  Colloidal Suspensions}.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{110}, 035501, Jan 2013.
+
+\bibitem{kastberger2014speeding}
+Kastberger, G., Hoetzl, T., Maurer, M., Kranner, I., Weiss, S., Weihmann, F.
+\newblock
+  \href{https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0086315&type=printable}{Speeding
+  up social waves. Propagation mechanisms of shimmering in giant honeybees}.
+\newblock \emph{PloS one}, \textbf{9}~(1), e86315, 2014.
+
+\bibitem{kastberger2013social}
+Kastberger, G., Weihmann, F., Hoetzl, T.
+\newblock
+  \href{https://link.springer.com/content/pdf/10.1007/s00114-013-1056-z.pdf}{Social
+  waves in giant honeybees (Apis dorsata) elicit nest vibrations}.
+\newblock \emph{Naturwissenschaften}, \textbf{100}~(7), 595--609, 2013.
+
+\bibitem{kastberger2008social}
+Kastberger, G., Schmelzer, E., Kranner, I.
+\newblock
+  \href{https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0003141&type=printable}{Social
+  waves in giant honeybees repel hornets}.
+\newblock \emph{PLoS One}, \textbf{3}~(9), e3141, 2008.
+
+\bibitem{farkas2002mexican}
+Farkas, I., Helbing, D., Vicsek, T.
+\newblock \href{https://www.nature.com/articles/419131a}{Mexican waves in an
+  excitable medium}.
+\newblock \emph{Nature}, \textbf{419}~(6903), 131--132, 2002.
+
+\bibitem{farkas2003human}
+Farkas, I., Helbing, D., Vicsek, T.
+\newblock
+  \href{https://www.sciencedirect.com/science/article/abs/pii/S0378437103006873}{Human
+  waves in stadiums}.
+\newblock \emph{Physica A: statistical mechanics and its applications},
+  \textbf{330}~(1-2), 18--24, 2003.
+
+\bibitem{youtube}
+ViralHog.
+\newblock
+  \href{https://www.youtube.com/watch?v=8bNKU8GRYmU&ab_channel=ViralHog}{Honeybees
+  Mesmerizing Defensive Wave}.
+\newblock \emph{Youtube}, 2019.
+
+\bibitem{matsushita1990diffusion}
+Matsushita, M., Fujikawa, H.
+\newblock
+  \href{https://www.sciencedirect.com/science/article/abs/pii/037843719090402E}{Diffusion-limited
+  growth in bacterial colony formation}.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  \textbf{168}~(1), 498--506, 1990.
+
+\bibitem{bhattacharjee2022chemotactic}
+Bhattacharjee, T., Amchin, D.~B., Alert, R., Ott, J.~A., Datta, S.~S.
+\newblock \href{https://elifesciences.org/articles/71226.pdf}{Chemotactic
+  smoothing of collective migration}.
+\newblock \emph{Elife}, \textbf{11}, e71226, 2022.
+
+\bibitem{mate_sist_bio}
+Abramson, G.
+\newblock
+  \href{http://ricabib.cab.cnea.gov.ar/680/2/biologicos_2.pdf}{T{\'o}picos de
+  Biolog{\'\i}a Matem{\'a}tica.}
+\newblock p\'ags. 203--208, 2018.
+
+\bibitem{barbieri2020soil}
+Barbieri, R., Texier, G., Keller, C., Drancourt, M.
+\newblock \href{https://www.nature.com/articles/s41598-020-63211-4}{Soil
+  salinity and aridity specify plague foci in the United States of America}.
+\newblock \emph{Scientific reports}, \textbf{10}~(1), 1--9, 2020.
+
+\bibitem{stenseth2008plague}
+Stenseth, N.~C., Atshabar, B.~B., Begon, M., Belmain, S.~R., Bertherat, E.,
+  Carniel, E., \emph{et~al.}
+\newblock
+  \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2194748/pdf/pmed.0050003.pdf}{Plague:
+  past, present, and future}.
+\newblock \emph{PLoS medicine}, \textbf{5}~(1), e3, 2008.
+
+\bibitem{farahzadi2008systematic}
+Farahzadi, A.
+\newblock Systematic studies on structural and optical properties of organic
+  thin films on inorganic substrates.
+\newblock Tesis Doctoral, Aachen, Techn. Hochsch., Diss., 2007, 2008.
+
+\bibitem{Family_1985}
+Family, F., Vicsek, T.
+\newblock \href{https://dx.doi.org/10.1088/0305-4470/18/2/005}{Scaling of the
+  active zone in the Eden process on percolation networks and the ballistic
+  deposition model}.
+\newblock \emph{Journal of Physics A: Mathematical and General},
+  \textbf{18}~(2), L75, feb 1985.
+
+\bibitem{Bustingorry}
+Bustingorry, S., Guyonnet, J., Paruch, P., Agoritsas, E.
+\newblock \href{https://arxiv.org/pdf/1904.11726.pdf}{A numerical study of the
+  statistics of roughness parameters for fluctuating interfaces}.
+\newblock \emph{Journal of Physics: Condensed Matter}, \textbf{33}, 06 2021.
+
+\bibitem{Family_1986}
+Family, F.
+\newblock \href{https://dx.doi.org/10.1088/0305-4470/19/8/006}{Scaling of rough
+  surfaces: effects of surface diffusion}.
+\newblock \emph{Journal of Physics A: Mathematical and General},
+  \textbf{19}~(8), L441, jun 1986.
+
+\bibitem{PhysRevLett.56.889}
+Kardar, M., Parisi, G., Zhang, Y.-C.
+\newblock \href{https://link.aps.org/doi/10.1103/PhysRevLett.56.889}{Dynamic
+  Scaling of Growing Interfaces}.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{56}, 889--892, Mar 1986.
+
+\bibitem{PhysRevE.96.013107}
+Lam, F., Mi, X., Higgins, A.~J.
+\newblock \href{https://link.aps.org/doi/10.1103/PhysRevE.96.013107}{Front
+  roughening of flames in discrete media}.
+\newblock \emph{Phys. Rev. E}, \textbf{96}, 013107, Jul 2017.
+
+\bibitem{PhysRevE.74.041116}
+O'Malley, L., Kozma, B., Korniss, G., R\'acz, Z., Caraco, T.
+\newblock \href{https://link.aps.org/doi/10.1103/PhysRevE.74.041116}{Fisher
+  waves and front roughening in a two-species invasion model with preemptive
+  competition}.
+\newblock \emph{Phys. Rev. E}, \textbf{74}, 041116, Oct 2006.
+
+\bibitem{black_death3}
+Glatter, K.~A., Finkelman, P.
+\newblock \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7513766/}{History
+  of the plague: An ancient pandemic for the age of COVID-19}.
+\newblock \emph{The American journal of medicine}, \textbf{134}~(2), 176--181,
+  2021.
 
 \bibitem{black_death}
 Cesana, D., Benedictow, O., Bianucci, R.
@@ -98,6 +227,22 @@ Mills, C.~E., Robins, J.~M., Lipsitch, M.
   of 1918 pandemic influenza}.
 \newblock \emph{Nature}, \textbf{432}~(7019), 904--906, 2004.
 
+\bibitem{SIR}
+Kermack, W.~O., McKendrick, A.~G., Walker, G.~T.
+\newblock
+  \href{https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.1927.0118}{A
+  contribution to the mathematical theory of epidemics}.
+\newblock \emph{Proceedings of the Royal Society of London. Series A,
+  Containing Papers of a Mathematical and Physical Character},
+  \textbf{115}~(772), 700--721, 1927.
+
+\bibitem{keeling:infectious_diseases}
+Keeling, M.~J., Rohani, P.
+\newblock
+  \href{https://press.princeton.edu/books/hardcover/9780691116174/modeling-infectious-diseases-in-humans-and-animals}{Modeling
+  Infectious Diseases in Humans and Animals}.
+\newblock p\'ags. 15--26. Princeton University Press, 2008.
+
 \bibitem{sir_sol}
 Harko, T., Lobo, F.~S., Mak, M.
 \newblock \href{https://arxiv.org/pdf/1403.2160.pdf}{Exact analytical solutions
@@ -106,11 +251,31 @@ Harko, T., Lobo, F.~S., Mak, M.
 \newblock \emph{Applied Mathematics and Computation}, \textbf{236}, 184--194,
   2014.
 
-\bibitem{Recipes}
-Press, W.~H., Teukolsky, S.~A., Vetterling, W.~T., Flannery, B.~P.
-\newblock \href{https://dl.acm.org/doi/10.5555/1403886}{Numerical Recipes 3rd
-  Edition: The Art of Scientific Computing}.
-\newblock p\'ags. 907--910. Cambridge University Press, 2007.
+\bibitem{provatas1995flame}
+Provatas, N., Ala-Nissila, T., Grant, M., Elder, K., Pich{\'e}, L.
+\newblock \href{https://arxiv.org/pdf/cond-mat/9405040.pdf}{Flame propagation
+  in random media}.
+\newblock \emph{Physical Review E}, \textbf{51}~(5), 4232, 1995.
+
+\bibitem{ipsen2000amplitude}
+Ipsen, M., Kramer, L., S{\o}rensen, P.~G.
+\newblock
+  \href{https://www.sciencedirect.com/science/article/abs/pii/S0370157300000624}{Amplitude
+  equations for description of chemical reaction--diffusion systems}.
+\newblock \emph{Physics Reports}, \textbf{337}~(1-2), 193--235, 2000.
+
+\bibitem{field1985oscillations}
+Field, R.~J.
+\newblock Oscillations and traveling waves in chemical systems.
+\newblock Wiley, 1985.
+
+\bibitem{horvath1993instabilities}
+Horv{\'a}th, D., Petrov, V., Scott, S.~K., Showalter, K.
+\newblock
+  \href{https://web.archive.org/web/20070726124323id_/http://heracles.chem.wvu.edu/Papers/FrontInstabilities.JCP.pdf}{Instabilities
+  in propagating reaction-diffusion fronts}.
+\newblock \emph{The Journal of chemical physics}, \textbf{98}~(8), 6332--6343,
+  1993.
 
 \bibitem{Murray2002}
 Murray, J.~D.

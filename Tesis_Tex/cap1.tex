@@ -1,37 +1,24 @@
-\chapter{Introducción}
-\graphicspath{{figs/}}
-\label{Intro}
+\chap{Estructura de la tesis}{estructura}
 
 El modelado matemático de una dada fenomenología constituye una herramienta fundamental en el proceso de entendimiento cuantitativo de la misma. Más aún, aplicado 
 correctamente sobre una problemática concreta, como lo son las epidemias o los incendios forestales, permite desarrollar estrategias de contención, mitigación y 
-prevención \cite{bressan2009existence}.
+prevención.
 
-Entre la gran diversidad de desafíos que se presentan al momento de describir la dinámica de enfermedades infecciosas sobre una dada población o bien la propagación de un 
-frente de incendio, se encuentra el desafío de representar correctamente el carácter heterogéneo de la distribución espacial de la población o vegetación \cite{RILEY201568}.
-Esto, en última instancia, incluiría aspectos desde el ámbito comportamental de los individuos hasta la distribución espacial de los mismos. En tanto que para 
-incendios forestales, involucra la topografía del terreno, la diversidad de vegetación y su distribución espacial y hasta contribuciones climáticas. 
+Entre la gran diversidad de desafíos que se presentan al momento de describir la dinámica de enfermedades infecciosas sobre una dada población, o bien, la propagación de un incendio, se encuentra el desafío de representar correctamente el carácter heterogéneo de la población o la vegetación \cite{RILEY201568}. Esto incluye aspectos desde el ámbito comportamental de los individuos hasta la distribución espacial de los mismos. En tanto que para incendios, involucra la topografía e irregularidades del terreno, la diversidad de vegetación o su distribución espacial y hasta contribuciones climáticas. 
 
-El objetivo de este trabajo de tesis es dar un paso en esta dirección. Tanto para comprender los efectos que tienen sobre la dinámica las heterogeneidades del medio 
-de sustentación, ya sea de la población o vegetación, como para desarrollar herramientas estadísticas y computacionales que puedan ser utilizadas en sistemas 
-completamente diferentes donde la influencia de las características del medio sean de inteŕes. Para ello se consideró un modelo espacio-temporal de los más 
-sencillos en lo que respecta a modelos epidemiológicos de tipo SIR (Susceptibles - Infectados - Recuperados) \cite{SIR,keeling:infectious_diseases,Noble1974GeographicAT,kolton},
-en donde la movilidad de los individuos es dominada por un término difusivo\cite{chuleta}, tal como se verá en detalle en el capítulo \ref{Modelo teórico}. 
+El objetivo de este trabajo de maestría es dar un paso en el entendimiento del efecto de las heterogeneidades sobre la dinámica de un dado problema con frentes definidos que se propagan espacio-temporalmente. Adicionalmente, la intención es desarrollar en el camino herramientas estadísticas y computacionales que puedan ser utilizadas en problemas completamente diferentes donde la influencia de las características del medio sean de interés.
 
-Por su parte, las heterogeneidades del medio se introdujeron por medio de la distribución espacial de la tasa de transmisión la cual ha mostrado tener implicaciones 
-significativas para reproducir patrones de propagación espacio-temporales dados por datos epidemiológicos \cite{mosquito}.
-\newpage
+Para ello se consideró un problema particular, dado por un modelo espacio-temporal de tipo SIR 
+(Susceptibles - Infectados - Recuperados), en donde la movilidad de los individuos es dictada por un término difusivo. Este modelo admite soluciones de onda,
+lo cual permite definir frentes de infección que se propagan en el espacio y el tiempo. Nos centraremos en describir y entender en profundidad las propiedades de estos frentes de infección, en particular su geometría, su universalidad y los fenómenos críticos asociados. Haremos foco en los efectos que tienen sobre la dinámica las heterogeneidades del medio de sustentación, introducidas en el modelo en la forma de una tasa de transmisión espacialmente heterogénea.
 
-El presente trabajo se divide en tres capítulos además del presente, los cuales se describen brevemente a continuación:
+La tesis se divide en seis capítulos además del presente, los cuales se describen brevemente a continuación:
 
-En el \textbf{Capítulo 2} se presenta el marco teórico del trabajo, las herramientas estadísticas utilizadas para caracterizar los frentes de onda y se precisa las 
-condiciones del problema a resolver junto con la caracterización de los distintos medios que se propone estudiar.
-
-En el \textbf{Capítulo 3} se presentan los resultados obtenidos a partir de las simulaciones numéricas realizadas masivamente para cubrir diferentes parámetros del 
-problema y fundamentalmente para cuantificar los efectos sobre la dinámica de los distintos medios de sustentación.
-
-En el \textbf{Capítulo 4} se comentan brevemente las conclusiones del trabajo, sus potenciales aplicaciones y un posible desarrollo a futuro.
-
-
-
-
-
+\begin{itemize}
+    \item \textbf{Capítulo \ref{cap:intro}:} se da una introducción general donde se presentan diversos contextos en la naturaleza donde observamos interfases fuera del equilibrio y vemos cómo las características de las mismas dan información sobre la física subyacente. Luego, se desarrolla resumidamente la teoría asociada, donde definimos las propiedades de interés de las interfases y los modelos paradigmáticos.
+    \item \textbf{Capítulo \ref{cap:SIR}:} se presenta una introducción al modelo SIR en su forma más elemental junto con algunos resultados teóricos conocidos. Luego, se describe precisamente el problema que se aborda en este trabajo, que consiste en un modelo SIR difusivo con medio heterogéneo. Se presenta a su vez, una descripción de las heterogeneidades exploradas y los observables que se utilizarán para caracterizar la dinámica del problema.
+    \item \textbf{Capítulo \ref{cap:code}:} se presenta una reseña numérica y computacional que abarca el trabajo de investigación desarrollado para resolver ecuaciones diferenciales parciales utilizando procesadores gráficos (GPU). Se muestran explícitamente implementaciones sobre CPU y GPU utilizando \textit{Python}. Para la versión de GPU se utilizó la librería \textit{CuPy}. Por último, se muestra el beneficio obtenido en términos de aceleración al usar GPUs para resolver el tipo de simulaciones realizadas en este proyecto.
+    \item \textbf{Capítulo \ref{cap:resultados_criticos}:} Mostramos los resultados obtenidos de las simulaciones en lo que respecta a la velocidad, la amplitud y la nocividad de los frentes de infección. Mostramos cómo cada una de estas cantidades se ve afectada por las diferentes heterogeneidades del medio. Observamos fenómenos críticos y determinamos los exponentes críticos asociados en cada caso.
+    \item \textbf{Capítulo \ref{cap:rugosidad}:} En este capítulo profundizamos en el aspecto geométrico y leyes de escala dinámicas  de los frentes de infección dados. Estudiamos la evolución de la rugosidad del frente de infección. Determinamos el exponente de rugosidad $\alpha$ y el exponente dinámico $z$ del frente. Observamos también una dependencia cinética de la rugosidad del frente, propia de la clase de universalidad KPZ. 
+    \item \textbf{Capítulo \ref{cap:conclusiones}:} se comentan las conclusiones del trabajo, sus potenciales aplicaciones y un posible desarrollo a futuro.
+\end{itemize}
