@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex template"] 1669668139 "template.aux" "template.bbl" "template" 1669668811
+["bibtex template"] 1669668139 "template.aux" "template.bbl" "template" 1669674400
   "./ibtesis.bst" 1299702330 37291 3cf130789b1a81856935bf465f98529e ""
   "mibib.bib" 1669667582 25520 807c17e01084e31bac14c1b32e07b9f5 ""
-  "resumen.aux" 1669668807 1206 901a7d51b6a9055195e30c135bfdf269 "pdflatex"
-  "template.aux" 1669668811 42616 c30ec957e3b5fee2ed15530e616a16e2 "pdflatex"
+  "resumen.aux" 1669674396 1206 901a7d51b6a9055195e30c135bfdf269 "pdflatex"
+  "template.aux" 1669674400 42616 c30ec957e3b5fee2ed15530e616a16e2 "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
-["pdflatex"] 1669668807 "/home/renzo/Tesis_M/tesis/Tesis_Tex/template.tex" "template.pdf" "template" 1669668811
+["pdflatex"] 1669674396 "/home/renzo/Tesis_M/tesis/Tesis_Tex/template.tex" "template.pdf" "template" 1669674400
   "/etc/texmf/web2c/texmf.cnf" 1666557433 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/renzo/Tesis_M/tesis/Tesis_Tex/template.tex" 1669569768 6567 82a0a05f308d749eb3e02940b506b8b3 ""
+  "/home/renzo/Tesis_M/tesis/Tesis_Tex/template.tex" 1669674395 6476 32a336f3ac10cf670b160136f1dd4780 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136768653 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -252,7 +252,7 @@
   "cap4.tex" 1669569765 30742 6c08e1b4305bb03f048d7056241cfbad ""
   "cap5.tex" 1669569766 30541 e12702061244b56902b30ce94f5f2388 ""
   "cap6.tex" 1669667982 23551 70e5cc4b3b05673153bd6636c93ded18 ""
-  "cap7.tex" 1669668806 1035 07aad6d86ba6a6b0b98fbaf026a6d907 ""
+  "cap7.tex" 1669674395 1877 2c5ab0eebbcbaf4f22bc9322e156e3cb ""
   "figs/cap2/BD.png" 1668453934 32250 f7415d0c6763dd5e2af306496c4583e2 ""
   "figs/cap2/Bacteria.png" 1668131130 232856 5069a5bcb6d33ee42683f67718a7e88d ""
   "figs/cap2/Sq.pdf" 1669295032 20321 37372ce002927421128d83edcf7e31c5 ""
@@ -301,15 +301,15 @@
   "figs/cap6/txvsL.pdf" 1669603057 13173 4c8bb7df94636907b8266c309261fa80 ""
   "ibextra.sty" 1666613694 4536 c70a72e1a4be0fdde05f6bd00b9dfeb3 ""
   "ibtesis.cls" 1669039251 13030 ab16ccd88967f64d941594b03d2f743f ""
-  "resumen.aux" 1669668807 1206 901a7d51b6a9055195e30c135bfdf269 "pdflatex"
+  "resumen.aux" 1669674396 1206 901a7d51b6a9055195e30c135bfdf269 "pdflatex"
   "resumen.tex" 1669230712 3136 9ba23ee5a4afd1cfc5bda44e38a4d911 ""
-  "template.aux" 1669668811 42616 c30ec957e3b5fee2ed15530e616a16e2 "pdflatex"
+  "template.aux" 1669674400 42616 c30ec957e3b5fee2ed15530e616a16e2 "pdflatex"
   "template.bbl" 1669668139 14575 8fef9a6ad844387be6ab41b4eecda5e7 "bibtex template"
-  "template.lof" 1669668811 11151 60346b1fb2831387a76e0c4ad4f70a1f "pdflatex"
-  "template.lot" 1669668811 1032 07ffaba621383b409572063b76f29011 "pdflatex"
-  "template.out" 1669668811 8001 623db488b5dffbfccdd1c08bf20160c2 "pdflatex"
-  "template.tex" 1669569768 6567 82a0a05f308d749eb3e02940b506b8b3 ""
-  "template.toc" 1669668811 3916 9d072e2bee87cf45f5039d5bcb861c4f "pdflatex"
+  "template.lof" 1669674400 11151 60346b1fb2831387a76e0c4ad4f70a1f "pdflatex"
+  "template.lot" 1669674400 1032 07ffaba621383b409572063b76f29011 "pdflatex"
+  "template.out" 1669674400 8001 623db488b5dffbfccdd1c08bf20160c2 "pdflatex"
+  "template.tex" 1669674395 6476 32a336f3ac10cf670b160136f1dd4780 ""
+  "template.toc" 1669674400 3916 9d072e2bee87cf45f5039d5bcb861c4f "pdflatex"
   (generated)
   "resumen.aux"
   "template.aux"
