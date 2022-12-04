@@ -467,26 +467,26 @@ por lo menos, en un factor de 12, la diferencia entre una simulación de un 1 d�
 Por último, quisiera terminar este capítulo con algunos comentarios. Por un lado, recordar que todas las comparaciones de velocidad en las diferentes 
 implementaciones se realizaron con los mismos parámetros, y fundamentalmente con sistemas relativamente grandes, $1024\times1024$, donde la GPU se ve 
 favorecida sobre la CPU. Diferente es el caso para sistemas chicos, por completitud en este sentido, en la figura \ref{fig:cpuvsgpu} mostramos 
-los resultados de velocidad de las distintas implementaciones para distintos tamaños de sistemas. Por otro lado, la mayoría de los resultados presentados  
-en este proyecto fueron obtenidos con sistemas de $2^{16} \times 2^{11}$, en un sistema de dos ecuaciones de reacción-difusión como el discutido aquí,
-esto implica cuatro matrices con $2^{27}$ elementos cada una, considerando que además utilizamos un formato en coma flotante de doble precisión, cada 
-matriz ocupa alrededor de $1GB$ de memoria. El tiempo que llevaría resolver sistemas de este tamaño sin GPU sería completamente inviable. 
+los resultados de velocidad de las distintas implementaciones para distintos tamaños de sistemas. En esta misma figura se muestran también los tiempos de ejecución 
+sobre una GPU \textit{GeForce RTX 3080} del \textit{cluster} de GPUs de la Gerencia de Física del Centro Atómico Bariloche, donde se realizaron la mayoría de las simulaciones de este trabajo.
 
+Por otro lado, la mayoría de los resultados presentados en este proyecto fueron obtenidos con sistemas de $2^{16} \times 2^{11}$, en un sistema de dos ecuaciones de reacción-difusión como el discutido aquí,
+esto implica cuatro matrices con $2^{27}$ elementos cada una, considerando que además utilizamos un formato en coma flotante de doble precisión, cada 
+matriz ocupa alrededor de $1GB$ de memoria. El tiempo que llevaría resolver sistemas de este tamaño sin GPU sería inviable. 
 
 \begin{figure}[ht]
-\hspace*{-1.7cm}
-\begin{subfigure}{.6\textwidth}
+\hspace*{-.6cm}
+\begin{subfigure}{.51\textwidth}
   \centering
   \includegraphics[width=\textwidth]{cpuvsgpu.pdf}
   \caption{}
 \end{subfigure}
-\begin{subfigure}{.6\textwidth}
+\begin{subfigure}{.51\textwidth}
   \centering
   \includegraphics[width=\textwidth]{cpuvsgpu_ratio.pdf}
   \caption{}
 \end{subfigure}
-\caption{\textbf{(a)} Tiempo de simulación en función del tamaño del sistema $N \times N$ para las distintas implementaciones. \textbf{(b)} Aceleración 
-obtenida al usar GPU en función del tamaño del sistema $N \times N$ para las distintas implementaciones.}
+\caption[Tiempo de simulaciones en función del tamaño del sistema en CPUs y GPUs.]{\textbf{(a)} Tiempo de simulación en función del tamaño del sistema $N \times N$ para las distintas implementaciones. \textbf{(b)} Aceleración obtenida al usar GPU en función del tamaño del sistema $N \times N$ para las distintas implementaciones.}
 \label{fig:cpuvsgpu}
 \end{figure}
 

@@ -17,9 +17,8 @@ acontecimientos epidemiológicos, creo que resulta de interés poner en observac
 En la Edad Media, la Peste Negra, fue una epidemia de peste bubónica que se extendió por Europa entre 1347 y 1350, causando la muerte de entre un tercio y la mitad de la 
 población europea \cite{black_death3}. La enfermedad era producida por la bacteria \textit{Yersinia pestis}, que se transmitía por la picadura de pulgas infectadas. De hecho, el mecanismo de 
 transmisión de la enfermedad fue un misterio durante mucho tiempo.
-En 1855, una epidemia de peste bubónica, ocasionda por la misma bacteria responsable de la peste negra, comenzó en el sur de China. Fue entonces cuando pudieron obtenerse resultados de laboratorio y recién en 1897, M. Ogata, y en 1898,
-P. L. Simonds, de manera independiente llegaron a la hipótesis de que la enfermedad se transmitía por medio de la picadura de pulgas infectadas. Lo cual fue confirmado unos 
-años más tarde. 
+En 1855, una epidemia de peste bubónica, ocasionda por la misma bacteria, comenzó en el sur de China. Fue entonces cuando pudieron obtenerse resultados de laboratorio y recién en 1897, M. Ogata, y en 1898,
+P. L. Simonds, de manera independiente llegaron a la hipótesis de que la enfermedad se transmitía por medio de la picadura de pulgas infectadas que vivian fundamentalemnte en ratas. Lo cual fue confirmado unos años más tarde. 
 
 \begin{figure}[!b]
     \centering
@@ -49,7 +48,7 @@ propagación de la plaga.
 
 \subsection*{Gripe Española}
 
-La gripe española, por su parte, se extendió por todo el mundo entre 1918 y 1920, se estima que causó la muerte de unas 40 millones de personas y entre un 25-30 \% de la 
+La gripe española, se extendió por todo el mundo entre 1918 y 1920, se estima que causó la muerte de unas 40 millones de personas y entre un 25-30 \% de la 
 población mundial padeció la enfermedad \cite{gripe2}. Se originó en Kansas, Estados Unidos, y se extendió por todo el mundo en menos de un año. Curiosamente, se denominó gripe
 española simplemente porque España no participó en la Primera Guerra Mundial que acontecía simultáneamente, por lo tanto, no se censuraron los datos de la enfermedad.
 La gripe española fue una pandemia de gripe de tipo A, causada por el virus H1N1. Fue la primera de tres pandemias causadas por este virus, la última de
@@ -61,7 +60,7 @@ medio de gotitas de saliva que se expulsan al toser, estornudar o respirar.
 
 Es interesante notar también en este caso cómo el contexto histórico influyó en la propagación de la enfermedad. En 1918, la Primera Guerra Mundial estaba en su apogeo y 
 muchos países se encontraban en medio de una crisis económica. Se piensa que la elevada tasa de transmisión de la enfermedad, con un número de reproducción básico entre 
-2 y 3 \cite{gripe}, se debió a la enorme cantidad de tropas movilizadas por todo el mundo. Además, esto mismo sustentó mutaciones en el virus. 
+2 y 3 \cite{gripe}, se debió a la enorme cantidad de tropas movilizadas por todo el mundo. Además, esto mismo promovió mutaciones en el virus. 
 
 
 
@@ -261,7 +260,7 @@ $D_I I'' + cI'+\beta I(S_1-\gamma/\beta)=0$, de esto resulta
 
 \begin{align}
   I_p(z)&\propto \exp[\left(-\frac{c_0}{2D_I}+\sqrt{(c_0/2D_I)^2-\frac{\beta}{D_I}(S_1-\gamma/\beta)}\right)z], \label{larika} \\[.3cm]
-  I_p(z)&\propto \exp[\left(-\frac{c_0}{2D_I}+ \sqrt{\frac{\beta}{D_I}(S_0-S_1)}\right)z].
+  I_p(z)&\propto \exp[\left(-\frac{c_0}{2D_I}+ \sqrt{\frac{\beta}{D_I}(S_0-S_1)}\right)z].\label{larika3}
 \end{align}
 Donde en el último paso se reemplazó la expresión para $c_0$ (ecuación \ref{eq:c0}) dentro de la raiz. De la ecuación \ref{larika} se ve que es necesario que $\gamma/\beta>S_1$, dado que debe satisfacerse $I_p(-\infty) = 0$, de modo que en resumen se tiene la siguiente relación
 \[S_0>\gamma/\beta>S_1>0,\]
@@ -275,13 +274,13 @@ Por último, quería comentar brevemente acerca de la estabilidad de estas soluc
 
 \ssect{Soluciones en sistema de reacción-difusión-convección}{SIRrdc}
 
-En este trabajo exploramos algunos resultados sobre un modelo SIR como el presentado en la sección \ref{sec:modeloRDHo} pero con un término adicional de convección. Esto es,
+Es posible agregar un término de convección al modelo presentado en la sección \ref{sec:sec:modeloRDHo}. Esto es,
 \begin{align}
   \partial_t S & = -\beta SI + D_S \laplacian{S} \label{S_eq_v}\\
   \partial_t I &= \beta SI + D_I \laplacian{I}- \mathbf{v} \cdot \nabla I \label{I_eq_v}
 \end{align}
-donde $\mathbf{v}$ es un campo vectorial. En términos epidemiológicos no es fácil dar una interpretación a este campo vectorial, sin embargo, podría interpretarse 
-como un campo de migración de individuos infectados de un lugar a otro y la dirección de $\mathbf{v}$ sería la dirección de la migración, en tanto que su magnitud 
+donde $\mathbf{v}$ es un campo vectorial. En términos epidemiológicos $\mathbf{v}$ podría interpretarse 
+como un campo de migración de individuos infectados de un lugar a otro, indicando la dirección de migración en cada punto, en tanto que su magnitud 
 sería la velocidad de migración. Pensando en incendios es más sencillo motivar este término de convección, pues se podría interpretar como el campo de viento. 
 
 Ahora bien, se puede ver que este modelo también tiene soluciones de onda cuando $\mathbf{v}$ es constante. Sin perder generalidad podemos tomar $\mathbf{v}=(v,0)$ con 
@@ -317,6 +316,7 @@ necesaria para la existencia de una solución de onda viajando en la dirección 
     \frac{\gamma}{S_0} \; \text{, si} \; v\geq 0 \\
     \frac{1}{S_0}(\frac{v^2}{4D_I}+\gamma) \; \text{, si} \; v<0.
   \end{cases}
+  \label{eq:beta_c_v}
 \end{equation}
 
 
@@ -357,7 +357,7 @@ comienza la infección/incendio $\Omega_0 = (0,\delta x) \times (0,L_y)$ donde $
   S_0 & \text{si} \; (x,y) \notin \Omega_0.
   \end{cases}
 \end{align*}
-Mientras que las condiciones de contorno son rígidas en la dirección $x$
+Mientras que las condiciones de contorno son de Dirichlet en la dirección $x$
 \begin{align*}
   I(0,y,t)=I(L_x,y,t)=S(0,y,t)=S(L_x,y,t)=0,
 \end{align*}
@@ -377,7 +377,7 @@ de $u(y,t)$,
 \begin{equation}
   u_{cm}(t)\equiv\langle u(y,t)\rangle_{y},\label{centromasa}
 \end{equation}
-donde $\langle...\rangle_{y}$ indica el promedio sobre la coordenada $y$. Definimos la amplitud de $I(x,y,t)$ como el valor medio de $I(x,y,t)$ sobre $u(y,t)$, es decir,
+donde $\langle...\rangle_{y}$ indica el promedio sobre la coordenada $y$. Tomamos la amplitud de $I(x,y,t)$ como el valor medio de $I(x,y,t)$ sobre $u(y,t)$, es decir,
 \begin{equation}
   I_{max}(t)=\langle I(u(y,t),y,t)\rangle_{y}.\label{maximo}
 \end{equation}
@@ -391,9 +391,9 @@ Mientras que las fluctuaciones del frente de onda pueden ser caracterizadas defi
 \end{equation}  
 o bien utilizando el factor de estructura,
 \begin{equation}
-  S(q,t)\equiv|u(q,t)|^2,\label{factor}
+  S(q,t)\equiv|\tilde{u}(q,t)|^2,\label{factor}
 \end{equation}
-donde $u(q,t)$ es la transformada de Fourier sobre el espacio de $u(y,t)$.
+donde $\tilde{u}(q,t)$ es la transformada de Fourier sobre el espacio de $u(y,t)$.
 
 En capítulos posteriores utilizaremos los observables definidos aquí como principales herramientas para caracterizar y comparar de manera cuantitativa
 los efectos que tienen distintas heterogeneidades, introducidas mediante $\beta_{\vb r}$, sobre la dinámica del problema. A continuación describimos los distintos
@@ -401,8 +401,8 @@ tipos de heterogeneidades estudiadas.
 
 \subsection*{Tipos de heterogeneidades}
 
-Discutiremos aquí brevemente los distintos tipos de heterogeneidad que nos proponemos explorar en este trabajo. Para ello simplemente describimos los distintos 
-$\beta_{\vb r}$ utilizados.
+%Discutiremos aquí brevemente los distintos tipos de heterogeneidad que nos proponemos explorar en este trabajo. Para ello simplemente describimos los distintos 
+%$\beta_{\vb r}$ utilizados.
 \subsubsection*{Heterogeneidad dicotómica-aleatoria (DA)}
 
 Consiste en una tasa de transmisión $\beta_{\vb r}$ espacialmente dicotómica con una distribución de probabilidad dada por 
@@ -427,7 +427,7 @@ pueden verse distintas realizaciones de $\beta_{\vb r}$ para diferentes valores 
 \begin{figure}[t]
   \centering
   \includegraphics[width=1\textwidth]{heterogeneidad_dicot_aleatoria.pdf}
-  \caption{De izquierda a derecha: representación de $\beta_{\vb r}$ sobre una grilla de $20 \times 20$ para  $p=0.3$ , $p=0.5$ , $p=0.7$ y $p=0.9$.}
+  \caption[Representación del medio DA sobre una grilla de $20 \times 20$.]{Representación de $\beta_{\vb r}$ sobre una grilla de $20 \times 20$ para  $p=0.3$ , $p=0.5$ , $p=0.7$ y $p=0.9$.}
   \label{fig:heterogeneidad_dicotómica_aleatoria}
 \end{figure}
 
@@ -451,7 +451,7 @@ luego, asumiendo que $\overline{\beta^{(n-1)}_{\vb r}}=\overline{\beta_{\vb r}^{
 \begin{figure}[t]
   \centering
   \includegraphics[width=.6\textwidth]{smoth_step.pdf}
-  \caption{A la izquierda, se muestra una realización de $\beta_{\vb r}^{DA}$ con $p=0.5$. A la derecha, se muestra el efecto de un paso de suavizado 
+  \caption[Paso de suavizado de la hetereogeneidad suavizada]{A la izquierda, se muestra una realización de $\beta_{\vb r}^{DA}$ con $p=0.5$. A la derecha, se muestra el efecto de un paso de suavizado 
   sobre el $\beta_{\vb r}^{DA}$ original generando $\beta_{\vb r}^{(1)}$.}
   \label{fig:smoth_step}
 \end{figure}
@@ -463,13 +463,13 @@ la figura \ref{fig:heterogeneidad_dicotómica_aleatoria}.
 \begin{figure}[!b]
   \centering
   \includegraphics[width=.9\textwidth]{het_suav.pdf}
-  \caption{Representación de $\beta^{(1)}_{\vb r}$ sobre una grilla de $20 \times 20$ para  $p=0.3$ , $p=0.5$ , $p=0.7$ y $p=0.9$.}
+  \caption[Representación del medio S sobre una grilla de $20 \times 20$ con $n=1$.]{Representación de $\beta^{(1)}_{\vb r}$ sobre una grilla de $20 \times 20$ para  $p=0.3$ , $p=0.5$ , $p=0.7$ y $p=0.9$.}
   \label{fig:smoth}
 \end{figure}
 \begin{figure}[!b]
   \centering
   \includegraphics[width=.9\textwidth]{nsmoth_step.pdf}
-  \caption{Se muestran los $\beta^{(n)}_{\vb r}$ con $n=0,1,3,10$ sobre una grilla de $20\times20$.}
+  \caption[Representación del medio S sobre una grilla de $20 \times 20$ con distintos $n$.]{Se muestran los $\beta^{(n)}_{\vb r}$ con $n=0,1,3,10$ sobre una grilla de $20\times20$.}
   \label{fig:nsmoth_step}
 \end{figure}
 
@@ -503,13 +503,13 @@ $n\to \infty$ se recupera nuevamente el caso homogéneo pero con un valor medio 
 \begin{figure}[h]
   \centering
   \includegraphics[width=.9\textwidth]{het_suav_dico.pdf}
-  \caption{Representación de $\tilde{\beta}^{(1)}_{\vb r}$ sobre una grilla de $20 \times 20$ para  $p=0.3$ , $p=0.5$ , $p=0.7$ y $p=0.9$.}
+  \caption[Representación del medio DC sobre una grilla de $20 \times 20$ con $n=1$.]{Representación de $\tilde{\beta}^{(1)}_{\vb r}$ sobre una grilla de $20 \times 20$ para  $p=0.3$ , $p=0.5$ , $p=0.7$ y $p=0.9$.}
   \label{fig:smoth_dic}  
 \end{figure}
 \begin{figure}[h]
   \centering
   \includegraphics[width=.9\textwidth]{nsmoth_dic_step.pdf}
-  \caption{Se muestran los $\tilde{\beta}^{(n)}_{\vb r}$ con $n=0,1,3,10$ sobre una grilla de $20\times20$.}
+  \caption[Representación del medio DC sobre una grilla de $20 \times 20$ con distintos $n$.]{Se muestran los $\tilde{\beta}^{(n)}_{\vb r}$ con $n=0,1,3,10$ sobre una grilla de $20\times20$.}
   \label{fig:smoth_dic_step}
 \end{figure}
 

@@ -1,18 +1,17 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {v}}{section*.1}%
-\contentsline {chapter}{\'{I}ndice de s{\'{\i }}mbolos}{\es@scroman {vii}}{section*.3}%
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {ix}}{section*.5}%
-\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {xiii}}{section*.7}%
-\contentsline {chapter}{Resumen}{\es@scroman {xv}}{section*.9}%
-\contentsline {chapter}{Abstract}{\es@scroman {xvii}}{section*.11}%
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {vii}}{section*.3}%
+\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {ix}}{section*.5}%
+\contentsline {chapter}{Resumen}{\es@scroman {xi}}{section*.7}%
+\contentsline {chapter}{Abstract}{\es@scroman {xiii}}{section*.9}%
 \babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Estructura de la tesis}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Introducción}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Interfases fuera del equilibrio en la naturaleza}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.1}interfaces fuera del equilibrio en la naturaleza}{3}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Conceptos de escala}{7}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Ancho de la interfase}{8}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Factor de estructura de la interfase}{11}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Ancho de la interfaz}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Factor de estructura de la interfaz}{11}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Universalidad: Poisson, KPZ y EW}{13}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Modelo SIR}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Historia}{17}{section.3.1}%
@@ -41,6 +40,6 @@
 \contentsline {subsection}{\numberline {6.1.2}Exponente de rugosidad y dinámico}{64}{subsection.6.1.2}%
 \contentsline {section}{\numberline {6.2}Velocidad con frente inclinado}{67}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Factor de estructura}{68}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Conclusiones}{73}{chapter.7}%
-\contentsline {chapter}{Bibliograf{\'{\i }}a}{75}{section*.65}%
-\contentsline {chapter}{Agradecimientos}{81}{section*.67}%
+\contentsline {chapter}{\numberline {7}Conclusiones}{75}{chapter.7}%
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{79}{section*.65}%
+\contentsline {chapter}{Agradecimientos}{85}{section*.67}%

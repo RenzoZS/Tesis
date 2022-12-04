@@ -27,7 +27,7 @@ donde $\Omega_0 = (0,\delta x) \times [0,Ly]$, es decir, la condición inicial c
 
 Todas las simulaciones realizadas en este capítulo se realizaron sobre sistemas relativamente chicos de $1024\times 1024$\footnote{Comparados con los del capítulo \ref{cap:rugosidad}.}. Se decidió utilizar este tamaño de sistema dado que en este capítulo nos centramos en estudiar características macroscópicas del frente, las cuales presentan pequeñas fluctuaciones para diferentes realizaciones y transitorios cortos, de modo que un sistema de este tamaño resultó suficiente. Para referencia es importante decir que en este capítulo utilizamos un paso temporal de $0.05$ para integrar las ecuaciones, $Lx=Ly=1024$, $\delta x=1$ y $S_0=I_0=1$. Los demás parámetros del modelo se especificarán según corresponda.
 
-En particular, vamos a estar observando la velocidad $c$, la amplitud máxima $I_{max}$ y la nocividad $S_1$ (a definir) del frente de infección en función del parámetro de desorden $p$ y la tasa de transmisión media espacial $\langle\beta_{\vb r}\rangle_{\vb r}$ para las distintas heterogeneidades. Veremos cómo cada uno de estos observables muestra un comportamiento crítico cerca del umbral de propagación y determinaremos los exponentes críticos asociados. En el camino discutiremos las diferencias de los resultados entre las heterogeneidades y las posibles interpretaciones en términos epidemiológicos. 
+En particular, vamos a estar observando la velocidad $c$, la amplitud máxima $I_{max}$ y la nocividad $S_1$ (a definir) del frente de infección en función del parámetro de desorden $p$ y la tasa de transmisión media espacial $\langle\beta_{\vb r}\rangle_{\vb r}=\beta_m$ para las distintas heterogeneidades. Veremos cómo cada uno de estos observables muestra un comportamiento crítico cerca del umbral de propagación y determinaremos los exponentes críticos asociados. En el camino discutiremos las diferencias de los resultados entre las heterogeneidades y las posibles interpretaciones en términos epidemiológicos. 
 
 \vspace*{-.7cm}
 \sect{Medio homogéneo (H)}{H}
@@ -55,7 +55,7 @@ Nótese que $\beta > \beta_c = \frac{\gamma}{S_0} = 0.2$ de modo que la tasa de 
         \includegraphics[width=.87\textwidth]{u_cm(t).pdf}
         \caption{}
     \end{subfigure}
-    \caption{\textbf{(a)} Mapa de color de la evolución del frente de infección sobre un medio homogéneo con parámetros $\beta=1$, $\gamma=0.2$, $D_S=0$ y $D_I=1$.
+    \caption[Representación del campo de infectados y evolución del centro de masa en medio H.]{\textbf{(a)} Mapa de color de la evolución del frente de infección sobre un medio homogéneo con parámetros $\beta=1$, $\gamma=0.2$, $D_S=0$ y $D_I=1$.
     \textbf{(b)} Perfil longitudinal del frente de infección, se muestran también los perfiles asintóticos frontal y posterior 
     del frente de onda calculados en la sección \ref{sec:modeloRDHo}. \textbf{(c)} Posición del centro de masa del frente de infección en función del tiempo para distintos valores de $\gamma/\beta$ junto con los correspondientes ajustes lineales. Se muestra también la velocidad $c$ obtenida para cada caso.}
     \label{fig:h_case}
@@ -79,7 +79,7 @@ Observando la figura \ref{fig:da}, que muestra el frente de infección propagán
 \begin{figure}[b]
     \centering
     \includegraphics[width=\imsizeL]{da_case.pdf}
-    \caption{Evolución del frente de infección sobre un medio heterogéneo DA con $p=0.3$, $\gamma=0.2$, $\beta=1$, $D_S = 0$ y $D_{I}=1$.}
+    \caption[Representación del campo de infectados y evolución del centro de masa en medio DA.]{Evolución del frente de infección sobre un medio heterogéneo DA con $p=0.3$, $\gamma=0.2$, $\beta=1$, $D_S = 0$ y $D_{I}=1$.}
     \label{fig:da}
 \end{figure}
 
@@ -95,7 +95,7 @@ Sin embargo, podemos hacer algunas preguntas más difíciles, por ejemplo, ¿cu�
 \begin{figure}[!b]
     \centering
     \includegraphics[width=\imsizeL]{cc.png}
-    \caption{Velocidad $c$ del frente de infección en función de $p$ para los medios H y DA con la misma tasa de transmisión media espacial usando $\gamma/\beta=0.2$ y $0.4$, $D_S=0$ y $D_{I}=1$. Se muestran los ajustes con la regla de potencia $c\propto(1-p/p_c)^{\alpha_c}$ sobre la región crítica.}
+    \caption[Velocidad del frente infección en función del parámetro de desorden $p$.]{Velocidad $c$ del frente de infección en función de $p$ para los medios H y DA con la misma tasa de transmisión media espacial usando $\gamma/\beta=0.2$ y $0.4$, $D_S=0$ y $D_{I}=1$. Se muestran los ajustes con la regla de potencia $c\propto(1-p/p_c)^{\alpha_c}$ sobre la región crítica.}
     \label{fig:velocidad_p}
 \end{figure}
 
@@ -143,10 +143,8 @@ Más aún, no solo hay un efecto de aceleración, si no que el umbral de propaga
 \end{table}
 
 
-
 Por lo visto hasta ahora uno pensaría, al menos en términos epidemiológicos, que es preferible tener una tasa de transmisión con una distribución homogénea antes que una de tipo DA, ya que así habría una propagación más lenta. Sin embargo, antes de asegurar esto debiéramos tener en cuenta otras características epidemiológicas relevantes. Una de ellas es la amplitud del frente, una amplitud grande del frente implicaría muchos individuos infectados al mismo tiempo, lo cual podría demandar una cantidad de recursos e infraestructura de salud simultáneamente inaccesible. Esto podría producir fácilmente el colapso de los servicios de salud dando lugar a muchas tragedias. 
 Entonces, ¿cómo es la amplitud del frente sobre el medio DA en comparación con H?
-
 
 
 \subsubsection*{Amplitud del frente}
@@ -162,7 +160,7 @@ Los resultados obtenidos se muestran en la figura \ref{fig:amplitud_p}. En prime
 \begin{figure}[!b]
     \centering
     \includegraphics[width=\imsizeL]{amplitud_p.pdf}
-    \caption{Amplitud media $I_{max}$ del frente de propagación en función de $p$ con $\gamma/\beta=0.2$ y $0.4$ y $D_{I}=1$. Se muestran los 
+    \caption[Amplitud máxima del frente de infección en función del parámetro de desorden $p$]{Amplitud media $I_{max}$ del frente de propagación en función de $p$ con $\gamma/\beta=0.2$ y $0.4$ y $D_{I}=1$. Se muestran los 
     ajustes con la regla de potencia $I_{max}\propto(1-p/p_c)^{\alpha_I}$ sobre la región crítica.}
     \label{fig:amplitud_p}
  \end{figure}
@@ -196,7 +194,7 @@ Los resultados obtenidos hasta aquí de la comparación entre el medio H y el DA
      \textit{mayor} sobre el medio H que sobre el DA en tanto $p<p_c^H$, con $p_c^{H}$ el umbral del medio H.
      \item El valor de umbral de la tasa de transmisión media $\beta_m$ para el cual se extingue el frente de infección es \textit{menor} sobre el medio DA que sobre el H.
      \item Los exponentes críticos de la velocidad $\alpha_c$ para el medio homogéneo \textit{coinciden} con el estimado por $c_0$ en la aproximación analítica de la solución de onda. $(\alpha_c = \frac{1}{2})$
-     \item Los exponentes críticos de la velocidad $\alpha_c$ para el medio DA son \textit{mayores} que para el medio H.
+     \item Los exponentes críticos de la velocidad $\alpha_c$ para el medio DA son aparentemente \textit{mayores} que para el medio H. Sin embargo, más precisión es necesaria para decidir si $\alpha_c$ es universal o no. ($\alpha_c\approx0.5$)
  \end{itemize}
 
  
@@ -218,7 +216,7 @@ introducida en DC genera un cambio apreciable sobre la velocidad.
 \begin{figure}[!b]
     \centering
     \includegraphics[width=\imsizeL]{c_all.pdf}
-    \caption{Velocidad del frente de infección en función del valor medio de la tasa de transmisión $\beta_m$ sobre los medios S, DC, DA y 
+    \caption[Velocidad del frente de infección en función de $\beta_m$ para los medios H, S, DA y DC]{Velocidad del frente de infección en función del valor medio de la tasa de transmisión $\beta_m$ sobre los medios S, DC, DA y 
     H. Se muestran los ajustes con la regla de potencia $c\propto(\beta_m-\beta_c)^{\alpha_c}$ sobre la región crítica.}
     \label{fig:c_all}
 \end{figure}
@@ -233,14 +231,14 @@ distinguible, se forman regiones agrupadas con tasa de transmisión no nula $\be
 \begin{figure}[t]
     \centering
     \includegraphics[width=\imsize]{beta_al_zoom.pdf}
-    \caption{Distribución de la tasa de transmisión $\beta_{\vb r}$ del medio DA. A izquierda se muestra la distribución sobre 
+    \caption[Medio DA en diferentes escalas]{Distribución de la tasa de transmisión $\beta_{\vb r}$ del medio DA. A izquierda se muestra la distribución sobre 
     todo el espacio de $1024\times1024$ y a la derecha un acercamiento a una región de $100\times100$.}
     \label{beta_al_zoom}
 \end{figure}
 \begin{figure}[t]
     \centering
     \includegraphics[width=\imsize]{beta_dic_zoom.pdf}
-    \caption{Distribución de la tasa de transmisión $\beta_{\vb r}$ del medio DC. A izquierda se muestra la distribución sobre 
+    \caption[Medio DC en diferentes escalas]{Distribución de la tasa de transmisión $\beta_{\vb r}$ del medio DC. A izquierda se muestra la distribución sobre 
     todo el espacio de $1024\times1024$ y a la derecha un acercamiento a una región de $100\times100$.}
     \label{beta_dic_zoom}
 \end{figure}
@@ -272,7 +270,7 @@ Sin embargo, nuevamente, no queda claro si es preferible un medio sobre otro, da
 \begin{figure}[h]
     \centering
     \includegraphics[width=\imsizeL]{I_max.png}
-    \caption{Amplitud media del frente de infección/incendio $I_{max}$ en función de la tasa de transmisión media $\overline{\beta_{\vb r}}$ para los medios S, DA, 
+    \caption[Amplitud máxima en función de $\beta_m$ para los medios H, DA, S y DC]{Amplitud media del frente de infección/incendio $I_{max}$ en función de la tasa de transmisión media $\overline{\beta_{\vb r}}$ para los medios S, DA, 
     DC y H.}
     \label{fig:I_all}
 \end{figure}
@@ -285,7 +283,9 @@ Un aspecto de gran importancia en lo que respecta a problemáticas tanto epidemi
 deja un brote de enfermedad infecciosa o un incendio. En particular, estaremos interesados en estimar el daño que queda tras el paso del frente de infección/incendio sobre una dada región. Para ello utilizaremos como cuantificador de daños la fracción de susceptibles remanentes $S_1$ que queda tras el paso del frente. Entendiendo que mientras menor sea esta fracción, mayor será el daño ocasionado por el frente.
 
 Para ser más precisos al respecto, tomaremos 
-\[S_1=\langle S(x,y,T)\rangle_{x,y}\]
+\begin{equation}
+    S_1=\langle S(x,y,T)\rangle_{x,y} \label{S1}  
+\end{equation}
 con $0.2L_x<x<u_{cm}(T)-0.2L_x$, siendo $T$ el tiempo que dure la simulación correspondiente\footnote{Notar que T varía en cada realización, fundamentalmente dado que la velocidad de los frentes en los distintos medios cambia. De modo que esta definición pone el foco en el daño que se hace en una dada región sin importar el tiempo que le lleve al frente recorrerla.}. Definido de esta manera $S_1$, quitamos los efectos del transitorio que se da en la primera región de evolución del sistema y posibles efectos de tamaño finito por estar cerca de los bordes de la región de simulación. Además imponemos que $x$ se encuentre relativamente lejos del centro de masa del frente para no contar los susceptibles en la región del frente mismo.
 
 Utilizando este criterio para todas las simulaciones, podremos comparar 
@@ -299,7 +299,7 @@ embargo, tal como ya hemos apreciado antes (Tabla \ref{tab:pc}), la tasa de tran
 \begin{figure}[!t]
     \centering
     \includegraphics[width=\imsizeL]{S1_all.png}
-    \caption{Fracción de susceptibles $S_1$ en función de la tasa de transmisión media $\beta_m$ para los medios H, S, DA y DC.}
+    \caption[Susceptibles remanentes $S_1$ en función de $\beta_m$ para los medios H, S, DA y DC]{Susceptibles remanentes $S_1$ en función de la tasa de transmisión media $\beta_m$ para los medios H, S, DA y DC. Se muestra también la curva $1-\beta_m$ que aproxima $S_1$ sobre los medios dicotómicos.}
     \label{fig:S_1}
 \end{figure}
 
@@ -311,7 +311,7 @@ velocidad tenga menos tiempo de ocasionar grandes daños.
 
 Respecto al carácter lineal que presentan las curvas de $S_1$ sobre los medios dicotómicos, podemos hacernos una idea de a qué se debe: los susceptibles en los lugares donde la tasa de transmisión es nula resultan completamente inaccesible al frente dado que solo hemos trabajo con el término difusivo de infectados en las ecuaciones del sistema (\ref{Seqdif} - \ref{Ieqdif}), ($D_S = 0,D_I=1$). Es decir, los infectados pueden ingresar a esas zonas, donde no pueden contagiar a nadie dado que la tasa de transmisión es nula, pero los susceptibles nunca salen de modo que nunca pueden infectarse. Es por ello que como mínimo la cantidad de susceptibles remanentes debe ser igual a la cantidad de susceptibles inaccesibles, que es igual a la fracción de lugares donde la tasa de transmisión es nula, es decir, $S_1\geq 1-\beta_m$. Esta curva se muestra graficada en la figura \ref{fig:S_1} como una línea punteada y representa la contribución fundamental a $S_1$ en los medios dicotómicos, lo que explica el comportamiento lineal.
 
-Resumiendo, los resultados obtenidos son los siguientes:
+Resumiendo, los resultados obtenidos son los siguientes (Tabla \ref{tab:ranking}):
 \begin{itemize}
     \item Si la tasa de transmisión media espacial es la misma, la velocidad del frente de infección es la \textit{mayor} sobre el medio DC.
     \item Si la tasa de transmisión media espacial es la misma y $\beta_m>0.35$, la amplitud media del frente de infección es \textit{mayor} sobre el medio H.
@@ -321,5 +321,21 @@ Resumiendo, los resultados obtenidos son los siguientes:
     \item Si $\beta_m<0.2$, el frente de infección \textit{más nocivo} (menor $S_1$) se da sobre el medio DC.
     \item Sobre los medios dicotómicos DC y DA, la \textit{nocividad} $S_1$ es aproximadamente lineal con $\beta_m$.
 \end{itemize}
+
+\begin{table}[h]
+    \centering
+    \caption{\textit{Ranking} esquemático de heterogeneidades en función de los observables $c$, $I_{max}$ y $S_1$ ordenado de mayor a menor.}
+    \label{tab:ranking}
+    \begin{tabular}{@{}cccccc@{}}
+    \toprule
+    Posición & $c$     & $I_{max}(\beta_m >0.35 )$ & $I_{max}(\beta_m <0.35 )$ & $S_1$ \\ \midrule
+    1°    & DC  & H & DC & DA\\
+    2°    & DA  & S & S & DC\\
+    3°    & S   & DC & DA & S\\
+    4°    & H   & DA & H &  H\\ \bottomrule
+    \end{tabular}
+\end{table}
+
+
 
 

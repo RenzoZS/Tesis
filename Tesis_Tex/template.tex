@@ -5,9 +5,6 @@
 %\documentclass[12pt,papel,singlespace,oneside]{ibtesis}
 %\documentclass[12pt,papel,preprint,singlespace,oneside]{ibtesis}
 
-
-%%%%%%%%%%%%%%%%%%%%% Paquetes extra %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Por conveniencia: aquí puede cargar todos los paquetes y definir los comandos que necesite
 \usepackage{ibextra}
 \usepackage{physics}
 \usepackage{dsfont}
@@ -58,7 +55,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%% Informacion sobre la tesis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Frentes de onda en ecuaciones de reacción-difusión-convección sobre medios heterogéneos}
+\title{Simulaciones masivamente paralelas de modelos de propagación de epidemias e incendios}
 \author{Renzo Zagarra Saez}
 \director{Dr. Alejandro Kolton}
 \carrera{Tesis Maestría en Física}
@@ -96,35 +93,35 @@ A mi novia, Sol, \\por acompañarme y entenderme como nadie.
 
 \tableofcontents 
 
-\begin{abreviaturas}
-  \noindent
-  {$S(x,y,t)$ \hspace*{.3cm} Fracción de susceptibles en la posición $(x,y)$ en el instante $t$.\\
-  $I(x,y,t)$ \hspace*{.3cm} Fracción de infectados en la posición $(x,y)$ en el instante $t$.\\
-  $R(x,y,t)$ \hspace*{.3cm} Fracción de recuperados en la posición $(x,y)$ en el instante $t$.\\
-  $\beta$ \hspace*{.3cm} Tasa de transmisión.\\
-  $\gamma$ \hspace*{.3cm} Tasa de recuperación.\\
-  $S_0$ \hspace*{.3cm} Fracción inicial de susceptibles.\\
-  $S_c$ \hspace*{.3cm} Fracción de susceptibles crítica.\\
-  $R_0$ \hspace*{.3cm} Coeficiente de reproducción.\\
-  $D_{I}$ \hspace*{.3cm} Coeficiente de difusión de $I$.\\
-  $D_{S}$ \hspace*{.3cm} Coeficiente de difusión de $S$.\\
-  $u(y,t)$ \hspace*{.3cm} Campo de desplazamiento del frente de onda.\\
-  $u_{cm}(t)$ \hspace*{.3cm} Centro de masa del frente de onda.\\
-  $I_{max}$ \hspace*{.3cm} Amplitud media del frente de onda.\\
-  $c$ \hspace*{.3cm} Velocidad media del frente de onda.\\
-  $w(t)$ \hspace*{.3cm} Rugosidad del frente de onda.\\
-  $S(q)$ \hspace*{.3cm} Factor de estructura del campo de desplazamiento del frente de onda.\\
-  $f_I(t)$ \hspace*{.3cm} Perfil centrado del frente de onda.\\
-  $\beta_{\vb r}$ \hspace*{.3cm} Distribución espacial de la tasa de transmisión.\\
-  H \hspace*{.3cm} Medio homogéneo\\
-  DA \hspace*{.3cm} Heterogeneidad dicotómica-aleatoria.\\
-  S \hspace*{.3cm} Heterogeneidad suavizada.\\
-  DC \hspace*{.3cm} Heterogeneidad dicotómica-correlacionada.\\
-  BD \hspace*{.3cm} Crecimiento balístico.\\
-  KPZ \hspace*{.3cm} Kardar-Parisi-Zhang\\
-  EW \hspace*{.3cm} Edwards-Wilkinson\\
-  }
-\end{abreviaturas}
+%\begin{abreviaturas}
+%  \noindent
+%  {$S(x,y,t)$ \hspace*{.3cm} Densidad de susceptibles en la posición $(x,y)$ en el instante $t$.\\
+%  $I(x,y,t)$ \hspace*{.3cm} Densidad de infectados en la posición $(x,y)$ en el instante $t$.\\
+%  $R(x,y,t)$ \hspace*{.3cm} Densidad de recuperados en la posición $(x,y)$ en el instante $t$.\\
+%  $\beta$ \hspace*{.3cm} Tasa de transmisión.\\
+%  $\gamma$ \hspace*{.3cm} Tasa de recuperación.\\
+%  $S_0$ \hspace*{.3cm} Densidad inicial de susceptibles.\\
+%  $S_c$ \hspace*{.3cm} Densidad crítica de susceptibles.\\
+%  $R_0$ \hspace*{.3cm} Número de reproducción básico.\\
+%  $D_{I}$ \hspace*{.3cm} Coeficiente de difusión de infectados.\\
+%  $D_{S}$ \hspace*{.3cm} Coeficiente de difusión de susceptibles.\\
+%  $u(y,t)$ \hspace*{.3cm} Campo de desplazamiento del frente de infección.\\
+%  $u_{cm}(t)$ \hspace*{.3cm} Centro de masa del frente de infección.\\
+%  $I_{max}$ \hspace*{.3cm} Amplitud máxima del frente de infección.\\
+%  $c$ \hspace*{.3cm} Velocidad del frente de infección.\\
+%  $\omega$ \hspace*{.3cm} Ancho del campo de desplazamiento $u(y,t)$.\\
+%  $S(q,t)$ \hspace*{.3cm} Factor de estructura del campo de desplazamiento del frente de infección.\\
+%  $f_I(t)$ \hspace*{.3cm} Perfil longitudinal del frente de infección.\\
+%  $\beta_{\vb r}$ \hspace*{.3cm} Distribución espacial de la tasa de transmisión.\\
+%  H \hspace*{.3cm} Medio homogéneo\\
+%  DA \hspace*{.3cm} Heterogeneidad dicotómica-aleatoria.\\
+%  S \hspace*{.3cm} Heterogeneidad suavizada.\\
+%  DC \hspace*{.3cm} Heterogeneidad dicotómica-correlacionada.\\
+%  BD \hspace*{.3cm} Crecimiento balístico.\\
+%  KPZ \hspace*{.3cm} Kardar-Parisi-Zhang\\
+%  EW \hspace*{.3cm} Edwards-Wilkinson\\
+%  }
+%\end{abreviaturas}
 
 \listoffigures
 \listoftables
@@ -132,9 +129,6 @@ A mi novia, Sol, \\por acompañarme y entenderme como nadie.
 \include{resumen}
 
 \end{preliminary}
-
-
-% Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
 
 \input{cap1}
 \input{cap2}
@@ -153,13 +147,8 @@ A mi novia, Sol, \\por acompañarme y entenderme como nadie.
 
 \begin{postliminary}
 \begin{seccion}{Agradecimientos}
-  
-Agradezco al Instituto Balseiro, a la Universidad Nacional de Cuyo y a la Comisión Nacional de Energía Atómica por hacer posible mis estudios universitarios. 
-Agradezco enteramente a todo el personal de estas instituciones que hacen posible, con gran esfuerzo y a pesar todas las complicaciones dadas por la pandemia, que 
-educación universitaria de altísimo nivel, pública y gratuita llegue a todo el país. Particular agradecimiento para mi director de tesis, Dr. Alejandro Kolton, 
-por su gran apoyo en el desarrollo de este trabajo y buena predisposición para todo. Agradezco también a mis compañeros de camada Amir Zablotsky, Pedro
-Llauradó, Esteban Acerbo, Marco Madile, Ezequiel Saidman, Martín Famá y Francisco \textit{El Bbto} Gymnich por estar siempre presentes.
-
+Agradezco al Instituto Balseiro, a la Universidad Nacional de Cuyo, a la Comisión Nacional de Energía Atómica y fundamentalmente a todos los argentinos, que con sus impuestos financian a estas instituciones, por brindarme estudios universitarios gratuitamente. 
+Agradezco enteramente a todo el personal de estas instituciones que hacen posible, con gran esfuerzo, que la educación universitaria llegue a todo el país. Particular agradecimiento para mi director, Dr. Alejandro Kolton, por su gran apoyo en el desarrollo de este trabajo y buena predisposición para todo. Agradezco también a mis compañeros de camada Amir Zablotsky, Pedro Llauradó, Esteban Acerbo, Marco Madile, Ezequiel Saidman, Martín Famá y Francisco Gymnich por estar siempre presentes.
 \end{seccion}
 \end{postliminary}
 
