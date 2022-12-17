@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex template"] 1669906733 "template.aux" "template.bbl" "template" 1670541944
+["bibtex template"] 1671111042 "template.aux" "template.bbl" "template" 1671113455
   "./ibtesis.bst" 1299702330 37291 3cf130789b1a81856935bf465f98529e ""
   "mibib.bib" 1669674887 25522 834bb60ff559161836f11f78fb760707 ""
-  "resumen.aux" 1670541940 1205 303cc0c3d3016e2ece51e58dee3ae295 "pdflatex"
-  "template.aux" 1670541944 32803 413f652982a119f2884c23eca67ba90f "pdflatex"
+  "resumen.aux" 1671113450 1205 303cc0c3d3016e2ece51e58dee3ae295 "pdflatex"
+  "template.aux" 1671113454 32795 6becb9b9bb916c50acbfb3b3e9a4ee3b "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
-["pdflatex"] 1670541940 "/home/renzo/Tesis_M/tesis/Tesis_Tex/template.tex" "template.pdf" "template" 1670541944
+["pdflatex"] 1671113450 "/home/renzo/Tesis_M/tesis/Tesis_Tex/template.tex" "template.pdf" "template" 1671113455
   "/etc/texmf/web2c/texmf.cnf" 1666557433 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/renzo/Tesis_M/tesis/Tesis_Tex/template.tex" 1669907287 6281 39d50180dd8c808f101acc53c0859862 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -252,7 +252,7 @@
   "cap2.tex" 1669901237 30048 e21e32d1da4d2b942277c92ee5928079 ""
   "cap3.tex" 1669830295 40437 5aa0b789fbdd03f881f8c193eabcde03 ""
   "cap4.tex" 1669831486 31066 37d77390a2754343d78bead9b11a96ce ""
-  "cap5.tex" 1669906727 32004 a8ceb89c7e06128fcbe8444624028868 ""
+  "cap5.tex" 1671113449 32025 7bfaf996d0014f3cc45aec1ab7d9f7ba ""
   "cap6.tex" 1669903404 32087 cdab975f67ee11853635b918c67c1d43 ""
   "cap7.tex" 1669904548 7089 94297ae9fe2da0d994d4f83749b56469 ""
   "figs/cap2/BD.png" 1668453934 32250 f7415d0c6763dd5e2af306496c4583e2 ""
@@ -303,15 +303,15 @@
   "figs/cap6/txvsL.pdf" 1669900320 12533 553fdcb8206041312fd61c4166a2ffb1 ""
   "ibextra.sty" 1666613694 4536 c70a72e1a4be0fdde05f6bd00b9dfeb3 ""
   "ibtesis.cls" 1669039251 13030 ab16ccd88967f64d941594b03d2f743f ""
-  "resumen.aux" 1670541940 1205 303cc0c3d3016e2ece51e58dee3ae295 "pdflatex"
+  "resumen.aux" 1671113450 1205 303cc0c3d3016e2ece51e58dee3ae295 "pdflatex"
   "resumen.tex" 1669819665 3416 7012dfed83822fad3546f762aa00c947 ""
-  "template.aux" 1670541944 32803 413f652982a119f2884c23eca67ba90f "pdflatex"
-  "template.bbl" 1669906733 14575 8fef9a6ad844387be6ab41b4eecda5e7 "bibtex template"
-  "template.lof" 1670541944 5905 86addeccfd3baec4a213c844eefbf417 "pdflatex"
-  "template.lot" 1670541944 1251 8c33fe1613584fe3f985e7ac0083967d "pdflatex"
-  "template.out" 1670541944 7843 f350652d685e862266c4438efa5e5e13 "pdflatex"
+  "template.aux" 1671113454 32795 6becb9b9bb916c50acbfb3b3e9a4ee3b "pdflatex"
+  "template.bbl" 1671111042 14575 8fef9a6ad844387be6ab41b4eecda5e7 "bibtex template"
+  "template.lof" 1671113454 5905 86addeccfd3baec4a213c844eefbf417 "pdflatex"
+  "template.lot" 1671113454 1247 5f29a33e44a972419ccbce33ea4f97b6 "pdflatex"
+  "template.out" 1671113454 7843 f350652d685e862266c4438efa5e5e13 "pdflatex"
   "template.tex" 1669907287 6281 39d50180dd8c808f101acc53c0859862 ""
-  "template.toc" 1670541944 3824 a529d91e7b2c38ff73bbd510ed421e16 "pdflatex"
+  "template.toc" 1671113454 3824 a529d91e7b2c38ff73bbd510ed421e16 "pdflatex"
   (generated)
   "resumen.aux"
   "template.aux"

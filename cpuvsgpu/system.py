@@ -440,7 +440,7 @@ class System:
         self.t_it += 1
 
 
-    def solve(self,it_max=1000):
+    def solve(self,it_max):
         '''
             Solve the SIR model for a given number of iterations.
 
@@ -452,7 +452,7 @@ class System:
                 Number of iterations
         '''
 
-        for _ in range(it_max):
+        while self.t_it < it_max:
             self.update()
             self.rigid_x()
     
