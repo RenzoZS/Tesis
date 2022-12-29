@@ -1,9 +1,9 @@
-PWD /home/renzo/Tesis_M/tesis/Tesis_Tex
+PWD /home/renzo/Documents/Tesis_M/tesis/Tesis_Tex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/renzo/Tesis_M/tesis/Tesis_Tex/template.tex
+INPUT /home/renzo/Documents/Tesis_M/tesis/Tesis_Tex/template.tex
 OUTPUT template.log
 INPUT ./ibtesis.cls
 INPUT ./ibtesis.cls

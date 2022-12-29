@@ -10,45 +10,45 @@ Warning--empty booktitle in Jullien1992SurfaceD
 Warning--empty journal in mate_sist_bio
 Warning--empty booktitle in keeling:infectious_diseases
 Warning--empty booktitle in LLVM
-You've used 51 entries,
+You've used 52 entries,
             2634 wiz_defined-function locations,
-            1359 strings with 21883 characters,
-and the built_in function-call counts, 18551 in all, are:
-= -- 1212
-> -- 644
+            1366 strings with 22113 characters,
+and the built_in function-call counts, 18832 in all, are:
+= -- 1229
+> -- 652
 < -- 6
-+ -- 322
-- -- 161
-* -- 1013
-:= -- 2058
-add.period$ -- 157
-call.type$ -- 51
-change.case$ -- 48
++ -- 326
+- -- 163
+* -- 1027
+:= -- 2090
+add.period$ -- 160
+call.type$ -- 52
+change.case$ -- 49
 chr.to.int$ -- 0
-cite$ -- 55
-duplicate$ -- 1845
-empty$ -- 1854
-format.name$ -- 202
-if$ -- 4047
+cite$ -- 56
+duplicate$ -- 1880
+empty$ -- 1883
+format.name$ -- 205
+if$ -- 4107
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 541
-newline$ -- 260
-num.names$ -- 51
-pop$ -- 826
+int.to.str$ -- 52
+missing$ -- 550
+newline$ -- 265
+num.names$ -- 52
+pop$ -- 838
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 433
+skip$ -- 438
 stack$ -- 0
 substring$ -- 725
-swap$ -- 1269
+swap$ -- 1294
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 111
-width$ -- 53
-write$ -- 545
+while$ -- 112
+width$ -- 54
+write$ -- 556
 (There were 5 warnings)
